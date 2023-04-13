@@ -386,8 +386,8 @@
 				},
 				"dwellingLvl1" :
 				{
-					"description" : "Barracks allow to recruit Grunts.",
-					"name" : "Barracks",
+					"description" : "Blaster Arsenal allows to recruit Grunts.",
+					"name" : "Blaster Arsenal",
 					"cost" : {
 						"gold" : 1000,
 						"ore" : 10
@@ -479,8 +479,8 @@
 				},
 				"dwellingUpLvl1" :
 				{
-					"description" : "Upg. Barracks allow to recruit Troopers.",
-					"name" : "Upg. Barracks",
+					"description" : "Upg. Blaster Arsenal allows to recruit Troopers.",
+					"name" : "Upg. Blaster Arsenal",
 					"cost" : {
 						"gold" : 1000,
 						"ore" : 5,

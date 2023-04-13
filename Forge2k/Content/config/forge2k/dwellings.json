@@ -2,7 +2,7 @@
 	"core:creatureGeneratorCommon" : {
 		"types" : {
 			"metalBarracks2k" : {
-				"name" : "Barracks",
+				"name" : "Blaster Arsenal",
 				"creatures" : [[ "gruntSoldier2k" ]],
 				"sounds": {
 					"ambient": ["forge2k/gruntLOOP"]
