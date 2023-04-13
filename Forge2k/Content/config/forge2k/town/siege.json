@@ -1,0 +1,60 @@
+{
+	"forge2k" :
+	{
+		"town" :
+		{
+			"siege" :
+			{
+				"shooter" : "gruntSoldier2k",
+				"imagePrefix" : "forge2k/siege/sgfg",
+				"towerIconSmall" : "forge2k/icons/arrowtowersmall",
+				"towerIconLarge" : "forge2k/icons/arrowtowerlarge",
+				"gate" :
+				{
+					"arch" : { "x" : 476, "y" : 192 },
+					"gate" : { "x" : 408, "y" : 254 }
+				},
+				"moat" :
+				{
+					"bank" : { "x" : 400, "y" : 80 },
+					"moat" : { "x" : 406, "y" : 90 }
+				},
+				"static" :
+				{
+					"background" : { "x" : 619, "y" : 56 },
+					"bottom" : { "x" : 506, "y" : 373 },
+					"top" : { "x" : 498, "y" : 92 }
+				},
+				"towers" :
+				{
+					"bottom" :
+					{
+						"battlement" : { "x" : 579, "y" : 513 },
+						"creature" : { "x" : 356, "y" : 311 },
+						"tower" : { "x" : 579, "y" : 513 }
+					},
+					"keep" :
+					{
+						"battlement" : { "x" : 717, "y" : 196 },
+						"creature" : { "x" : 519, "y" : -5 },
+						"tower" : { "x" : 717, "y" : 196 }
+					},
+					"top" :
+					{
+						"battlement" : { "x" : 558, "y" : 30 },
+						"creature" : { "x" : 340, "y" : -173 },
+						"tower" : { "x" : 558, "y" : 30 }
+					}
+				},
+				"walls" :
+				{
+					"bottom" : { "x" : 506, "y" : 373 },
+					"bottomMid" : { "x" : 489, "y" : 322 },
+					"upper" : { "x" : 523, "y" : 67 },
+					"upperMid" : { "x" : 486, "y" : 158 }
+				}
+			}
+		}
+	}
+}
+

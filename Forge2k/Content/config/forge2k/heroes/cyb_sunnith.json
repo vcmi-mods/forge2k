@@ -1,0 +1,59 @@
+{
+	"sunnith2k" :
+	{
+		"class" : "cyborg2k",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Sunnith",
+			"biography" : "Sunnith and her band of renegade Nagas led the lives of fugitives after defying their Bracadan masters. With their tails bruised and torn from the long years of roaming, she and her sisters have finally found a safe haven in the embrace of steel and circuits.",
+			"specialty" :
+			{
+				"description" : "{Tanks}\r\n\r\nIncreases the Attack and Defense skills of any Tanks or Heavy Tanks for each level attained after 6th level.",
+				"tooltip" : "Creature Bonus: Tanks",
+				"name" : "Tanks"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "forge2k/heroes/sunnith/spec-small",
+			"specialtyLarge" : "forge2k/heroes/sunnith/spec-large",
+			"large" : "forge2k/heroes/sunnith/portrait-large",
+			"small" : "forge2k/heroes/sunnith/portrait-small"
+		},
+		"army" :
+		[
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 10,
+				"min" : 10
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 7,
+				"min" : 7
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 4,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			},
+			{
+				"level" : "basic",
+				"skill" : "ballistics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "nagaTank2k"
+		}
+	}
+}

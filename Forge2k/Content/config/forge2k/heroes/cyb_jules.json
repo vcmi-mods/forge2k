@@ -1,0 +1,63 @@
+{
+	"jules2k" :
+	{
+		"class" : "cyborg2k",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Jules",
+			//"biography" : "Jules had always wanted to fly. Other Minotaurs called him crazy. Who's crazy now?",
+			"biography" : "Even before the reactivation of the Heavenly Forge, Jules had always yearned to traverse the skies. Other Minotaurs called him crazy. Who's crazy now?",
+			"specialty" :
+			{
+				"description" : "{Jump Cadets}\r\n\r\nIncreases the Attack and Defense skills of any Jump Cadets or Jump Soldiers for each level attained after 5th level.",
+				"tooltip" : "Creature Bonus: Jump Cadets",
+				"name" : "Jump Cadets"
+			}
+		},		
+
+		"images" :
+		{
+			"specialtySmall" : "forge2k/heroes/jules/spec-small",
+			"specialtyLarge" : "forge2k/heroes/jules/spec-large",
+			"large" : "forge2k/heroes/jules/portrait-large",
+			"small" : "forge2k/heroes/jules/portrait-small"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 10,
+				"min" : 10
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 7,
+				"min" : 7
+			},
+			{
+				"creature" : "jumpSoldier2k",
+				"max" : 1,
+				"min" : 1
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "jumpSoldier2k"
+		}
+	}
+}
+

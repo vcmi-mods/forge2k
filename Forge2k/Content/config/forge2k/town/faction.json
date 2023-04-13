@@ -1,0 +1,131 @@
+{
+	"forge2k" :
+	{
+		"name" : "Forge",
+		"creatureBackground" :
+		{
+			"120px" : "forge2k/creature-bg-120px",
+			"130px" : "forge2k/creature-bg-130px"
+		},
+		"nativeTerrain": "asphalt",
+		"alignment" : "evil",
+
+		"town" :
+		{
+			"musicTheme" : "music/forge2k/theme",
+			"defaultTavern" : 5,
+			"tavernVideo" : "TAVERN.BIK",
+			"guildBackground" : "TPMAGE.bmp",
+			"townBackground": "forge2k/town-screen/background",
+			"guildWindow": "forge2k/town-screen/mage-guild",
+			"hallBackground": "forge2k/TownHallForge",
+			"hallSlots":
+			[
+				[ [ "villageHall", "townHall", "cityHall", "capitol" ], [ "fort", "citadel", "castle", "horde2", "horde2Upgr"], [ "tavern" ], [ "blacksmith" ] ],
+				[ [ "marketplace", "resourceSilo" ], [ "mageGuild1", "mageGuild2", "mageGuild3" ], ["special3"] ],// [ "shipyard" ] ],
+				[ ["special1"], ["special2"], [ "horde1", "horde1Upgr" ] ],
+//				[ [ "special2" ], [ "special1" ], [ "horde1", "horde1Upgr" ] ],
+				[ [ "dwellingLvl1", "dwellingUpLvl1" ], [ "dwellingLvl2", "dwellingUpLvl2" ], [ "dwellingLvl3", "dwellingUpLvl3" ], [ "dwellingLvl4", "dwellingUpLvl4" ] ],
+				[ [ "dwellingLvl5", "dwellingUpLvl5" ], [ "dwellingLvl6", "dwellingUpLvl6" ], [ "dwellingLvl7", "dwellingUpLvl7" ]  ]
+			],
+			"creatures" :
+			[
+				[ "gruntSoldier2k", "footSoldier2k" ],
+				[ "cyberDead2k", "cyberZombie2k" ],
+				[ "pyro2k", "pyromaniac2k" ],
+				[ "stringer2k", "bruiser2k" ],
+				[ "jumpSoldier2k", "jumpTrooper2k" ],
+				[ "nagaTank2k", "nagaHeavy2k" ],
+				[ "juggernaut2k", "dreadnought2k" ]
+			],
+			"moatDamage" : 90,
+			"horde" : [ 0, 6 ], // , -1 ],
+			"mageGuild" : 3,
+			"primaryResource" : "crystal",
+			"warMachine" : "supplyCart2k",
+			"buildingsIcons" : "forge2k/town-hall.def",
+			"icons" :
+			{
+				"village" : {
+					"normal" : {
+						"small" : "forge2k/icons/hall-small.bmp",
+						"large" : "forge2k/icons/hall-big.bmp"
+					},
+					"built" : {
+						"small" : "forge2k/icons/hall-builded-small.bmp",
+						"large" : "forge2k/icons/hall-builded-big.bmp"
+					}
+				},
+				"fort" : {
+					"normal" : {
+						"small" : "forge2k/icons/fort-small.bmp",
+						"large" : "forge2k/icons/fort-big.bmp"
+					},
+					"built" : {
+						"small" : "forge2k/icons/fort-builded-small.bmp",
+						"large" : "forge2k/icons/fort-builded-big.bmp"
+					}
+				}
+			},
+			"mapObject" : {
+				"filters" : {
+					"castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+					"citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+					"fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ]
+				},
+				"templates" : {
+					"capitol" : { "animation" : "forge2k/adventure-map/forgeCapitol.def" },
+					"castle" : { "animation" : "forge2k/adventure-map/forgeFort.def" },
+					"citadel" : { "animation" : "forge2k/adventure-map/forgeFort.def" },
+					"fort" : { "animation" : "forge2k/adventure-map/forgeFort.def" },
+					"village" : { "animation" : "forge2k/adventure-map/forgeVillage.def" }
+				}
+			},
+			"names" :
+			[
+				"Neo Dolere",
+				"Alphaville",
+				"Gothamtown",
+				"Century City",
+				"Metropolis",
+				"Bartertown",
+				"Mega-City One",
+				"Arrakis",
+				"Downcity",
+				"Undercity",
+				"Rammburg",
+				"Westland Pier",
+				"Walendale",
+				"Port Crowland",
+				"Jordanhall",
+				"Sleepy Creek",
+				"Hitchgrove"
+			],
+
+
+			"tavern" :
+			{
+				"knight"       : 0,
+				"cleric"       : 0,
+				"ranger"       : 0,
+				"druid"        : 0,
+				"alchemist"    : 0,
+				"wizard"       : 0,
+				"demoniac"     : 4,
+				"heretic"      : 4,
+				"deathknight"  : 4,
+				"necromancer"  : 4,
+				"warlock"      : 4,
+				"overlord"     : 4,
+				"barbarian"    : 2,
+				"battlemage"   : 2,
+				"beastmaster"  : 2,
+				"witch"        : 2,
+				"planeswalker" : 0,
+				"elementalist" : 0,
+				"cyborg2k"      : 6,
+				"technoJunk2k"      : 6
+			}
+		}
+	}
+}

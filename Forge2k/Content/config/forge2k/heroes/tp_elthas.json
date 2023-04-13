@@ -1,0 +1,68 @@
+{
+	"elthas2k" :
+	{
+		"class" : "technoJunk2k",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Elthas",
+			"biography" : "Elthas made his name when he developed extremely efficient means of blowing up large swaths of land. This made it easier to access buried vaults of the Ancients and a wealth of underground resources, so ravenously consumed by the furnaces of the Heavenly Forge.",
+			"specialty" :
+			{
+				"description" : "{Inferno}\r\n\r\nCasts Inferno with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+				"tooltip" : "Spell Bonus: Inferno",
+				"name" : "Inferno"
+			}
+		},		
+
+		"images" :
+		{
+			"specialtySmall" : "forge2k/heroes/elthas/spec-small",
+			"specialtyLarge" : "forge2k/heroes/elthas/spec-large",
+			"large" : "forge2k/heroes/elthas/portrait-large",
+			"small" : "forge2k/heroes/elthas/portrait-small"
+		},
+		"army" :
+		[
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 10,
+				"min" : 10
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 7,
+				"min" : 7
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 4,
+				"min" : 4
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "fireMagic"
+			}
+		],
+		
+		"spellbook" : [ "inferno" ],
+		"specialty":
+		{
+			"bonuses" : {
+				"inferno" : {
+					"subtype" : "spell.inferno",
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		}
+	}
+}

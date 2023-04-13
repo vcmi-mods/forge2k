@@ -1,0 +1,85 @@
+{
+	"technoJunk2k" :
+	{
+		"name" : "Techno Junkie",
+		"affinity" : "magic",	
+		"defaultTavern" : 5,
+		"animation" :
+		{
+			"battle" : 
+			{
+				"female" : "forge2k/battleHeroTechno",
+				"male"   : "forge2k/battleHeroTechno"
+			}
+		},
+		"mapObject" : { "templates" : { "default" : { "animation" : "forge2k/mapHeroBard" } } },
+		"commander" : "commstringer2k",		
+		"faction" : "forge2k",
+
+		"primarySkills" :
+		{
+			"attack"     : 1,
+			"defence"    : 0,
+			"spellpower" : 3,
+			"knowledge"  : 2
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 25,
+			"defence"    : 25,
+			"spellpower" : 30,
+			"knowledge"  : 20
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 25,
+			"defence"    : 25,
+			"spellpower" : 25,
+			"knowledge"  : 25
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 4,
+			"archery"      : 2,
+			"logistics"    : 6,
+			"scouting"     : 5,
+			"diplomacy"    : 5,
+			"navigation"   : 0,
+			"leadership"   : 1,
+			"wisdom"       : 8,
+			"mysticism"    : 6,
+			"luck"         : 4,
+			"ballistics"   : 5,
+			"eagleEye"     : 4,
+			"necromancy"   : 0,
+			"estates"      : 1,
+			"fireMagic"    : 6,
+			"airMagic"     : 4,
+			"waterMagic"   : 2,
+			"earthMagic"   : 4,
+			"scholar"      : 5,
+			"tactics"      : 1,
+			"artillery"    : 4,
+			"learning"     : 4,
+			"offence"      : 5,
+			"armorer"      : 5,
+			"intelligence" : 8,
+			"sorcery"      : 7,
+			"resistance"   : 5,
+			"firstAid"     : 1
+		},
+		"tavern" :
+		{
+			"castle"     : 0,
+			"rampart"    : 0,
+			"tower"      : 0,
+			"inferno"    : 0,
+			"necropolis" : 0,
+			"dungeon"    : 0,
+			"stronghold" : 0,
+			"fortress"   : 0,
+			"conflux"    : 0,
+			"forge2k"      : 4
+		}
+	}
+}

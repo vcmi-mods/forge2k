@@ -1,0 +1,66 @@
+{
+	"agar2k" : 
+	{
+		"class" : "technoJunk2k",		"female" : false,
+
+		"texts" :
+		{
+			"name" : "Agar",
+			"biography" : "The rumours of Master Agar's demise were greatly exaggerated. Well ... not exactly. Despite having been slain in Enroth, this tenacious Lich appeared under various guises throughout the land, not unlike a certain Immortal Hero. Some strange magic must be at play.",
+
+			"specialty" :
+			{
+				"description" : "{Resurrection}\r\n\r\nCasts Resurrection with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+				"tooltip" : "Spell Bonus: Resurrection",
+				"name" : "Resurrection"
+			}
+		},	
+
+		"images" :
+		{
+			"specialtySmall" : "forge2k/heroes/agar/spec-small",
+			"specialtyLarge" : "forge2k/heroes/agar/spec-large",
+			
+			"large" : "forge2k/heroes/agar/portrait-large",
+			"small" : "forge2k/heroes/agar/portrait-small"
+		},
+
+		"spellbook" : [ "resurrection" ],
+		"army" :
+		[
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 10,
+				"min" : 10
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 7,
+				"min" : 7
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 4,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{ "level" : "basic", "skill" : "wisdom" },
+			{ "level" : "basic", "skill" : "earthMagic" }
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"resurrection" : {
+					"subtype" : "spell.resurrection",
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		}
+	}
+}
+
+

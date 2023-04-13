@@ -1,0 +1,85 @@
+{
+	"cyborg2k" : 
+	{
+		"name" : "Cyborg",	
+		"affinity" : "might",	
+		"defaultTavern" : 5,
+		"animation" :
+		{
+			"battle" : 
+			{
+				"female" : "forge2k/battleHeroCyborg",
+				"male"   : "forge2k/battleHeroCyborg"
+			}
+		},
+		"mapObject" : { "templates" : { "default" : { "animation" : "forge2k/mapHeroGuardian" } } },
+		"commander" : "commstringer2k",
+		"faction" : "forge2k",
+
+		"primarySkills" :
+		{
+			"attack"     : 3,
+			"defence"    : 1,
+			"spellpower" : 1,
+			"knowledge"  : 2
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 45,
+			"defence"    : 45,
+			"spellpower" : 5,
+			"knowledge"  : 5
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 30,
+			"defence"    : 30,
+			"spellpower" : 20,
+			"knowledge"  : 20
+		},
+		"secondarySkills" :
+		{
+			"pathfinding"  : 6,
+			"archery"      : 7,
+			"logistics"    : 7,
+			"scouting"     : 5,
+			"diplomacy"    : 1,
+			"navigation"   : 2,
+			"leadership"   : 4,
+			"wisdom"       : 2,
+			"mysticism"    : 2,
+			"luck"         : 3,
+			"ballistics"   : 9,
+			"eagleEye"     : 3,
+			"necromancy"   : 0,
+			"estates"      : 3,
+			"fireMagic"    : 3,
+			"airMagic"     : 2,
+			"waterMagic"   : 0,
+			"earthMagic"   : 2,
+			"scholar"      : 1,
+			"tactics"      : 7,
+			"artillery"    : 9,
+			"learning"     : 4,
+			"offence"      : 9,
+			"armorer"      : 8,
+			"intelligence" : 1,
+			"sorcery"      : 1,
+			"resistance"   : 10,
+			"firstAid"     : 1
+		},
+		"tavern" :
+		{
+			"castle"     : 0,
+			"rampart"    : 0,
+			"tower"      : 0,
+			"inferno"    : 0,
+			"necropolis" : 0,
+			"dungeon"    : 0,
+			"stronghold" : 0,
+			"fortress"   : 0,
+			"conflux"    : 0,
+			"forge2k"      : 6                 
+		}
+	}
+}

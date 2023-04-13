@@ -1,0 +1,76 @@
+{
+	"nagaTank2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 4
+		},
+		"faction" : "forge2k",
+		"aiValue" : 2449,
+		"fightValue" : 2137,
+		"attack" : 18,
+		"defense" : 15,
+		"hitPoints" : 130,
+		"speed" : 6,
+		"cost" :
+		{
+			"gold" : 1500
+		},
+		"damage" :
+		{
+			"max" : 25,
+			"min" : 20
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR207.DEF",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/tank.def",
+			"iconSmall" : "forge2k/iconsSmall/CPRS207F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL207B.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"doubleWide" : true,
+		"growth" : 2,
+		"level" : 6,
+		"upgrades":
+		[
+			"nagaHeavy2k"
+		],
+		"sound" :
+		{
+			"attack" : "forge2k/tankATTK.wav",
+			"defend" : "forge2k/CBRGDFND.wav",
+			"killed" : "forge2k/tankKILL.wav",
+			"move" : "forge2k/tankMOVE.wav",
+			"wince" : "forge2k/tankWNCE.wav"
+		},
+		"abilities" :
+		{
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]
+						 } ],
+						 "stacking" : "Forge creatures"
+		},
+			"fearless" :
+			{
+				"type" : "FEARLESS"
+			},
+            "multiAttack" : 
+			{
+				"type" : "BLOCKS_RETALIATION"
+				//"type" : "THREE_HEADED_ATTACK"
+			}
+
+		}
+	}
+	}

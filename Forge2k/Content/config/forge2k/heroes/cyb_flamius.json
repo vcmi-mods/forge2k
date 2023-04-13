@@ -1,0 +1,62 @@
+{
+	"flamius2k" :
+	{
+		"class" : "cyborg2k",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Flamius",
+			//"biography" : "When Kastore's troops began plundering vaults and ruins of the Ancients, Gogs, often inhabiting such areas, started joining the Heavenly Forge army. Flamius' skill with the advanced weaponry was leagues above others' of his kin, but he was more than eager to teach them how cybernetic enhancements can make their innate talents burn even more brightly.", 
+			"biography" : "When Kastore's troops began plundering vaults and ruins of the Ancients, Gogs, often inhabiting such areas, started joining the Heavenly Forge army. Flamius' skill with the advanced weaponry was leagues above his fellow kin, and he was more than eager to teach them the advantages of cybernetic enhancements.", 
+			"specialty" :
+			{
+				"description" : "{Pyros}\r\n\r\nIncreases the Attack and Defense skills of any Pyros or Pyromaniacs for each level attained after 3rd level.",
+				"tooltip" : "Creature Bonus: Pyros",
+				"name" : "Pyros"
+			}
+		},
+		"images" :
+		{
+			
+			"specialtySmall" : "forge2k/heroes/flamius/spec-small",
+			"specialtyLarge" : "forge2k/heroes/flamius/spec-large",
+			"large" : "forge2k/heroes/flamius/portrait-large",
+			"small" : "forge2k/heroes/flamius/portrait-small"
+		},
+		"army" :
+		[
+			{
+				"creature" : "pyro2k",
+				"max" : 8,
+				"min" : 4
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 8,
+				"min" : 4
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 8,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "pyro2k"
+		}
+	}
+}
+

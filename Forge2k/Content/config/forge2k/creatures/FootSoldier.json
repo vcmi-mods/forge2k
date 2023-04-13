@@ -1,0 +1,95 @@
+{
+	"footSoldier2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 25,
+			"min" : 15
+		},
+		"faction" : "forge2k",
+		"aiValue" : 177,
+		"fightValue" : 150,
+		"attack" : 5,
+		"defense" : 3,
+		"hitPoints" : 7,
+		"speed" : 6,
+		"cost" :
+		{
+			"gold" : 120
+		},
+		"damage" :
+		{
+			"max" : 2,
+			"min" : 2
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR198.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/footsoldier.def",
+			"iconSmall" : "forge2k/iconsSmall/CPrS198F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL198B.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"ray" :
+				[
+					{ "start" : [ 211, 64, 1, 200 ], "end" : [ 0, 162, 232,  211 ] },
+					{ "start" : [ 253, 160, 36, 200 ], "end" : [ 153, 217, 234, 211 ] },
+					{ "start" : [ 254, 237, 197, 200 ], "end" : [ 231, 245, 250, 211 ] },
+					{ "start" : [ 253, 160, 36, 200 ], "end" : [ 153, 217, 234, 211 ] },
+					{ "start" : [ 211, 64, 1, 200 ], "end" : [ 0, 162, 232,  211 ] }
+				],
+				"offset" :
+				{
+					"upperX" : 28,
+					"upperY" : -80,
+					"middleX" : 34,
+					"middleY" : -58,
+					"lowerX" : -6,
+					"lowerY" : -5
+				},
+				"frameAngles" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+				"attackClimaxFrame" : 3
+			}
+		},
+
+		"growth" : 10,
+		"horde" : 6,
+        "level" : 1,
+		"shots" : 16,
+		"sound" :
+		{
+			"attack" : "forge2k/gruntATTK.wav",
+			"defend" : "forge2k/gruntDFND.wav",
+			"killed" : "forge2k/gruntKILL.wav",
+			"move" : "forge2k/gruntMOVE.wav",
+			"wince" : "forge2k/gruntWNCE.wav",
+                     	"shoot" : "forge2k/gruntSHOT2.wav"
+		},
+		"abilities" :
+		{
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]
+						 } ],
+						 "stacking" : "Forge creatures"
+					},
+		"shooter" :
+			{
+				"type" : "SHOOTER"
+			},
+		"freeshooting" :	
+			{
+				"type" : "FREE_SHOOTING"
+			}
+		}
+	}
+}

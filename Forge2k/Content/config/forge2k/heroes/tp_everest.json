@@ -1,0 +1,80 @@
+{
+	"everest2k" :
+	{
+		"class" : "technoJunk2k",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Everest",
+			"biography" : "Everest was banished from Bracada for taking over wizads' golems and other animated servants. In the more turbulent circles of Techno Junkies, his impulses stopped sparking controversy, allowing him to perfect the art of controlling magical constructs.",
+			"specialty" :
+			{
+				"description" : "{Mysticism}\r\n\r\nReceives a 10% per level bonus to Mysticism skill percentage.",
+				"tooltip" : "Secondary Skill Bonus: Mysticism",
+				"name" : "Mysticism"
+			}
+		},		
+
+		"images" :
+		{
+			"specialtySmall" : "forge2k/heroes/everest/spec-small",
+			"specialtyLarge" : "forge2k/heroes/everest/spec-large",
+			"large" : "forge2k/heroes/everest/portrait-large",
+			"small" : "forge2k/heroes/everest/portrait-small"
+		},
+		"army" :
+		[
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 10,
+				"min" : 10
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 7,
+				"min" : 7
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 4,
+				"min" : 4
+			}
+		],
+
+		"spellbook" :
+		[
+			"assumeControl2k"
+		],
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+			
+        "specialty": 
+		{
+			"bonuses" : {
+				"mysticism" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_REGENERATION",
+					"val" : 10,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				},
+				
+				"noAssControlDamage" : {
+					"subtype" : "spell.assumeControl2k",
+					"propagator" : "BATTLE_WIDE",
+					"type" : "MORE_DAMAGE_FROM_SPELL",
+					"val" : -100,
+					"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "psychicElemental", false ]}]
+				}
+			}
+		}
+	}
+}

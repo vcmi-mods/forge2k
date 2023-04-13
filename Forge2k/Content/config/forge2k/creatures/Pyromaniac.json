@@ -1,0 +1,71 @@
+{
+	"pyromaniac2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 18,
+			"min" : 10
+		},
+		"faction" : "forge2k",
+		"aiValue" : 404,
+		"fightValue" : 397,
+		"attack" : 11,
+		"defense" : 6,
+		"hitPoints" : 25,
+		"speed" : 8,
+		"cost" :
+		{
+			"gold" : 325
+		},
+		"damage" :
+		{
+			"max" : 9,
+			"min" : 5 
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR202.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/pyro2.def",
+			"iconSmall" : "forge2k/iconsSmall/CPRS202F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL202B.bmp",
+			"timeBetweenFidgets" : 1
+              },
+		"growth" : 6,
+		"level" : 3,
+		"sound" :
+		{
+			"attack" : "forge2k/pyroATTK.wav",
+			"defend" : "forge2k/pyroDFND.wav",
+			"killed" : "forge2k/pyroKILL.wav",
+			"move" : "forge2k/pyroMOVE.wav",
+			"wince" : "forge2k/pyroWNCE.wav"
+		},
+		"abilities" :
+		{
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]
+						 } ],
+						 "stacking" : "Forge creatures"
+		},
+                     "abilities1":
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+                     "abilities2":
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 50,
+				"subtype" : 1
+			}
+		}
+	}
+}

@@ -1,0 +1,101 @@
+{
+	"name" : "Heavenly Forge 2000",
+	"description" : "The Forgest of all Forges for VCMI - Updated Forge town combined out of various assets made by the Heroes of Might & Magic modding community.",
+	"author" : "HOMM modding community",
+	"contact" : "http://forum.vcmi.eu/index.php",
+	"version" : "2.000",
+	"changelog" :
+    {
+		"1.0" : ["Initial release"],
+		"1.1" : ["Minor fixes and balancing based on community feedback"]
+    },
+	"modType" : "Town",
+    "depends" :
+    [
+        "asphalt-terrain"
+    ],
+
+	"factions" :
+	[
+		"config/forge2k/town/buildings.json",
+		"config/forge2k/town/faction.json",
+		"config/forge2k/town/siege.json",
+		"config/forge2k/town/spells.json",
+		"config/forge2k/town/structures.json",
+		"config/forge2k/town/puzzle.json"
+	],
+	"creatures" :
+	[
+		"config/forge2k/artifacts/supplyCart",
+
+		"config/forge2k/creatures/CyberDead.json",
+		"config/forge2k/creatures/CyberZombie.json",
+
+		"config/forge2k/creatures/GruntSoldier.json",
+		"config/forge2k/creatures/FootSoldier.json",
+
+		"config/forge2k/creatures/Pyro.json",
+		"config/forge2k/creatures/Pyromaniac.json",
+
+		"config/forge2k/creatures/Stringer.json",
+		"config/forge2k/creatures/Bruiser.json",
+		"config/forge2k/creatures/heavystringer.json",
+
+		"config/forge2k/creatures/JumpSoldier.json",
+		"config/forge2k/creatures/JumpTrooper.json",
+
+		"config/forge2k/creatures/NagaTank.json",
+		"config/forge2k/creatures/NagaHeavy.json",
+
+		"config/forge2k/creatures/Juggernaut.json",
+		"config/forge2k/creatures/Dreadnought.json",
+		
+		"config/forge2k/creatures/creature-names2.json"
+	],
+	"artifacts" : [
+		"config/forge2k/artifacts/supplyCartArt"
+//		"config/forge2k/artifact/someFuturisticStuffmaybe.json"
+	],
+
+	"heroClasses" :
+	[
+		"config/forge2k/heroes/cyborg.json",
+		"config/forge2k/heroes/technojunk.json"
+	],
+
+	"heroes" :
+	[
+		"config/forge2k/heroes/cyb_deckard.json",
+		"config/forge2k/heroes/cyb_flamius.json",
+		"config/forge2k/heroes/cyb_jules.json",
+		"config/forge2k/heroes/cyb_singhell.json",
+		"config/forge2k/heroes/cyb_rengust.json",
+		"config/forge2k/heroes/cyb_sprinter.json",
+		"config/forge2k/heroes/cyb_sturm.json",
+		"config/forge2k/heroes/cyb_sunnith.json",
+		
+		"config/forge2k/heroes/tp_agar.json",
+		"config/forge2k/heroes/tp_charity.json",
+		"config/forge2k/heroes/tp_cistrict.json",
+		"config/forge2k/heroes/tp_elthas.json",
+		"config/forge2k/heroes/tp_leanne.json",
+		//"config/forge2k/heroes/tp_null.json",
+		"config/forge2k/heroes/tp_sheikleen.json",
+		"config/forge2k/heroes/tp_everest.json",
+		"config/forge2k/heroes/tp_kastore.json"
+	],
+	"objects" : 
+	[ 
+		"config/forge2k/dwellings.json" 
+	],	
+	"spells" :
+	[
+//		"config/forge2k/someCyberBeam.json",
+		"config/forge2k/assumeControl.json",
+		"config/forge2k/cyberBloodlust.json",
+		"config/forge2k/specialClone.json",
+		"config/forge2k/cartArmor.json",
+		"config/forge2k/teslasWrath.json"
+		
+	]	
+}

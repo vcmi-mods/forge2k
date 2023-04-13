@@ -1,0 +1,36 @@
+{
+	"supplyCart2k":
+	{
+		"type" : ["HERO"],
+		"warMachine" : "supplyCart2k",
+		"class" : "SPECIAL",
+		"slot" : "MACH2",
+		"value": 1500,		
+		"text":
+		{
+			"name": "Booster Cart",
+			"description": "{Booster Cart}\r\n\r\nThe Booster Cart makes all shooters in army deal 35% more damage.",
+			"event": "Lucky you, you've found a shiny and unused Booster Cart :)"
+		},
+		"graphics":
+		{
+			"image": "forge2k/artifacts/supplyCartbigart",
+			"large": "forge2k/artifacts/supplyCartL",
+			"map": "forge2k/map/blank"
+		},
+		"bonuses" : [  
+			{
+				"type" : "CREATURE_DAMAGE",
+				"val" : 35,
+				"valueType" : "PERCENT_TO_BASE",
+				"subtype" : 0,
+				"limiters" : [ "SHOOTER_ONLY" ]
+			}
+			//{
+			//	"type" : "SHOTS",
+			//	"val" : 8,
+			//	"valueType" : "ADDITIVE_VALUE"
+			//}
+		]
+	}
+}

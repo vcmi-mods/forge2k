@@ -1,0 +1,70 @@
+{
+	"forge2k" :
+	{
+		"town" :
+		{
+			"structures" :
+			{
+				"mageGuild1" :     { "animation" : "forge2k/town-screen/buildings/TBELmag2.def", "x" : 200, "y" : 15,  "z" : 4,  "border" : "forge2k/town-screen/buildings-border/TOELmag2.bmp", "area" : "forge2k/town-screen/buildings-area/TZELmag2.bmp" },
+				"mageGuild2" :     	{ "animation" : "forge2k/town-screen/buildings/TBELmag4.def", "x" : 200, "y" : 15,  "z" : 4,  "border" : "forge2k/town-screen/buildings-border/TOELmag4.bmp", "area" : "forge2k/town-screen/buildings-area/TZELmag4.bmp" },
+				"mageGuild3" :     { "animation" : "forge2k/town-screen/buildings/TBELmag5.def", "x" : 200, "y" : 15,  "z" : 4,  "border" : "forge2k/town-screen/buildings-border/TOELmag5.bmp", "area" : "forge2k/town-screen/buildings-area/TZELmag5.bmp" },
+
+//				"tavern" :         { "animation" : "forge2k/town-screen/buildings/TBELtvrn.def", "x" : 312, "y" : 275,  "z" : 18,  "border" : "forge2k/town-screen/buildings-border/TOELtvrn.bmp", "area" : "forge2k/town-screen/buildings-area/TZELtvrn.bmp" },
+//				"tavern" :         { "animation" : "forge2k/town-screen/buildings/TBELtvrn.def", "x" : 325, "y" : 274,  "z" : 18,  "border" : "forge2k/town-screen/buildings-border/TOELtvrn.bmp", "area" : "forge2k/town-screen/buildings-area/TZELtvrn.bmp" },
+				"tavern" :         { "animation" : "forge2k/town-screen/buildings/TBELtvrn.def", "x" : 400, "y" : 274,  "z" : 18,  "border" : "forge2k/town-screen/buildings-border/TOELtvrn.bmp", "area" : "forge2k/town-screen/buildings-area/TZELtvrn.bmp" },
+
+
+
+//				"shipyard" :       { "animation" : "forge2k/town-screen/buildings/TBELdock.def", "x" : 0, "y" : 0,  "z" : 0,  "border" : "forge2k/town-screen/buildings-border/TOELdock.bmp", "area" : "forge2k/town-screen/buildings-area/TZELdock.bmp" },
+
+
+				"fort" :           { "animation" : "forge2k/town-screen/buildings/TBELcstl.def", "x" : 538, "y" : 0,  "z" : 6, "border" : "forge2k/town-screen/buildings-border/TOELcstl.bmp", "area" : "forge2k/town-screen/buildings-area/TZELcstl.bmp" },
+				"citadel" :        { "animation" : "forge2k/town-screen/buildings/TBELcas2.def", "x" : 538, "y" : 0,  "z" : 6, "border" : "forge2k/town-screen/buildings-border/TOELcas2.bmp", "area" : "forge2k/town-screen/buildings-area/TZELcas2.bmp" },
+				"castle" :         { "animation" : "forge2k/town-screen/buildings/TBELcas3.def", "x" : 538, "y" : 0,  "z" : 6, "border" : "forge2k/town-screen/buildings-border/TOELcas3.bmp", "area" : "forge2k/town-screen/buildings-area/TZELcas3.bmp" },
+				"villageHall" :    { "animation" : "forge2k/town-screen/buildings/TBELhall.def", "x" : 0,  "y" : 0, "z" : 3,  "border" : "forge2k/town-screen/buildings-border/TOELhall.bmp", "area" : "forge2k/town-screen/buildings-area/TZELhall.bmp" },
+				"townHall" :       { "animation" : "forge2k/town-screen/buildings/TBELhal2.def", "x" : 0,   "y" : 0, "z" : 3,  "border" : "forge2k/town-screen/buildings-border/TOELhal2.bmp", "area" : "forge2k/town-screen/buildings-area/TZELhal2.bmp" },
+				"cityHall" :       { "animation" : "forge2k/town-screen/buildings/TBELhal3.def", "x" : 0,   "y" : 0, "z" : 3,  "border" : "forge2k/town-screen/buildings-border/TOELhal3.bmp", "area" : "forge2k/town-screen/buildings-area/TZELhal3.bmp" },
+				"capitol" :        { "animation" : "forge2k/town-screen/buildings/TBELhal4.def", "x" : 0,   "y" : 0, "z" : 3,  "border" : "forge2k/town-screen/buildings-border/TOELhal3.bmp", "area" : "forge2k/town-screen/buildings-area/TZELhal3.bmp" },
+//				"marketplace" :    { "animation" : "forge2k/town-screen/buildings/TBELmark.def", "x" : 0, "y" : 254, "z" : 20,  "border" : "forge2k/town-screen/buildings-border/TOELmark.bmp", "area" : "forge2k/town-screen/buildings-area/TZELmark.bmp" },
+//				"resourceSilo" :   {  "animation" : "forge2k/town-screen/buildings/TBELsilo.def", "x" : 0, "y" : 254, "z" : 21,  "border" : "forge2k/town-screen/buildings-border/TOELsilo.bmp", "area" : "forge2k/town-screen/buildings-area/TZELsilo.bmp" },
+				"marketplace" :    { "animation" : "forge2k/town-screen/buildings/TBELmark.def", "x" : 0, "y" : 240, "z" : 20,  "border" : "forge2k/town-screen/buildings-border/TOELmark.bmp", "area" : "forge2k/town-screen/buildings-area/TZELmark.bmp" },
+				"resourceSilo" :   {  "animation" : "forge2k/town-screen/buildings/TBELsilo.def", "x" : 0, "y" : 240, "z" : 21,  "border" : "forge2k/town-screen/buildings-border/TOELsilo.bmp", "area" : "forge2k/town-screen/buildings-area/TZELsilo.bmp" },
+
+				"blacksmith" :     { "animation" : "forge2k/town-screen/buildings/TBELblak.def", "x" : 252, "y" : 77, "z" : 3,  "border" : "forge2k/town-screen/buildings-border/TOELblak.bmp", "area" : "forge2k/town-screen/buildings-area/TZELblak.bmp" },
+				"special3" :       { "animation" : "forge2k/town-screen/buildings/SGbolster.def", "x" : 562, "y" : 254, "z" : 7,  "border" : "forge2k/town-screen/buildings-border/f2k_bolb.bmp", "area" : "forge2k/town-screen/buildings-area/f2k_bola.bmp" },
+				"horde1" :         { "animation" : "forge2k/town-screen/buildings/TBELhrd1.def", "x" : 565, "y" : 322, "z" : 13,  "border" : "forge2k/town-screen/buildings-border/TOELhrd1.bmp", "area" : "forge2k/town-screen/buildings-area/TZELhrd1.bmp", "hidden" : true },
+				"horde1Upgr" :     { "animation" : "forge2k/town-screen/buildings/TBELhrd1.def", "x" : 565, "y" : 322, "z" : 13,  "border" : "forge2k/town-screen/buildings-border/TOELhrd1.bmp", "area" : "forge2k/town-screen/buildings-area/TZELhrd1.bmp", "hidden" : true, "builds" : "horde1" },
+
+				"horde2" :         { "animation" : "forge2k/town-screen/buildings/TBELcas3.def", "x" : 538, "y" : 0,  "z" : 6, "border" : "forge2k/town-screen/buildings-border/TOELcas3.bmp", "area" : "forge2k/town-screen/buildings-area/TZELcas3.bmp", "hidden" : true, "builds" : "castle"  },
+				"horde2Upgr" :     { "animation" : "forge2k/town-screen/buildings/TBELcas3.def", "x" : 538, "y" : 0,  "z" : 6, "border" : "forge2k/town-screen/buildings-border/TOELcas3.bmp", "area" : "forge2k/town-screen/buildings-area/TZELcas3.bmp", "hidden" : true, "builds" : "castle"  },
+				
+//				"ship" :           { "animation" : "forge2k/town-screen/buildings/TBELboat.def", "x" : 0, "y" : 0, "z" : 0,  "border" : "forge2k/town-screen/buildings-border/TOELboat.bmp", "area" : "forge2k/town-screen/buildings-area/TZELboat.bmp", "hidden" : true },
+				"special2" :       { "animation" : "forge2k/town-screen/buildings/Nanomed.def", "x" : 509, "y" : 277, "z" : 6,  "border" : "forge2k/town-screen/buildings-border/f2k_nanb.bmp", "area" : "forge2k/town-screen/buildings-area/f2k_nana.bmp" },
+				"special1" :       { "animation" : "forge2k/town-screen/buildings/Carmory.def", "x" : 380, "y" : 131, "z" : 2,  "border" : "forge2k/town-screen/buildings-border/f2k_armb.bmp", "area" : "forge2k/town-screen/buildings-area/f2k_arma.bmp" },
+				"grail" :          { "animation" : "forge2k/town-screen/buildings/TBELholy.def", "x" : 427, "y" : 30, "z" : 1,  "border" : "forge2k/town-screen/buildings-border/TOELholy.bmp", "area" : "forge2k/town-screen/buildings-area/TZELholy.bmp" },
+
+				"dwellingLvl1" :   { "animation" : "forge2k/town-screen/buildings/TBELdw_0.def", "x" : 668, "y" : 273, "z" : 12,  "border" : "forge2k/town-screen/buildings-border/TOELdw_0.bmp", "area" : "forge2k/town-screen/buildings-area/TZELdw_0.bmp" },
+				"dwellingUpLvl1" : { "animation" : "forge2k/town-screen/buildings/TBELup_0.def", "x" : 668, "y" : 273, "z" : 12,  "border" : "forge2k/town-screen/buildings-border/TOELUp_0.bmp", "area" : "forge2k/town-screen/buildings-area/TZELUp_0.bmp" },
+
+				"dwellingLvl2" :   { "animation" : "forge2k/town-screen/buildings/TBELdw_1.def", "x" : 445, "y" : 188, "z" : 8,  "border" : "forge2k/town-screen/buildings-border/TOELdw_1.bmp", "area" : "forge2k/town-screen/buildings-area/TZELdw_1.bmp" },
+				"dwellingUpLvl2" : { "animation" : "forge2k/town-screen/buildings/TBELup_1.def", "x" : 445, "y" : 188, "z" : 8,  "border" : "forge2k/town-screen/buildings-border/TOELup_1.bmp", "area" : "forge2k/town-screen/buildings-area/TZELup_1.bmp" },
+
+				"dwellingLvl3" :   { "animation" : "forge2k/town-screen/buildings/TBELdw_2.def", "x" : 325, "y" : 175, "z" : 15, "border" : "forge2k/town-screen/buildings-border/TOELdw_2.bmp", "area" : "forge2k/town-screen/buildings-area/TZELdw_2.bmp" },
+				"dwellingUpLvl3" : { "animation" : "forge2k/town-screen/buildings/TBELup_2.def", "x" : 325, "y" : 175, "z" : 15, "border" : "forge2k/town-screen/buildings-border/TOELup_2.bmp", "area" : "forge2k/town-screen/buildings-area/TZELup_2.bmp" },
+
+				"dwellingLvl4" :   { "animation" : "forge2k/town-screen/buildings/TBELdw_3.def", "x" : 509, "y" : 164, "z" : 7, "border" : "forge2k/town-screen/buildings-border/TOELdw_3.bmp", "area" : "forge2k/town-screen/buildings-area/TZELdw_3.bmp" },
+				"dwellingUpLvl4" : { "animation" : "forge2k/town-screen/buildings/TBELup_3.def", "x" : 509, "y" : 164 , "z" : 7, "border" : "forge2k/town-screen/buildings-border/TOELup_3.bmp", "area" : "forge2k/town-screen/buildings-area/TZELup_3.bmp" },
+
+				"dwellingLvl5" :   { "animation" : "forge2k/town-screen/buildings/TBELdw_4.def", "x" : 0, "y" : 242, "z" : 12, "border" : "forge2k/town-screen/buildings-border/TOELdw_4.bmp", "area" : "forge2k/town-screen/buildings-area/TZELdw_4.bmp" },
+				"dwellingUpLvl5" : { "animation" : "forge2k/town-screen/buildings/TBELup_4.def", "x" : 0, "y" : 242, "z" : 12, "border" : "forge2k/town-screen/buildings-border/TOELup_4.bmp", "area" : "forge2k/town-screen/buildings-area/TZELup_4.bmp" },
+
+				"dwellingLvl6" :   { "animation" : "forge2k/town-screen/buildings/TBELdw_5.def", "x" : 188, "y" : 257, "z" : 16,  "border" : "forge2k/town-screen/buildings-border/TOELdw_5.bmp", "area" : "forge2k/town-screen/buildings-area/TZELdw_5.bmp" },
+				"dwellingUpLvl6" : { "animation" : "forge2k/town-screen/buildings/TBELup_5.def", "x" : 188, "y" : 257, "z" : 16,  "border" : "forge2k/town-screen/buildings-border/TOELup_5.bmp", "area" : "forge2k/town-screen/buildings-area/TZELup_5.bmp" },
+
+				"dwellingLvl7" :   { "animation" : "forge2k/town-screen/buildings/TBELdw_6.def", "x" : 659, "y" : 181,  "z" : 11, "border" : "forge2k/town-screen/buildings-border/TOELdw_6.bmp", "area" : "forge2k/town-screen/buildings-area/TZELdw_6.bmp" },
+				"dwellingUpLvl7" : { "animation" : "forge2k/town-screen/buildings/TBELup_6.def", "x" : 659, "y" : 181, "z" : 11, "border" : "forge2k/town-screen/buildings-border/TOELUp_6.bmp", "area" : "forge2k/town-screen/buildings-area/TZELUp_6.bmp" }
+			}
+		}
+	}
+}
+

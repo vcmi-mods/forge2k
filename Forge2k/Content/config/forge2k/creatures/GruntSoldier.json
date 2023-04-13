@@ -1,0 +1,89 @@
+{
+	"gruntSoldier2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 40,
+			"min" : 15
+		},
+		"faction" : "forge2k",
+		"aiValue" : 135,
+		"fightValue" : 120,
+		"attack" : 5,
+		"defense" : 3,
+		"hitPoints" : 7,
+		"speed" : 5,
+		"cost" :
+		{
+			"gold" : 80
+		},
+		"damage" :
+		{
+			"max" : 2,
+			"min" : 2
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR197.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/gruntsoldier.def",
+			"iconSmall" : "forge2k/iconsSmall/CPrS197F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL197B.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile" : "forge2k/battle/projectile/SHOT197.DEF",
+				"offset" :
+				{
+					"upperX" : 34,
+					"upperY" : -96,
+					"middleX" : 50,
+					"middleY" : -62,
+					"lowerX" : 4,
+					"lowerY" : 0
+				},
+				"attackClimaxFrame" : 4,
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+
+		},
+
+		"growth" : 10,
+		"horde" : 6,
+              	"level" : 1,
+		"shots" : 8,
+		"upgrades":
+		[
+			"footSoldier2k"
+		],
+		"sound" :
+		{
+			"attack" : "forge2k/gruntATTK.wav",
+			"defend" : "forge2k/gruntDFND.wav",
+			"killed" : "forge2k/gruntKILL.wav",
+			"move" : "forge2k/gruntMOVE.wav",
+			"wince" : "forge2k/gruntWNCE.wav",
+                     	"shoot" : "forge2k/gruntSHOT1.wav"
+		},
+		"abilities" :
+		{
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]
+						 } ],
+						 "stacking" : "Forge creatures"
+		},
+		"shooter" :
+			{
+				"type" : "SHOOTER"
+			}
+		}
+	}
+}

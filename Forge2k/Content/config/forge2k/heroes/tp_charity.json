@@ -1,0 +1,73 @@
+{
+	"charity2k" : 
+	{
+		"class" : "technoJunk2k",
+		"texts" :
+		{
+			"name" : "Charity",
+			//"biography" : "After the Succession Wars, Charity left the continent of Enroth, lusting for more excitement and conflict. She was naturally attracted to the power and possibilities of the Heavenly Forges.",
+			"biography" : "After the Succession Wars, Charity left the continent of Enroth, lusting after more excitement and conflict. Eventually, she was attracted to the roaring call of the Heavenly Forge, like a moth drawn to the flame.",
+			"specialty" :
+			{
+				"description" : "{Sorcery}\r\n\r\nReceives a 7% per level bonus to Sorcery skill percentage.",
+				"tooltip" : "Secondary Skill Bonus: Sorcery",
+				"name" : "Sorcery"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "forge2k/heroes/charity/spec-small",
+			"specialtyLarge" : "forge2k/heroes/charity/spec-large",
+			"large" : "forge2k/heroes/charity/portrait-large",
+			"small" : "forge2k/heroes/charity/portrait-small"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "cyberDead2k",
+				"max" : 12,
+				"min" : 7
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 12,
+				"min" : 7
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 12,
+				"min" : 7
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
+		],
+		"spellbook" :
+		[
+			"deathRipple"
+		],	
+		
+        "specialty": 
+		{
+			"bonuses" : {
+				"sorcery" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPELL_DAMAGE",
+					"val" : 7,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

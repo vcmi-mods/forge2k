@@ -1,0 +1,66 @@
+{
+	"null2k" :
+	{
+		"class" : "technoJunk2k",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Null",
+			"biography" : "01000110 01100001 01101001 01101100 01100101 01100100 00100000 01000101 01111000 01110000 01100101 01110010 01101001 01101101 01100101 01101110 01110100 00101110",
+			"specialty" : {
+				"tooltip" : "Spell Bonus: Clone",
+				"name" : "Clone",
+				"description" : "{Clone}\r\n\r\nKnows a special Clone spell variant which costs more spell points and summons 2 clones of a target unit."
+			}
+		},		
+
+		"images" :
+		{
+			"specialtySmall" : "forge2k/heroes/null/spec-small",
+			"specialtyLarge" : "forge2k/heroes/null/spec-large",
+			"large" : "forge2k/heroes/null/portrait-large",
+			"small" : "forge2k/heroes/null/portrait-small"
+		},
+
+		"spellbook" : [ "clone" ],
+		"army" :
+		[
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 10,
+				"min" : 10
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 7,
+				"min" : 7
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 4,
+				"min" : 4
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"clone" : {
+					"subtype" : "spell.specialClone2k",
+					"type" : "SPELL"
+				}
+			}
+		}
+	}
+}
+

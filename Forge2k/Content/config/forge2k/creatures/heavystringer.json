@@ -1,0 +1,202 @@
+{
+	"heavystringer2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 12,
+			"min" : 6
+		},
+		"faction" : "forge2k",
+		"aiValue" : 1234,
+		"fightValue" : 1082,
+		"attack" : 20,
+		"defense" : 12,
+		"growth" : 3,
+		"hitPoints" : 80,
+		"speed" : 7,
+        "shots" : 12,
+		"cost" :
+		{
+			"gold" : 675
+		},
+		"damage" :
+		{
+			"max" : 18,
+			"min" : 10
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/heavystringer.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/megabruiser.def",
+			"iconSmall" : "forge2k/iconsSmall/heavystringer.bmp",
+			"iconLarge" : "forge2k/iconsBig/heavystringer.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile" : "forge2k/battle/projectile/lvl5shot.DEF",
+			    "attackClimaxFrame" : 4,
+				"offset" :
+				{
+					"upperX" : 25,
+					"upperY" : -86,
+					"middleX" : 47,
+					"middleY" : -69,
+					"lowerX" : 25,
+					"lowerY" : -38
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"level" : 5,
+		"sound" :
+		{
+			"attack" : "forge2k/stingerATTK.wav",
+			"defend" : "forge2k/stingerDFND.wav",
+			"killed" : "forge2k/stingerKILL.wav",
+			"move" : "forge2k/stingerMOVE.wav",
+			"wince" : "forge2k/stingerWNCE.wav",
+ 			"shoot" : "forge2k/stingerSHOT.wav" 
+		},
+		"abilities" :
+		{
+			"shooter" :
+			{
+				"type" : "SHOOTER"
+			},	
+			"absoluteShooter" :
+			{
+				"type" : "NO_DISTANCE_PENALTY"
+			},	
+			"fullmelee" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			},	
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]	 
+					} 
+				],
+				"stacking" : "Forge creatures"
+			},
+		
+		"missilePower" :
+		{
+			"type" : "SPECIFIC_SPELL_POWER",
+			"subtype" : "spell.meteorShower",
+			"val" : 30
+		},
+		"missileRain" :
+		{
+			"type" : "SPELL_AFTER_ATTACK",
+			"subtype" : "spell.meteorShower",
+			"val" : 20,
+			"addInfo" : [0,1]
+		}
+	  }	
+	},
+
+	
+	"commstringer2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 0,
+			"min" : 0
+		},
+		"faction" : "forge2k",
+		"special" : true,
+		"name" :
+		{
+			"plural" : "Stinger Captains",
+			"singular" : "Stinger Captain"
+		},
+		"aiValue" : 2195,
+		"fightValue" : 1819,
+		"attack" : 5,
+		"defense" : 5,
+		"growth" : 1,
+		"hitPoints" : 60,
+		"speed" : 5,
+        "shots" : 24,
+		"cost" :
+		{
+			"gold" : 140
+		},
+		"damage" :
+		{
+			"min" : 7,
+			"max" : 15
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/heavystringer.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/megabruiser.def",
+			"iconSmall" : "forge2k/iconsSmall/heavystringer.bmp",
+			"iconLarge" : "forge2k/iconsBig/heavystringer.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile" : "forge2k/battle/projectile/lvl5shot.DEF",
+			    "attackClimaxFrame" : 4,
+				"offset" :
+				{
+					"upperX" : 25,
+					"upperY" : -86,
+					"middleX" : 47,
+					"middleY" : -69,
+					"lowerX" : 25,
+					"lowerY" : -38
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"level" : 0,
+		"sound" :
+		{
+			"attack" : "forge2k/stingerATTK.wav",
+			"defend" : "forge2k/stingerDFND.wav",
+			"killed" : "forge2k/stingerKILL.wav",
+			"move" : "forge2k/stingerMOVE.wav",
+			"wince" : "forge2k/stingerWNCE.wav",
+ 			"shoot" : "forge2k/stingerSHOT.wav" 
+		},
+		"abilities" :
+		{
+			"magicResistance" :
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 5
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.disease",
+				"val" : 3
+			}
+		}	
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"sheikleen2k" :
+	{
+		"class" : "technoJunk2k",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Sheikleen",
+			//"biography" : "Sheikleen is an enigma. She emerged one day among the chain of command and her directives won battles. People like her are not uncommon in the ranks of the Heavenly Forge, and as long as she's a useful asset, no one asks unnecessary questions. Still, some people can't help but suspect there is an ulterior motive behind her actions.",
+			"biography" : "Enigmas like Sheikleen are not uncommon in the ranks of the Heavenly Forge, and as long as she's a useful asset, no one asks unnecessary questions. She emerged one day among the chain of command and her directives won battles. Still, some people can't help but suspect there is an ulterior motive behind her actions.",
+			"specialty" :
+			{
+				"description" : "{Intelligence}\r\n\r\nReceives a 10% per level bonus to Intelligence skill percentage.",
+				"tooltip" : "Secondary Skill Bonus: Intelligence",
+				"name" : "Intelligence"
+			}
+		},		
+
+		"images" :
+		{
+			"specialtySmall" : "forge2k/heroes/sheikleen/spec-small",
+			"specialtyLarge" : "forge2k/heroes/sheikleen/spec-large",
+			"large" : "forge2k/heroes/sheikleen/portrait-large",
+			"small" : "forge2k/heroes/sheikleen/portrait-small"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 10,
+				"min" : 10
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 7,
+				"min" : 7
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 4,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"spellbook": [ "haste" ],
+	
+        "specialty": 
+		{
+			"bonuses" : {
+				"intelligence" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_PER_KNOWLEDGE",
+					"val" : 10,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

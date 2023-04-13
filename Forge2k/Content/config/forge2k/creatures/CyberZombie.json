@@ -1,0 +1,76 @@
+{
+	"cyberZombie2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 12
+		},
+		"faction" : "forge2k",
+		"aiValue" : 243,
+		"fightValue" : 249,
+		"attack" : 7,
+		"defense" : 6,
+		"hitPoints" : 25,
+		"speed" : 6,
+		"cost" :
+		{
+			"gold" : 185
+		},
+		"damage" :
+		{
+			"max" : 5,
+			"min" : 2
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR200.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/advCyber2.def",
+			"iconSmall" : "forge2k/iconsSmall/CPrS200F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL200B.bmp",
+			"timeBetweenFidgets" : 1
+		},
+	
+		"growth" : 7,
+//		"horde" : 5,
+		"level" : 2,
+		"sound" :
+		{
+			"attack" : "forge2k/CBRGATTK.wav",
+			"defend" : "forge2k/cyberDFND.wav",
+			"killed" : "forge2k/CBRGDEAD.wav",
+			"move" : "forge2k/cyberMOVE.wav",
+			"wince" : "forge2k/CBRGWNCE.wav"
+		},
+		"abilities" :
+		{
+
+			"dead" : 
+			{
+				"type" : "UNDEAD"
+			},
+				"forgeMorale" :
+				{
+					"type" : "MORALE",
+					"val" : -1,
+					"propagator" : 	"HERO",
+					"limiters": [ 
+						"noneOf",
+						{						
+							"type" : "CREATURE_FACTION_LIMITER",
+							"parameters": [ "forge2k" ]
+							 } ],
+							 "stacking" : "Forge creatures"
+			},
+
+				 "blood4tehbloodgod" :
+					 {
+						 "type" : "SPELL_BEFORE_ATTACK",
+						 "val" : 100,
+						 "subtype" : "spell.cyberBloodlust"
+					 }
+					 
+		}
+	}
+}

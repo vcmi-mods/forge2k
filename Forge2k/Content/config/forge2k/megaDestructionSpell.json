@@ -1,0 +1,42 @@
+{
+	"megaDestruction":
+	{
+		"type": "ability",	"targetType" : "CREATURE",
+		"name": "Mega Destruction",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 0, "power": 1, "defaultGainChance": 0, 
+		"gainChance":{},"counters": {},			
+		"graphics":	{
+			"iconEffect": "spells/tempNoEffect"},		
+			"animation":{
+				"affect":["Spell/Spell_destruction.def"]},
+			"sounds": {
+				"cast": "CURSE"},
+ 
+		"flags" : { "negative" : true, "special" : true },
+ 
+		"levels":
+		{
+			"base":
+			{
+				"cost": 0,
+				"range": "0",
+				"power": 50, //base dmg
+				"aiValue": 0,
+				"targetModifier":
+				{
+					"smart": true
+				},
+				"description": "{Mega Destruction}\r\n\r\nHas a chance to reduces the enemy creature stack by half.",
+				"battleEffects" : {
+
+					"directDamage" : {
+						"type":"core:damage", 
+						"killByPercentage" : true }
+				}
+			},
+			"none":{},"basic":{},"advanced":{},"expert":{}
+		}
+	}
+
+}

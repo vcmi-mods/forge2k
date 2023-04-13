@@ -1,0 +1,98 @@
+{
+	"dreadnought2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 4,
+			"min" : 2
+		},
+		"faction" : "forge2k",
+		"aiValue" : 9000,
+		"fightValue" : 7635,
+		"attack" : 40,
+		"defense" : 40,
+		"hitPoints" : 400,
+		"speed" : 13,
+		"cost" :
+		{
+			"gold" : 10000,
+			"crystal" : 5
+		},
+		"damage" :
+		{
+			"max" : 70,
+			"min" : 45
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR210.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/dread.def",
+			"iconSmall" : "forge2k/iconsSmall/CPrS210F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL210B.bmp",
+			"timeBetweenFidgets" : 1
+
+		},
+		"doubleWide" : true,
+		"growth" : 1,
+		"horde" : -1,
+		"level" : 7,
+		"sound" :
+		{
+			"attack" : "forge2k/juggerATTK.wav",
+			"defend" : "forge2k/juggerDFND.wav",
+			"killed" : "forge2k/juggerKILL.wav",
+			"move" : "forge2k/juggerMOVE.wav",
+			"wince" : "forge2k/juggerWNCE.wav"
+                     
+		},
+		"abilities" :
+		{
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]
+						 } ],
+						 "stacking" : "Forge creatures"
+		},
+
+			"expSlayer" : { 
+				"type" : "KING",
+				"val" : 3,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+
+			"mechanical" :
+			{
+				"type" : "NON_LIVING"
+			},
+			
+			"unlimited" :
+			{
+				"type" : "UNLIMITED_RETALIATIONS"
+			},
+
+			"killOne" : 
+			{ 
+				"type" : "DESTRUCTION",
+				"subtype" : 1,
+				"val" : 50,
+				"addInfo" : 1
+			}
+
+//			"HPregenerate" : 
+//			{
+//				"type" : "HP_REGENERATION",
+//				"subtype" : 1,
+//				"val" : 45
+//			}
+
+		}
+	}
+}

@@ -1,0 +1,68 @@
+{
+	"leanne2k" :
+	{
+		"class" : "technoJunk2k",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Leanne",
+			"biography" : "For a Deyjan countrygirl like Leanne, the greatest possible prospect in life was to become a rich necromancer's maid. However, Kastore's coup brought about a new order, and now, with a deadly blaster in hand, the world is her oyster.",
+			"specialty" :
+			{
+				"description" : "{Lightning Bolt}\r\n\r\nCasts Lightning Bolt with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+				"tooltip" : "Spell Bonus: Lightning Bolt",
+				"name" : "Lightning Bolt"
+			}
+		},
+
+		"images" :
+		{
+			
+			"specialtySmall" : "forge2k/heroes/leanne/spec-small",
+			"specialtyLarge" : "forge2k/heroes/leanne/spec-large",
+			"large" : "forge2k/heroes/leanne/portrait-large",
+			"small" : "forge2k/heroes/leanne/portrait-small"
+		},
+
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"army" :
+		[
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 15,
+				"min" : 10
+			},
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 15,
+				"min" : 10
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 4,
+				"min" : 4
+			}
+		],
+
+		"skills" :
+		[
+			{ "level" : "basic", "skill" : "wisdom" },
+			{ "level" : "basic", "skill" : "airMagic" }
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"lightning" : {
+					"subtype" : "spell.lightningBolt",
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER"
+				}
+			}
+		}
+	}
+}
+

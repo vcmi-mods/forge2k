@@ -1,0 +1,127 @@
+{
+	"cyberDead2k":
+	{
+		"name" :
+		{
+			"plural" : "Cyber Dead",
+			"singular" : "Cyber Dead"
+		}
+	},
+	"cyberZombie2k" :
+	{
+		"name" :
+		{
+			"plural" : "Cyber Zombies",
+			"singular" : "Cyber Zombie"
+		}
+	},
+
+	"gruntSoldier2k":
+	{
+		"name" :
+		{
+			"plural" : "Grunts",
+			"singular" : "Grunt"
+		}
+	},
+	"footSoldier2k" :
+	{
+		"name" :
+		{
+			"plural" : "Troopers",
+			"singular" : "Trooper"
+		}
+	},
+
+	"pyro2k" :
+	{
+		"name" :
+		{
+			"plural" : "Pyros",
+			"singular" : "Pyro"
+		}
+	},
+	"pyromaniac2k" :
+	{
+		"name" :
+		{
+			"plural" : "Pyromaniacs",
+			"singular" : "Pyromaniac"
+		}
+	},
+	"stringer2k" :
+	{
+		"name" :
+		{
+			"plural" : "Stingers",
+			"singular" : "Stinger"
+		}
+	},
+	"bruiser2k" :
+	{
+		"name" :
+		{
+			"plural" : "Bruisers",
+			"singular" : "Bruiser"
+		}
+	},
+	"heavystringer2k" :
+	{
+		"name" :
+		{
+			"plural" : "Sluggers",
+			"singular" : "Slugger"
+		}
+	},
+
+	"jumpSoldier2k" :
+	{
+		"name" :
+		{
+			"plural" : "Jump Cadets",
+			"singular" : "Jump Cadet"
+		}
+	},
+	"jumpTrooper2k" :
+	{
+		"name" :
+		{
+			"plural" : "Jump Soldiers",
+			"singular" : "Jump Soldier"
+		}
+	},
+
+	"nagaTank2k" :
+	{
+		"name" :
+		{
+			"plural" : "Tanks",
+			"singular" : "Tank"
+		}
+	},
+	"nagaHeavy2k" :
+	{
+		"name" :
+		{
+			"plural" : "Heavy Tanks",
+			"singular" : "Heavy Tank"
+		}
+	},
+
+	"juggernaut2k" :
+	{
+		"name" :
+		{
+			"plural" : "Juggernauts",
+			"singular" : "Juggernaut"
+		}
+	},
+	"dreadnought2k" :
+	{
+		"name" :
+		{
+			"plural" : "Dreadnoughts",
+			"singular" : "Dreadnought"
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"jumpTrooper2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 6
+		},
+		"faction" : "forge2k",
+		"aiValue" : 1262,
+		"fightValue" : 1134,
+		"attack" : 18,
+		"defense" : 18,
+		"hitPoints" : 60,
+		"speed" : 10,
+		"cost" :
+		{
+			"gold" : 1000
+		},
+		"damage" :
+		{
+			"max" : 20,
+			"min" : 15
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR206.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/jumptrooper.def",
+			"iconSmall" : "forge2k/iconsSmall/CPrS206F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL206B.bmp",
+			"timeBetweenFidgets" : 1
+              },
+
+		"growth" : 3,
+		"level" : 5,
+		"sound" :
+		{
+			"attack" : "forge2k/jumpATTK.wav",
+			"defend" : "forge2k/jumpDFND.wav",
+			"killed" : "forge2k/jumpKILL.wav",
+			"move" : "forge2k/jumpMOVE.wav",
+			"wince" : "forge2k/jumpWNCE.wav"
+		},
+		"abilities" :
+		{
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]
+						 } ],
+						 "stacking" : "Forge creatures"
+		},
+		       "flying" :
+			{
+				"type" : "FLYING"
+			},
+                    "spellimmunityslow" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.slow"
+			}
+              }
+
+	}
+}

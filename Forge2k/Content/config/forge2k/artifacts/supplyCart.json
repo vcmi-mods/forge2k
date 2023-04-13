@@ -1,0 +1,76 @@
+{
+	"supplyCart2k":
+	{
+		"name" :
+		{
+			"plural" : "Booster Carts",
+			"singular" : "Booster Cart"
+		},
+		"faction" : "neutral",
+		"level": 1,
+		"aiValue" : 450,
+		"special" : true,
+		"attack" : 0,
+        "cost": 
+        {
+              "gold": 1500
+        },
+		"damage" :
+		{
+			 "max" : 0,
+			 "min" : 0
+		},
+		"defense" : 7,
+		"fightValue" : 50,
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/supplyCart",
+			"iconSmall" : "forge2k/iconsSmall/supplyCartsmall",
+			"iconLarge" : "forge2k/iconsBig/supplyCartbig",
+//			"map" : "forge2k/map/blank",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"doubleWide" : false,
+		"growth" : 0,
+		"hitPoints" : 100,
+		"sound" :
+		{
+			"killed": "forge2k/SUPPKILL",
+			"wince": "forge2k/SUPPWNCE"
+		},
+		"speed" : 0,
+		"abilities" :
+		{
+				"additionalDef" : 
+				{ 
+				"type": "PRIMARY_SKILL", 
+				"val": 5, 
+				"subtype" : "primSkill.defence",
+				"limiters": [ {
+					"type":"HAS_ANOTHER_BONUS_LIMITER",
+					"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cartArmor2k"]
+				} ]
+			},
+
+			"inactive" : 
+			{ 
+				"type" : "NOT_ACTIVE" 
+			},
+			"warmachine" :
+			{
+				"type" : "SIEGE_WEAPON"
+			},
+			"noRetaliation" : 
+			{
+                "val" : 0,
+                "type" : "NO_RETALIATION"
+            }
+		}
+	}
+}

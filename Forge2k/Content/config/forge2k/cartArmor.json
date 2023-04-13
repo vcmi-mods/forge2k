@@ -1,0 +1,132 @@
+{
+	"cartArmor2k" : 
+	{
+		"type": "ability",	"targetType" : "CREATURE",
+		"name" : "Cart Armor",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1, "power": 0, "defaultGainChance": 0, 		
+		"gainChance":{},"counters": {},		
+		"graphics":	{
+			"iconEffect": "forge2k/spells/carteffect"},	
+		"animation":{},
+		"sounds": {},
+		"levels" : {
+			"base":{
+
+				"description": "{Additional Cart Armor}\r\n\r\n+50 Health + 5 Defense.",
+				"cost": 0, "power": 0, "aiValue": 0,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"effects" : {
+
+					"additionalHP" : 
+					{ 
+						"type": "STACK_HEALTH", 
+						"val": 50, 
+						"duration": "STACK_GETS_TURN",	
+					
+						"limiters": [ "anyOf", 
+						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "supplyCart2k", true]	},
+						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "ammoCart", true]	} ]
+					},
+
+					"additionalDef" : {
+						"val" : 10,
+						"type" : "PRIMARY_SKILL",
+						"subtype" : "primSkill.defence",
+						"duration": "STACK_GETS_TURN",	
+
+						"limiters": [ "anyOf", 
+						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "supplyCart2k", true]	},
+						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "ammoCart", true]	} ]
+					},
+					
+					"refill" : {
+						"type" : "OPENING_BATTLE_SPELL",
+						"subtype" : "spell.cartRefill2k",
+						"duration": "STACK_GETS_TURN",	
+						"propagator": "PLAYER_PROPAGATOR",
+
+						"limiters": [ "anyOf", 
+						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "supplyCart2k", true]	},
+						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "ammoCart", true]	} ]
+					}
+				}
+
+					},
+			"none":{},"basic":{
+
+				"effects" : {
+					"additionalDef" : {
+						"val" : 20
+					}
+				}
+
+			},"advanced":{
+
+				
+				"effects" : {
+					"additionalDef" : {
+						"val" : 30
+					}
+				}
+			},"expert":{
+
+				
+				"effects" : {
+					"additionalDef" : {
+						"val" : 40
+					}
+				}
+			}
+		},
+		"targetCondition" : {"allOf" : {},"noneOf" : {},"anyOf" : {	}},		
+		"flags" : {
+			"positive": true,
+			"special": true
+		}
+	},
+
+	"cartRefill2k" : 
+	{
+		"type": "combat",	"targetType" : "CREATURE",
+		"name" : "Cart Armor",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1, "power": 50, "defaultGainChance": 0, 		
+		"gainChance":{},"counters": {},		
+		"graphics":	{
+			"iconEffect": "forge2k/spells/carteffect"},	
+		"animation":{},
+		"sounds": {},
+		"levels" : {
+			"base":{
+
+				"description": "{Refill Cart Armor}\r\n\r\nRefills the missing Health.",
+				"cost": 0, "power": 0, "aiValue": 0,
+				"range" : "0",
+				"targetModifier":{"smart":true},
+				"battleEffects":{
+					"heal":{
+						"type":"core:heal",
+						"healLevel":"heal",
+						"healPower":"permanent",
+						"optional":true
+					}
+				}
+
+					},
+			"none":{},"basic":{},"advanced":{},"expert":{}
+		},
+		"targetCondition" : {"allOf" : {},"noneOf" : {},"anyOf" : {	
+			"core:creature.ammoCart":"absolute",	
+			"forge2k:creature.supplyCart2k":"absolute"
+
+			}},		
+		"flags" : {
+			"positive": true,
+			"rising": true,
+			"special": true
+		}
+	}
+
+}

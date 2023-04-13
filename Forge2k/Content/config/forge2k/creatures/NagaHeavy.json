@@ -1,0 +1,91 @@
+{
+	"nagaHeavy2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 8,
+			"min" : 4
+		},
+		"faction" : "forge2k",
+		"aiValue" : 2809,
+		"fightValue" : 2137,
+		"attack" : 18,
+		"defense" : 20,
+		"hitPoints" : 130,
+		"speed" : 8,
+		"cost" :
+		{
+			"gold" : 2000
+       		},
+		"damage" :
+		{
+			"max" : 35,
+			"min" : 25
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR208.DEF",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/heavytank.def",
+			"iconSmall" : "forge2k/iconsSmall/CPrS208F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL208B.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"doubleWide" : true,
+		"growth" : 2,
+		"level" : 6,
+		"sound" :
+		{
+			"attack" : "forge2k/tankATTK.wav",
+			"defend" : "forge2k/CBRGDFND.wav",
+			"killed" : "forge2k/tankKILL.wav",
+			"move" : "forge2k/tankMOVE.wav",
+			"wince" : "forge2k/tankWNCE.wav"
+		},
+		"abilities" :
+		{
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]
+						 } ],
+						 "stacking" : "Forge creatures"
+		},
+			"fearless" :
+			{
+				"type" : "FEARLESS"
+			},
+            "multiAttack" : 
+			{
+				"type" : "BLOCKS_RETALIATION"
+				//"type" : "THREE_HEADED_ATTACK"
+			},
+            "panzer" : 
+			{
+				"type" : "SPELL_IMMUNITY",
+				"subtype" : "spell.landMine",
+				"addInfo" : 0
+			}
+
+			//"electroBolt" : 
+			//{
+			//	"type" : "SPELL_AFTER_ATTACK",
+			//	"subtype" : "spell.electroBolt",
+			//	"val" : 100
+			//},
+			//"electroPower" :
+			//{
+			//	"type" : "SPECIFIC_SPELL_POWER",
+			//	"subtype" : "spell.electroBolt",
+			//	"val" : 10
+			//}
+
+           }
+	}
+}

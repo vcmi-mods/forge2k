@@ -1,0 +1,87 @@
+{
+	"stringer2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 18,
+			"min" : 8
+		},
+		"faction" : "forge2k",
+		"aiValue" : 839,
+		"fightValue" : 768,
+		"attack" : 12,
+		"defense" : 8,
+		"hitPoints" : 50,
+		"speed" : 4,
+		"cost" :
+		{
+			"gold" : 550
+		},
+		"damage" :
+		{
+			"max" : 14,
+			"min" : 8
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR203.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/stringer.def",
+			"iconSmall" : "forge2k/iconsSmall/CPRS203F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL203B.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+				"projectile" : "forge2k/battle/projectile/shot207.DEF",
+			       "attackClimaxFrame" : 4,
+				"offset" :
+				{
+					"upperX" : 25,
+					"upperY" : -86,
+					"middleX" : 47,
+					"middleY" : -69,
+					"lowerX" : 25,
+					"lowerY" : -38
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"growth" : 3,
+		"level" : 4,
+		"upgrades":
+		[
+			"bruiser2k"
+		],
+		"shots" : 6,
+		"sound" :
+		{
+			"attack" : "forge2k/stingerATTK.wav",
+			"defend" : "forge2k/stingerDFND.wav",
+			"killed" : "forge2k/stingerKILL.wav",
+			"move" : "forge2k/stingerMOVE.wav",
+			"wince" : "forge2k/stingerWNCE.wav",
+ 			"shoot" : "forge2k/stingerSHOT.wav"                    
+		},
+		"abilities" :
+		{
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]
+						 } ],
+						 "stacking" : "Forge creatures"
+		},
+                     "canshoot" :
+			{
+				"type" : "SHOOTER"
+			}
+		
+		}
+	}
+}

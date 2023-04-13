@@ -1,0 +1,93 @@
+{
+	"juggernaut2k":
+	{
+		"advMapAmount" :
+		{
+			"max" : 6,
+			"min" : 3
+		},
+		"faction" : "forge2k",
+		"aiValue" : 8577,
+		"fightValue" : 6684,
+		"attack" : 25,
+		"defense" : 25,
+		"hitPoints" : 250,
+		"speed" : 8,
+		"cost" :
+		{
+			"gold" : 5500,
+			"crystal" : 3
+		},
+		"damage" :
+		{
+			"max" : 70,
+			"min" : 45
+		},
+		"graphics" :
+		{
+			"animation" : "forge2k/battle/CR209.DEF",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "forge2k/map/jugger.def",
+			"iconSmall" : "forge2k/iconsSmall/CPrS209F.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL209B.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"doubleWide" : true,
+		"growth" : 1,
+		"horde" : -1,
+		"level" : 7,
+		"upgrades":
+		[
+			"dreadnought2k"
+		],
+		"sound" :
+		{
+			"attack" : "forge2k/juggerATTK.wav",
+			"defend" : "forge2k/juggerDFND.wav",
+			"killed" : "forge2k/juggerKILL.wav",
+			"move" : "forge2k/juggerMOVE.wav",
+			"wince" : "forge2k/juggerWNCE.wav"
+		},
+		"abilities" :
+		{
+			"forgeMorale" :
+			{
+				"type" : "MORALE",
+				"val" : -1,
+				"propagator" : 	"HERO",
+				"limiters": [ 
+					"noneOf",
+					{						
+						"type" : "CREATURE_FACTION_LIMITER",
+						"parameters": [ "forge2k" ]
+						 } ],
+						 "stacking" : "Forge creatures"
+			},
+
+			"expSlayer" : { 
+				"type" : "KING",
+				"val" : 3,
+				"valueType" : "ADDITIVE_VALUE"
+			},
+
+			"mechanical" :
+			{
+				"type" : "NON_LIVING"
+			},
+
+			"unlimited" :
+			{
+				"type" : "UNLIMITED_RETALIATIONS"
+			}
+
+//			"HPregenerate" : 
+//			{
+//				"type" : "HP_REGENERATION",
+//				"subtype" : 1,
+//				"val" : 25
+//			}
+
+
+		}
+	}
+}

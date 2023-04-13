@@ -1,0 +1,69 @@
+{
+	"deckard2k" :
+	{
+		"class" : "cyborg2k",
+		"female" : false,
+		"texts" :
+		{
+			"name" : "Deckard",
+			"biography" : "Deckard's state-of-the-art heavy armor fully lives up to its expectations. The mere sight of this impregnable cyborg on the battlefield can fill his troops with strength to weather the onslaught of bullets and blows.",
+			"specialty" :
+			{
+				"description" : "{Armorer}\r\n\r\nReceives a 7% per level bonus to Armorer skill percentage.",
+				"tooltip" : "Secondary Skill Bonus: Armorer",
+				"name" : "Armorer"
+			}
+		},		
+
+		"images" :
+		{
+			"specialtySmall" : "forge2k/heroes/deckard/spec-small",
+			"specialtyLarge" : "forge2k/heroes/deckard/spec-large",
+			"large" : "forge2k/heroes/deckard/portrait-large",
+			"small" : "forge2k/heroes/deckard/portrait-small"
+		},
+		"army" :
+		[
+			{
+				"creature" : "gruntSoldier2k",
+				"max" : 10,
+				"min" : 10
+			},
+			{
+				"creature" : "cyberDead2k",
+				"max" : 7,
+				"min" : 7
+			},
+			{
+				"creature" : "pyro2k",
+				"max" : 4,
+				"min" : 4
+			}
+		],
+
+		"skills" : [
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			}
+		],
+			
+        "specialty": 
+		{
+			"bonuses" : {
+				"armorer" : {
+					"subtype" : -1,
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : 7,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

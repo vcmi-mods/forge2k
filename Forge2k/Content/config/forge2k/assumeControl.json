@@ -1,0 +1,158 @@
+{
+	"assumeControl2k":
+	{
+		"type": "combat", 
+		"name": "Assume Control",
+		"school":
+		{
+			"air": true,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 4,
+		"power": 10,
+		"defaultGainChance": 12, 
+		"gainChance":
+		{
+			"forge2k" : 0
+		},
+ 
+		"animation":{
+			"affect":["C10SPA0"]
+		},
+ 
+		"flags" : {"negative": true},
+ 
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {
+				"core:bonus.NON_LIVING": "normal",
+				"core:bonus.UNDEAD": "normal"},			
+			"noneOf" : {}
+	},	
+ 
+		"graphics":
+		{
+			"iconBook": "forge2k/spells/AssumeFrame",
+			"iconScroll": "forge2k/spells/AssumeScroll",
+			"iconScenarioBonus": "forge2k/spells/AssumeBonus",
+			"iconEffect": "forge2k/spells/AssumeEffect",
+			
+			"iconImmune": "forge2k/spells/Assumeimmune"
+		},
+
+		"sounds":
+		{
+			"cast":"forge2k/spells/AssumeControl"
+		},
+		"targetType": "CREATURE",
+ 
+		"levels":
+		{
+			"base":
+			{
+				"power": 10,
+				"aiValue": 20,
+				"range": "0",
+				"targetModifier":
+				{
+					"smart": true
+				}
+			},
+			"none":
+			{
+				"description": "{Assume Control}\n\nPuts a non-living enemy unit temporarily under your control. The spell draws out untapped strenght and speed of the affected unit. Creatures of pure mind take damage instead.\n",
+	 
+				"cost": 18,
+
+				
+				"battleEffects" : {
+
+					"directDamage" : {
+						
+						"type":"core:damage"						
+					
+					},
+					
+					"curse" : {"type":"core:timed", "cumulative": false, "bonus":  {
+						
+						"undercontrol" : {
+							"type" : "HYPNOTIZED",
+							"duration": "N_TURNS",
+							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "psychicElemental", false ]}]
+										},
+						"quicker" :
+						{
+							"type": "STACKS_SPEED",
+							//"valueType" : "ADDITIVE_VALUE",
+							"val": 0,
+							"duration": "N_TURNS",
+							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "psychicElemental", false ]}]
+						},
+						
+						"stronger" :
+						{
+							"val" : 0,
+							"type" : "PRIMARY_SKILL",
+							"subtype" : "primSkill.attack",
+							"duration": "N_TURNS",
+							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "psychicElemental", false ]}]
+						}
+						}
+						
+						}
+	
+	
+					}
+	 
+			},
+			"basic":
+			{
+				"description": "{Basic Assume Control}\n\nPuts a non-living enemy unit temporarily under your control. The spell draws out untapped strenght and speed of the affected unit. Creatures of pure mind take damage instead.\n",				
+				"cost": 14,
+	 
+				"effects":
+				{
+				}
+			},
+			"advanced":
+			{
+				"description": "{Advanced Assume Control}\n\nPuts a non-living enemy unit temporarily under your control. The spell draws out untapped strenght and speed of the affected unit. Creatures of pure mind take damage instead.\n",
+	 
+				"cost": 14,
+	 
+				"effects":
+				{
+					"undead":
+					{
+						"type": "HYPNOTIZED",
+						"duration": ["UNITL_BEING_ATTACKED","N_TURNS"]
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"val": -25
+					}
+				}
+			},
+			"expert":
+			{
+				"description": "{Expert Assume Control}\n\nPuts a non-living enemy unit temporarily under your control. The spell draws out untapped strenght and speed of the affected unit. Creatures of pure mind take damage instead.\n",
+	 
+				"cost": 14,
+	 
+				"effects":
+				{
+					"undead":
+					{
+						"type": "HYPNOTIZED",
+						"duration": ["UNITL_BEING_ATTACKED","N_TURNS"]
+					}
+				}
+			}
+		}
+	}
+ 
+}
