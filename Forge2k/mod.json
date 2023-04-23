@@ -19,7 +19,7 @@
 		"description" : "Die beste aller Schmieden für VCMI - Aktualisierte Schmiedestadt, zusammengestellt aus verschiedenen Assets der Heroes of Might & Magic Modding-Community.",
 		
 		"translations" : [
-			"config/forge2k/translation/german.json"
+			"translation/forge2k/german.json"
 		]
 	},
 
