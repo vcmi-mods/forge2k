@@ -14,6 +14,14 @@
     [
         "asphalt-terrain"
     ],
+	"german" : {
+		"name" : "Himmlische Schmiede 2000",
+		"description" : "Die beste aller Schmieden für VCMI - Aktualisierte Schmiedestadt, zusammengestellt aus verschiedenen Assets der Heroes of Might & Magic Modding-Community.",
+		
+		"translations" : [
+			"translation/forge2k/german.json"
+		]
+	},
 
 	"factions" :
 	[
