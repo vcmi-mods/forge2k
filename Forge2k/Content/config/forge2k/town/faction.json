@@ -9,7 +9,7 @@
 		},
 		"nativeTerrain": "asphalt",
 		"alignment" : "evil",
-
+		"boat" : "boatNecropolis",
 		"town" :
 		{
 			"musicTheme" : "music/forge2k/theme",
@@ -37,11 +37,9 @@
 				[ "jumpSoldier2k", "jumpTrooper2k" ],
 				[ "nagaTank2k", "nagaHeavy2k" ],
 				[ "juggernaut2k", "dreadnought2k" ]
-			],
-			"moatDamage" : 90,			
-			"moatHexes" : [ 11, 28, 44, 61, 77, 111, 129, 146, 164, 181 ],
-
-			"horde" : [ 0, 6 ], // , -1 ],
+			],			
+			"moatAbility" : "forge2kMoat",
+			"horde" : [ 0, 6 ], //[ -1 ],
 			"mageGuild" : 3,
 			"primaryResource" : "crystal",
 			"warMachine" : "supplyCart2k",
@@ -125,8 +123,8 @@
 				"witch"        : 2,
 				"planeswalker" : 0,
 				"elementalist" : 0,
-				"cyborg2k"      : 6,
-				"technoJunk2k"      : 6
+				"cyborg2k"     : 6,
+				"technoJunk2k" : 6
 			}
 		}
 	}
