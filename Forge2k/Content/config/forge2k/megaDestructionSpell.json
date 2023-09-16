@@ -27,7 +27,7 @@
 				{
 					"smart": true
 				},
-				"description": "{Mega Destruction}\r\n\r\nHas a chance to reduces the enemy creature stack by half.",
+				"description": "{Mega Destruction}\r\n\r\nHas a chance to reduce the enemy creature stack by half.",
 				"battleEffects" : {
 
 					"directDamage" : {

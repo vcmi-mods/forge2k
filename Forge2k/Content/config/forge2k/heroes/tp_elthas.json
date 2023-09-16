@@ -9,7 +9,7 @@
 			"biography" : "Elthas made his name when he developed extremely efficient means of blowing up large swaths of land. This made it easier to access buried vaults of the Ancients and a wealth of underground resources, so ravenously consumed by the furnaces of the Heavenly Forge.",
 			"specialty" :
 			{
-				"description" : "{Inferno}\r\n\r\nCasts Inferno with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+				"description" : "{Inferno}\r\n\r\nCasts Inferno with 50 additional damage and with slightly increased effect per hero level.",
 				"tooltip" : "Spell Bonus: Inferno",
 				"name" : "Inferno"
 			}
@@ -56,11 +56,18 @@
 		"specialty":
 		{
 			"bonuses" : {
-				"inferno" : {
+				"inferno50plus" : {
 					"subtype" : "spell.inferno",
 					"type" : "SPECIFIC_SPELL_DAMAGE",
 					"val" : 50,
 					"valueType" : "BASE_NUMBER"
+				},
+				
+				"inferno" : {
+					"subtype" : "spell.inferno",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 1
 				}
 			}
 		}

@@ -1,0 +1,29 @@
+{
+	"core:wisdom":
+	{
+
+		"base" : {
+			"effects" : {
+				"damageForPsychos" : {
+					"subtype" : "spell.assumeControl2k",
+					"propagator" : "BATTLE_WIDE",
+					"type" : "MORE_DAMAGE_FROM_SPELL",
+					"val" : -100,
+					"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "psychicElemental", false ]}]
+				},
+				
+				"targetCondition" : {
+					"subtype" : "spell.assumeControl2k",
+					"propagator" : "BATTLE_WIDE",
+					"type" : "SPELL_IMMUNITY",
+					"addInfo" : 0,
+					"limiters": ["noneOf",
+					{"type" : "HAS_ANOTHER_BONUS_LIMITER","parameters": [ "UNDEAD" ]},
+					{"type" : "HAS_ANOTHER_BONUS_LIMITER","parameters": [ "NON_LIVING" ]}]
+				}
+			}
+		}
+
+	}
+ 
+}

@@ -32,7 +32,7 @@
 			"timeBetweenFidgets" : 1
               },
 
-		"growth" : 3,
+		"growth" : 2.5,
 		"level" : 5,
 		"upgrades":
 		[

@@ -6,8 +6,7 @@
 		"texts" :
 		{
 			"name" : "Sheikleen",
-			//"biography" : "Sheikleen is an enigma. She emerged one day among the chain of command and her directives won battles. People like her are not uncommon in the ranks of the Heavenly Forge, and as long as she's a useful asset, no one asks unnecessary questions. Still, some people can't help but suspect there is an ulterior motive behind her actions.",
-			"biography" : "Enigmas like Sheikleen are not uncommon in the ranks of the Heavenly Forge, and as long as she's a useful asset, no one asks unnecessary questions. She emerged one day among the chain of command and her directives won battles. Still, some people can't help but suspect there is an ulterior motive behind her actions.",
+			"biography" : "Enigmas like Sheikleen are not uncommon in the ranks of the Heavenly Forge. She emerged one day among the chain of command and her directives won battles, so she was universally deemed a useful asset. Still, there's always an ulterior motive with these kind of people.",
 			"specialty" :
 			{
 				"description" : "{Intelligence}\r\n\r\nReceives a 10% per level bonus to Intelligence skill percentage.",

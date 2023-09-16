@@ -78,7 +78,7 @@
 				"type" : "UNLIMITED_RETALIATIONS"
 			},
 
-			"killOne" : 
+			"onePunch" : 
 			{ 
 				"type" : "DESTRUCTION",
 				"subtype" : 1,

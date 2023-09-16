@@ -6,12 +6,12 @@
 		"texts" :
 		{
 			"name" : "Kastore",
-			"biography" : "Kastore is a powerful sorcerer who knows many secrets of the Ancients. He plans to conquer the world and he will stop at nothing in pursuit of this goal.",
+			"biography" : "Kastore is a powerful sorcerer who knows many secrets of the Ancients. He plans to conquer the world and will stop at nothing in pursuit of this goal.",
 			"specialty" :
 			{
-				"tooltip" : "Spell Bonus: Clone",
-				"name" : "Clone",
-				"description" : "{Clone}\r\n\r\nKnows a special Clone spell variant which costs more spell points and summons 2 clones of a target unit."
+				"tooltip" : "Spell Bonus: Double Clone",
+				"name" : "Double Clone",
+				"description" : "{Double Clone}\r\n\r\nKnows a special Clone spell variant which costs more spell points and summons 2 clones of the target unit."
 			}
 		},		
 

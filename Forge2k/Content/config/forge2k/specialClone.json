@@ -2,7 +2,7 @@
 	"specialClone2k" : 
 	{
 		"type": "combat",
-		"name": "Special Clone",
+		"name": "Double Clone",
 		"school":
 		{
 			"air": false,
@@ -58,22 +58,22 @@
 				"targetModifier":{"smart":true},
 				"power": 10,
 				"aiValue": 20,
-				"cost" : 36,
-				"description": "{Specialist's Clone}\n\nCreates 2 duplicates of the selected unit stack. The image is dispelled if it is attacked.\nClones creatures of levels 1-5.\n"
+				"cost" : 40,
+				"description": "{Double Clone}\n\nCreates 2 duplicates of the selected unit stack. The image is dispelled if it is attacked.\nClones creatures of levels 1-5.\n"
 			},
 			"none":
 			{	 
 			},
 			"basic":
 			{	 
-				"cost" : 32,
-				"description": "{Specialist's Basic Clone}\n\nCreates 2 duplicates of the selected unit stack. The image is dispelled if it is attacked.\nClones creatures of levels 1-5.\n"
+				"cost" : 40,
+				"description": "{Basic Double Clone}\n\nCreates 2 duplicates of the selected unit stack. The image is dispelled if it is attacked.\nClones creatures of levels 1-5.\n"
 
 			},
 			"advanced":
 			{	
-				"cost" : 32,
-				"description": "{Specialist's Advanced Clone}\n\nCreates 2 duplicates of the selected unit stack. The image is dispelled if it is attacked.\nClones creatures of levels 1-6.\n",
+				"cost" : 40,
+				"description": "{Advanced Double Clone}\n\nCreates 2 duplicates of the selected unit stack. The image is dispelled if it is attacked.\nClones creatures of levels 1-6.\n",
 				"battleEffects":{
 					"clone1":{
 						"maxTier":6,
@@ -88,8 +88,8 @@
 			},
 			"expert":
 			{
-				"cost" : 32,
-				"description": "{Specialist's Expert Clone}\n\nCreates 2 duplicates of the selected unit stack. The image is dispelled if it is attacked.\nClones creatures of any level.\n",
+				"cost" : 40,
+				"description": "{Expert Double Clone}\n\nCreates 2 duplicates of the selected unit stack. The image is dispelled if it is attacked.\nClones creatures of any level.\n",
 				"battleEffects":{
 					"clone1":{
 						"maxTier":1000,

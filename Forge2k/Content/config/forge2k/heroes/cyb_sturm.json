@@ -10,7 +10,7 @@
 			"biography" : "A cruel warlord, who quickly rose in ranks thanks to his destructive skills and thirst for power. Some say that he plans to overthrow Kastore himself one day.",
 			"specialty" :
 			{
-				"description" : "{Meteor Shower}\r\n\r\nAlways casts Meteor Shower at expert level.",
+				"description" : "{Meteor Shower}\r\n\r\nAlways casts Meteor Shower at expert level, and with slightly increased effect (per level).",
 				"tooltip" : "Secondary Skill Bonus: Meteor Shower",
 				"name" : "Meteor Shower"
 			}
@@ -60,11 +60,18 @@
 
 		"specialty" : {
 			"bonuses" : {
-				"meteorShower" : {
+				"meteorShowerMax" : {
 					"subtype" : "spell.meteorShower",
 					"type" : "SPELL",
 					"val" : 3,
 					"valueType" : "INDEPENDENT_MAX"
+				},
+				
+				"meteorShower" : {
+					"subtype" : "spell.meteorShower",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 1
 				}
 			}
 		}

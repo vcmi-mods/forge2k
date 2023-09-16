@@ -9,7 +9,7 @@
 			"biography" : "For a Deyjan countrygirl like Leanne, the greatest possible prospect in life was to become a rich necromancer's maid. However, Kastore's coup brought about a new order, and now, with a deadly blaster in hand, the world is her oyster.",
 			"specialty" :
 			{
-				"description" : "{Lightning Bolt}\r\n\r\nCasts Lightning Bolt with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+				"description" : "{Lightning Bolt}\r\n\r\nCasts Lightning Bolt with 50 additional damage and with slightly increased effect per hero level.",
 				"tooltip" : "Spell Bonus: Lightning Bolt",
 				"name" : "Lightning Bolt"
 			}
@@ -55,11 +55,18 @@
 		
 		"specialty" : {
 			"bonuses" : {
-				"lightning" : {
+				"lightning50plus" : {
 					"subtype" : "spell.lightningBolt",
 					"type" : "SPECIFIC_SPELL_DAMAGE",
 					"val" : 50,
 					"valueType" : "BASE_NUMBER"
+				},
+				
+				"lightning" : {
+					"subtype" : "spell.lightningBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 1
 				}
 			}
 		}

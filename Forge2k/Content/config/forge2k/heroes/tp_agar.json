@@ -10,7 +10,7 @@
 
 			"specialty" :
 			{
-				"description" : "{Resurrection}\r\n\r\nCasts Resurrection with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units).",
+				"description" : "{Resurrection}\r\n\r\nResurrection raises target stack with additional 50 Health and with slightly increased effect per level.",
 				"tooltip" : "Spell Bonus: Resurrection",
 				"name" : "Resurrection"
 			}
@@ -52,11 +52,18 @@
 		
 		"specialty" : {
 			"bonuses" : {
-				"resurrection" : {
+				"resurrection50plus" : {
 					"subtype" : "spell.resurrection",
 					"type" : "SPECIFIC_SPELL_DAMAGE",
 					"val" : 50,
 					"valueType" : "BASE_NUMBER"
+				},
+				
+				"resurrection" : {
+					"subtype" : "spell.resurrection",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 1
 				}
 			}
 		}
