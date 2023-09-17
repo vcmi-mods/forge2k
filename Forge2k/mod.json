@@ -71,7 +71,6 @@
 	],
 	"artifacts" : [
 		"config/forge2k/artifacts/supplyCartArt"
-//		"config/forge2k/artifact/someFuturisticStuffmaybe.json"
 	],
 
 	"heroClasses" :
@@ -111,7 +110,6 @@
 	],
 	"spells" :
 	[
-//		"config/forge2k/someCyberBeam.json",
 		"config/forge2k/assumeControl.json",
 		"config/forge2k/cyberBloodlust.json",
 		"config/forge2k/specialClone.json",
