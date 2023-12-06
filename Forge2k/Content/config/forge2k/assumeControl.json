@@ -85,7 +85,7 @@
 						{
 							"val" : 1,
 							"type" : "PRIMARY_SKILL",
-							"subtype" : "primSkill.attack",
+							"subtype" : "attack",
 							"duration": "N_TURNS",
 							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "creature.psychicElemental", false ]}]
 						}

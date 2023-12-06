@@ -33,7 +33,7 @@
 					"additionalDef" : {
 						"val" : 10,
 						"type" : "PRIMARY_SKILL",
-						"subtype" : "primSkill.defence",
+						"subtype" : "defence",
 						"duration": "STACK_GETS_TURN",	
 
 						"limiters": [ "anyOf", 

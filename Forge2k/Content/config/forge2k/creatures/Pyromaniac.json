@@ -55,16 +55,16 @@
 						"parameters": [ "forge2k" ]
 						 } ],
 						 "stacking" : "Forge creatures"
-		},
-                     "abilities1":
+			},
+            "abilities1":
 			{
 				"type" : "TWO_HEX_ATTACK_BREATH"
 			},
-                     "abilities2":
+            "abilities2":
 			{
 				"type" : "SPELL_DAMAGE_REDUCTION",
 				"val" : 50,
-				"subtype" : 1
+				"subtype" : "fire"
 			}
 		}
 	}

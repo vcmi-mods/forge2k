@@ -51,7 +51,7 @@
 				{ 
 				"type": "PRIMARY_SKILL", 
 				"val": 5, 
-				"subtype" : "primSkill.defence",
+				"subtype" : "defence",
 				"limiters": [ {
 					"type":"HAS_ANOTHER_BONUS_LIMITER",
 					"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cartArmor2k"]
@@ -68,7 +68,6 @@
 			},
 			"noRetaliation" : 
 			{
-                "val" : 0,
                 "type" : "NO_RETALIATION"
             }
 		}

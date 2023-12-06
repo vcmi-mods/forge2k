@@ -37,7 +37,7 @@
 					"bloodlustAtCyberDeads" : {
 						"val" : 10,
 						"type" : "PRIMARY_SKILL",
-						"subtype" : "primSkill.attack",
+						"subtype" : "attack",
 						"propagator" : "BATTLE_WIDE",
 						"duration": "UNTIL_BEING_ATTACKED",		
 						"limiters": [ {

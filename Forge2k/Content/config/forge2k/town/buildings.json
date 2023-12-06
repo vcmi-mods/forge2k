@@ -338,17 +338,17 @@
 					"bonuses" : [ 
 						{ 
 						"type" : "PRIMARY_SKILL", 
-						"subtype" : "primSkill.attack",
+						"subtype" : "attack",
 						"val": 1, 
 						"propagator" : "VISITED_TOWN_AND_VISITOR" },
 						{ 
 						"type" : "PRIMARY_SKILL", 
-						"subtype" : "primSkill.defence",
+						"subtype" : "defence",
 						"val": 1, 
 						"propagator" : "VISITED_TOWN_AND_VISITOR" },
 						{ 
 						"type" : "PRIMARY_SKILL", 
-						"subtype" : "primSkill.spellpower",
+						"subtype" : "spellpower",
 						"val": 1, 
 						"propagator" : "VISITED_TOWN_AND_VISITOR" },
 						{ 

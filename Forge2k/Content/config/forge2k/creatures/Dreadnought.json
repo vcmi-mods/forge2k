@@ -81,18 +81,10 @@
 			"onePunch" : 
 			{ 
 				"type" : "DESTRUCTION",
-				"subtype" : 1,
+				"subtype" : "destructionKillAmount",
 				"val" : 50,
 				"addInfo" : 1
 			}
-
-//			"HPregenerate" : 
-//			{
-//				"type" : "HP_REGENERATION",
-//				"subtype" : 1,
-//				"val" : 45
-//			}
-
 		}
 	}
 }
