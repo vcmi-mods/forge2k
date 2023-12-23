@@ -123,8 +123,8 @@
 		"attack" : 5,
 		"defense" : 5,
 		"growth" : 1,
-		"hitPoints" : 60,
-		"speed" : 5,
+		"hitPoints" : 40,
+		"speed" : 4,
         "shots" : 24,
 		"cost" :
 		{
@@ -132,8 +132,8 @@
 		},
 		"damage" :
 		{
-			"min" : 7,
-			"max" : 15
+			"min" : 6,
+			"max" : 12
 		},
 		"graphics" :
 		{
