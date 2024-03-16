@@ -35,9 +35,8 @@
 		]
 	},
 	"chinese" : {
-		"name" : "天堂铸造厂2000",
-		"description" : "VCMI的所有铸造厂种族中最好的 - 更新的铸造厂种族，由Heroes of Might & Magic Modding-Community的各种资源汇编而成。",
-		
+		"name" : "天堂铸造厂",
+		"description" : "天堂铸造厂是一个柴油朋克风格的高科技种族，基于《英雄无敌III》资料片机械族（Forge）废案制作，由Heroes of Might & Magic Modding Community社区的各种资源整理而成，是VCMI目前所有铸造厂项目中质量最好的。",
 		"translations" : [
 			"translation/forge2k/chinese.json"
 		]
