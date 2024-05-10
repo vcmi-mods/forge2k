@@ -28,7 +28,7 @@
 			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
 			"map" : "forge2k/map/jumptrooper.def",
 			"iconSmall" : "forge2k/iconsSmall/CPrS206F.bmp",
-			"iconLarge" : "forge2k/iconsBig/CPrL206B.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL206B.png",
 			"timeBetweenFidgets" : 1
               },
 

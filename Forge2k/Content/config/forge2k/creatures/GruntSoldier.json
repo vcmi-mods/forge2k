@@ -28,7 +28,7 @@
 			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
 			"map" : "forge2k/map/gruntsoldier.def",
 			"iconSmall" : "forge2k/iconsSmall/CPrS197F.bmp",
-			"iconLarge" : "forge2k/iconsBig/CPrL197B.bmp",
+			"iconLarge" : "forge2k/iconsBig/CPrL197B.png",
 			"timeBetweenFidgets" : 1,
 			"missile" :
 			{
