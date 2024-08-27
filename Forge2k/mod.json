@@ -5,7 +5,7 @@
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.3.4",
+	"version" : "2.3.5",
 	"compatibility" : 
 	{
 		"min" : "1.4.0"
@@ -21,7 +21,8 @@
 		"2.3.1" : ["Adjusted Commanders stats"],
 		"2.3.2" : ["Added Chinese translation, the creatures' stackExp and fixed the commander"],
 		"2.3.3" : ["Few creature portraits fixes"],
-		"2.3.4" : ["Russian translation by Anton Sergeew"]
+		"2.3.4" : ["Russian translation by Anton Sergeew"],
+		"2.3.5" : ["Updated Russian translation"]
     },
 	"modType" : "Town",
     "depends" :
