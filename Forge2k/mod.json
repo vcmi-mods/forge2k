@@ -44,8 +44,8 @@
 		]
 	},
 	"russian" : {
-		"name" : "Кузня 2000",
-		"description" : "Новый город",
+		"name" : "Небесная Кузня 2000",
+		"description" : "Горница всех кузниц для VCMI — обновленный город-кузница, созданный из различных материалов, созданных сообществом моддеров Heroes of Might & Magic.",
 		
 		"translations" : [
 			"translation/forge2k/russian.json"
