@@ -5,10 +5,10 @@
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.3.6",
+	"version" : "2.3.7",
 	"compatibility" : 
 	{
-		"min" : "1.4.0"
+		"min" : "1.6.0"
 	},
 	"changelog" :
     {
@@ -23,7 +23,8 @@
 		"2.3.3" : ["Few creature portraits fixes"],
 		"2.3.4" : ["Russian translation by Anton Sergeew"],
 		"2.3.5" : ["Updated Russian translation"],
-		"2.3.6" : ["Polish translation by ToRRent1812"]
+		"2.3.6" : ["Polish translation by ToRRent1812"],
+		"2.3.7" : ["Update to vcmi-1.6 format"],
     },
 	"modType" : "Town",
     "depends" :

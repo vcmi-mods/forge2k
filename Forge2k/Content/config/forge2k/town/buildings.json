@@ -225,6 +225,7 @@
 						"wood" : 5,
 						"gold" : 500
 					},
+					"marketModes" : ["resource-resource", "resource-player"],
 					"id" : 14
 				},
 				"resourceSilo" :
@@ -237,17 +238,19 @@
 						"gold" : 5000
 					},
 					"requires" : [ "marketplace" ],
+					"produce": { "crystal": 1 },
 					"id" : 15
 				},
 				"blacksmith" :
 				{
-					"description" : "The Blacksmith provides your armies with Ammo Carts.",
+					"description" : "The Blacksmith provides your armies with Booster Carts.",
 					"name" : "Blacksmith",
 					"cost" :
 					{
 						"wood" : 5,
 						"gold" : 1000
 					},
+					"warMachine" : "supplyCart2k",					
 					"id" : 16
 				},
 				"horde1" :
@@ -311,13 +314,20 @@
 					"cost" : {
 						"gold" : 2000
 					},
-					"onVisitBonuses": [ 
-						{ 
-						"duration": "ONE_WEEK", 
-						"type": "HP_REGENERATION", 
-						"val": 7,
-						"updater" : "TIMES_STACK_LEVEL"
-						} ],
+					"configuration" : {
+						"visitMode" : "bonus",
+						"rewards" : [
+							{
+								"message" : "@core.genrltxt.580",
+								"bonuses" : [ {
+									"duration": "ONE_WEEK", 
+									"type": "HP_REGENERATION", 
+									"val": 7,
+									"updater" : "TIMES_STACK_LEVEL"
+								}]
+							} 
+						]
+					},
 					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "mageGuild1" ] ],
 					"id" : 21
 				},

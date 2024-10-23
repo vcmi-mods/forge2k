@@ -12,7 +12,7 @@
 		"boat" : "boatNecropolis",
 		"town" :
 		{
-			"musicTheme" : "music/forge2k/theme",
+			"musicTheme" : [ "music/forge2k/theme" ],
 			"defaultTavern" : 5,
 			"tavernVideo" : "TAVERN.BIK",
 			"guildBackground" : "TPMAGE.bmp",
@@ -42,7 +42,6 @@
 			"horde" : [ 0, 6 ], //[ -1 ],
 			"mageGuild" : 3,
 			"primaryResource" : "crystal",
-			"warMachine" : "supplyCart2k",
 			"buildingsIcons" : "forge2k/town-hall.def",
 			"icons" :
 			{
