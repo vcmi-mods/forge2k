@@ -318,7 +318,7 @@
 						"visitMode" : "bonus",
 						"rewards" : [
 							{
-								"message" : "@core.genrltxt.580",
+								"message" : "A faint hum fills the air as the egg-shaped apparatus starts producing nanomachines. These small mechanical organism implanted into bodies of your troops will continue to restore both living tissue and mechanical parts, until they need to be recharged next week.",
 								"bonuses" : [ {
 									"duration": "ONE_WEEK", 
 									"type": "HP_REGENERATION", 
