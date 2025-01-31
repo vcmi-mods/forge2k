@@ -71,6 +71,8 @@
 
 		"translations" : [
 			"translation/forge2k/ukrainian.json"
+		]
+	},
 
 	"factions" :
 	[
