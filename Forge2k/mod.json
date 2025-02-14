@@ -5,7 +5,7 @@
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.4.2",
+	"version" : "2.4.15",
 	"compatibility" : 
 	{
 		"min" : "1.6.0"
@@ -27,7 +27,7 @@
 		"2.3.7" : ["Update to vcmi-1.6 format"],
 		"2.4.0" : ["Added hero Null; standardised hero specialties; updated all specialty and hero graphics"],
 		"2.4.1" : ["Fix Grail not to produce gold"],
-	        "2.4.2" : ["Ukrainian transtation by MyroSlave"]
+		"2.4.15" : ["finishing touches on Polish translation"]		
     },
 	"modType" : "Town",
     "depends" :
@@ -63,14 +63,6 @@
 
 		"translations" : [
 			"translation/forge2k/polish.json"
-		]
-	},
-	"ukrainian" : {
-		"name" : "Небесна Кузня 2000",
-		"description" : "Найкраща Кузня з усіх Кузень для VCMI - оновлене місто створене з різних наробок ком'юніті Героїв Меча і Магії.",
-
-		"translations" : [
-			"translation/forge2k/ukrainian.json"
 		]
 	},
 
