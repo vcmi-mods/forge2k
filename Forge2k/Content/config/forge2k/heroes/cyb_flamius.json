@@ -1,5 +1,5 @@
 {
-	"flamius2k" :
+	"cyb_flamius2k" :
 	{
 		"class" : "cyborg2k",
 		"female" : false,
@@ -28,17 +28,17 @@
 			{
 				"creature" : "pyro2k",
 				"max" : 5,
-				"min" : 3
+				"min" : 5
 			},
 			{
 				"creature" : "pyro2k",
 				"max" : 5,
-				"min" : 3
+				"min" : 5
 			},
 			{
 				"creature" : "pyro2k",
 				"max" : 5,
-				"min" : 3
+				"min" : 5
 			}
 		],
 

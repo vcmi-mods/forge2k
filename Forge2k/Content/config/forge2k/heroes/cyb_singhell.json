@@ -1,5 +1,5 @@
 {
-	"singhell2k" :
+	"cyb_singhell2k" :
 	{
 		"class" : "cyborg2k",
 		"female" : false,
@@ -27,18 +27,18 @@
 		[
 			{
 				"creature" : "cyberDead2k",
-				"max" : 7,
-				"min" : 4
+				"max" : 10,
+				"min" : 10
 			},
 			{
 				"creature" : "cyberDead2k",
-				"max" : 7,
-				"min" : 4
+				"max" : 10,
+				"min" : 10
 			},
 			{
 				"creature" : "cyberDead2k",
-				"max" : 7,
-				"min" : 4
+				"max" : 10,
+				"min" : 10
 			}
 		],
 

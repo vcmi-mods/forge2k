@@ -1,5 +1,5 @@
 {
-	"kastore2k" :
+	"tp_kastore2k" :
 	{
 		"class" : "technoJunk2k",
 		"female" : false,
@@ -11,7 +11,7 @@
 			{
 				"tooltip" : "Spell Bonus: Double Clone",
 				"name" : "Double Clone",
-				"description" : "Casts Double Clone."
+				"description" : "Knows a special Clone spell variant which costs more spell points and summons 2 clones of the target unit."
 			}
 		},		
 
@@ -27,18 +27,18 @@
 		[
 			{
 				"creature" : "gruntSoldier2k",
-				"max" : 20,
-				"min" : 10
+				"max" : 15,
+				"min" : 15
 			},
 			{
 				"creature" : "cyberDead2k",
 				"max" : 7,
-				"min" : 4
+				"min" : 7
 			},
 			{
 				"creature" : "pyro2k",
-				"max" : 3,
-				"min" : 2
+				"max" : 4,
+				"min" : 4
 			}
 		],
 

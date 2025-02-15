@@ -1,5 +1,5 @@
 {
-	"sturm2k" :
+	"cyb_sturm2k" :
 	{
 		
 		"class" : "cyborg2k",
@@ -10,7 +10,7 @@
 			"biography" : "A cruel warlord, who quickly rose in ranks thanks to his destructive skills and thirst for power. Some say that he plans to overthrow Kastore himself one day.",
 			"specialty" :
 			{
-				"description" : "Casts Expert Meteor Shower with damage increased by 3% for every n hero levels, where n is the level of the targeted creature.",
+				"description" : "Always casts Meteor Shower at expert level, and with slightly increased effect (1% per hero level / target creature tier).",
 				"tooltip" : "Secondary Skill Bonus: Meteor Shower",
 				"name" : "Meteor Shower"
 			}
@@ -31,18 +31,18 @@
 		[
 			{
 				"creature" : "gruntSoldier2k",
-				"max" : 20,
-				"min" : 10
+				"max" : 15,
+				"min" : 15
 			},
 			{
 				"creature" : "cyberDead2k",
 				"max" : 7,
-				"min" : 4
+				"min" : 7
 			},
 			{
 				"creature" : "pyro2k",
-				"max" : 3,
-				"min" : 2
+				"max" : 4,
+				"min" : 4
 			}
 		],
 
@@ -71,7 +71,7 @@
 					"subtype" : "spell.meteorShower",
 					"type" : "SPECIAL_SPELL_LEV",
 					"updater" : "TIMES_HERO_LEVEL",
-					"val" : 3
+					"val" : 1
 				}
 			}
 		}

@@ -1,5 +1,5 @@
 {
-	"jules2k" :
+	"cyb_jules2k" :
 	{
 		"class" : "cyborg2k",
 		"female" : false,
@@ -28,18 +28,18 @@
 		[
 			{
 				"creature" : "gruntSoldier2k",
-				"max" : 20,
-				"min" : 10
+				"max" : 15,
+				"min" : 15
 			},
 			{
 				"creature" : "cyberDead2k",
 				"max" : 7,
-				"min" : 4
+				"min" : 7
 			},
 			{
 				"creature" : "pyro2k",
-				"max" : 3,
-				"min" : 2
+				"max" : 4,
+				"min" : 4
 			}
 		],
 

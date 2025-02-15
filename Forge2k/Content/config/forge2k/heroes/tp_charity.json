@@ -1,15 +1,14 @@
 {
-	"charity2k" : 
+	"tp_charity2k" : 
 	{
 		"class" : "technoJunk2k",
 		"texts" :
 		{
 			"name" : "Charity",
-			//"biography" : "After the Succession Wars, Charity left the continent of Enroth, lusting for more excitement and conflict. She was naturally attracted to the power and possibilities of the Heavenly Forges.",
 			"biography" : "After the Succession Wars, Charity left the continent of Enroth, lusting after more excitement and conflict. Eventually, she was attracted to the roaring call of the Heavenly Forge, like a moth drawn to the flame.",
 			"specialty" :
 			{
-				"description" : "Receives a 5% per level bonus to Sorcery skill percentage.",
+				"description" : "Receives a 7% per level bonus to Sorcery skill percentage.",
 				"tooltip" : "Secondary Skill Bonus: Sorcery",
 				"name" : "Sorcery"
 			}
@@ -26,19 +25,19 @@
 		"army" :
 		[
 			{
-				"creature" : "gruntSoldier2k",
-				"max" : 20,
+				"creature" : "cyberDead2k",
+				"max" : 10,
 				"min" : 10
 			},
 			{
 				"creature" : "cyberDead2k",
-				"max" : 7,
-				"min" : 4
+				"max" : 10,
+				"min" : 10
 			},
 			{
-				"creature" : "pyro2k",
-				"max" : 3,
-				"min" : 2
+				"creature" : "cyberDead2k",
+				"max" : 10,
+				"min" : 10
 			}
 		],
 		"skills" :
@@ -63,7 +62,7 @@
 				"sorcery" : {
 					"targetSourceType" : "SECONDARY_SKILL",
 					"type" : "SPELL_DAMAGE",
-					"val" : 5,
+					"val" : 7,
 					"valueType" : "PERCENT_TO_BASE",
 					"updater" : "TIMES_HERO_LEVEL"
 				}

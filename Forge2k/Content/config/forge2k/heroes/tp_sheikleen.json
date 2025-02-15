@@ -1,15 +1,15 @@
 {
-	"sheikleen2k" :
+	"tp_sheikleen2k" :
 	{
 		"class" : "technoJunk2k",
 		"female" : true,
 		"texts" :
 		{
 			"name" : "Sheikleen",
-			"biography" : "Enigmas like Sheikleen are not uncommon in the ranks of the Heavenly Forge. She emerged one day among the chain of command and her directives won battles, so she was universally deemed a useful asset. Still, there's always an ulterior motive with these kind of people.",
+			"biography" : "Enigmas like Sheikleen are not uncommon in the ranks of the Heavenly Forge. She emerged one day within the chain of command and her directives won battles, so she was universally deemed a useful asset. Still, there's always an ulterior motive with these kinds of people.",
 			"specialty" :
 			{
-				"description" : "Receives a 5% per level bonus to Intelligence skill percentage.",
+				"description" : "Receives a 10% per level bonus to Intelligence skill percentage.",
 				"tooltip" : "Secondary Skill Bonus: Intelligence",
 				"name" : "Intelligence"
 			}
@@ -27,18 +27,18 @@
 		[
 			{
 				"creature" : "gruntSoldier2k",
-				"max" : 20,
-				"min" : 10
+				"max" : 15,
+				"min" : 15
 			},
 			{
 				"creature" : "cyberDead2k",
 				"max" : 7,
-				"min" : 4
+				"min" : 7
 			},
 			{
 				"creature" : "pyro2k",
-				"max" : 3,
-				"min" : 2
+				"max" : 4,
+				"min" : 4
 			}
 		],
 
@@ -63,7 +63,7 @@
 					"targetSourceType" : "SECONDARY_SKILL",
 					"type" : "MANA_PER_KNOWLEDGE_PERCENTAGE",
 					"updater" : "TIMES_HERO_LEVEL",
-					"val" : 5,
+					"val" : 10,
 					"valueType" : "PERCENT_TO_TARGET_TYPE"
 				}
 			}

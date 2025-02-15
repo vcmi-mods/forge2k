@@ -1,5 +1,5 @@
 {
-	"leanne2k" :
+	"tp_leanne2k" :
 	{
 		"class" : "technoJunk2k",
 		"female" : true,
@@ -9,7 +9,7 @@
 			"biography" : "For a Deyjan countrygirl like Leanne, the greatest possible prospect in life was to become a rich necromancer's maid. However, Kastore's coup brought about a new order, and now, with a deadly blaster in hand, the world is her oyster.",
 			"specialty" :
 			{
-				"description" : "Casts Lightning with damage increased by 3% for every n hero levels, where n is the level of the targeted creature.",
+				"description" : "Casts Lightning Bolt with 50 additional damage and with slightly increased effect (1% per hero level / target creature tier).",
 				"tooltip" : "Spell Bonus: Lightning Bolt",
 				"name" : "Lightning Bolt"
 			}
@@ -32,18 +32,18 @@
 		[
 			{
 				"creature" : "gruntSoldier2k",
-				"max" : 20,
-				"min" : 10
+				"max" : 15,
+				"min" : 15
 			},
 			{
 				"creature" : "cyberDead2k",
 				"max" : 7,
-				"min" : 4
+				"min" : 7
 			},
 			{
 				"creature" : "pyro2k",
-				"max" : 3,
-				"min" : 2
+				"max" : 4,
+				"min" : 4
 			}
 		],
 
@@ -55,11 +55,17 @@
 		
 		"specialty" : {
 			"bonuses" : {
+				"lightning50plus" : {
+					"subtype" : "spell.lightningBolt",
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER"
+				},
 				"lightning" : {
 					"subtype" : "spell.lightningBolt",
 					"type" : "SPECIAL_SPELL_LEV",
 					"updater" : "TIMES_HERO_LEVEL",
-					"val" : 3
+					"val" : 1
 				}
 			}
 		}

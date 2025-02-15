@@ -309,7 +309,7 @@
 				},
 				"special2" :
 				{
-					"description" : "The Nanomedic provides a Health regeneration bonus\r\n(7 x level) to any creature in visiting hero's army until the end of this week.",
+					"description" : "The Nanomedic provides a Health regeneration bonus\r\n(7 x unit tier) to any creature in visiting hero's army until the end of this week.",
 					"name" : "Nanomedic",
 					"cost" : {
 						"gold" : 2000

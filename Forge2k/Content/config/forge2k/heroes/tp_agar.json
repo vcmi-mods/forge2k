@@ -1,5 +1,5 @@
 {
-	"agar2k" : 
+	"tp_agar2k" : 
 	{
 		"class" : "technoJunk2k",
 		"female" : false,
@@ -11,7 +11,7 @@
 
 			"specialty" :
 			{
-				"description" : "Casts Resurrection with effect increased by 3% for every n hero levels, where n is the level of the targeted creature.",
+				"description" : "Resurrection raises target stack with additional 50 Health and with slightly increased effect (1% per level / target creature tier).",
 				"tooltip" : "Spell Bonus: Resurrection",
 				"name" : "Resurrection"
 			}
@@ -31,18 +31,18 @@
 		[
 			{
 				"creature" : "gruntSoldier2k",
-				"max" : 20,
-				"min" : 10
+				"max" : 15,
+				"min" : 15
 			},
 			{
 				"creature" : "cyberDead2k",
 				"max" : 7,
-				"min" : 4
+				"min" : 7
 			},
 			{
 				"creature" : "pyro2k",
-				"max" : 3,
-				"min" : 2
+				"max" : 4,
+				"min" : 4
 			}
 		],
 		"skills" :
@@ -53,11 +53,18 @@
 		
 		"specialty" : {
 			"bonuses" : {
+				
+				"resurrection50plus" : {
+					"subtype" : "spell.resurrection",
+					"type" : "SPECIFIC_SPELL_DAMAGE",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER"
+				},
 				"resurrection" : {
 					"subtype" : "spell.resurrection",
 					"type" : "SPECIAL_SPELL_LEV",
 					"updater" : "TIMES_HERO_LEVEL",
-					"val" : 3
+					"val" : 1
 				}
 			}
 		}

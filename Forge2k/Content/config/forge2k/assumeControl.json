@@ -24,8 +24,14 @@
  
 		"flags" : {"negative": true, "damage": true},
 		
- 		"targetCondition" : {	
-			"noneOf" : {}
+		"targetCondition" : {
+			"anyOf" : {
+				"core:bonus.UNDEAD":"absolute", "core:bonus.NON_LIVING":"absolute",	"bonus.GARGOYLE":"normal",	"bonus.MECHANICAL":"normal"
+			},
+			
+			"noneOf" : {
+				"bonus.SIEGE_WEAPON":"absolute"
+			}
 		},
  
 		"graphics":
@@ -69,6 +75,7 @@
 						
 						"undercontrol" : {
 							"type" : "HYPNOTIZED",
+							"val": 3,
 							"duration": "N_TURNS",
 							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "creature.psychicElemental", false ]}]
 										},
@@ -88,7 +95,14 @@
 							"subtype" : "attack",
 							"duration": "N_TURNS",
 							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "creature.psychicElemental", false ]}]
-						}
+						},
+						
+				"damageForPsychos" : {
+					"subtype" : "spell.assumeControl2k",
+					"type" : "MORE_DAMAGE_FROM_SPELL",
+					"val" : -100,
+					"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "psychicElemental", false ]}]
+				}
 						}
 						
 						}
@@ -116,6 +130,7 @@
 				"description": "{Advanced Assume Control}\n\nPuts a non-living enemy unit temporarily under your control. The spell draws out untapped strength and speed of the affected unit. Creatures of pure mind take damage instead.\n",
 	 
 				"cost": 14,
+				"power": 25,
 	 
 				"battleEffects" : {
 					"curse" : {
@@ -137,6 +152,7 @@
 				"description": "{Expert Assume Control}\n\nPuts a non-living enemy unit temporarily under your control. The spell draws out untapped strength and speed of the affected unit. Creatures of pure mind take damage instead.\n",
 	 
 				"cost": 14,
+				"power": 50,
 	 
 				"battleEffects" : {					
 					"curse" : {

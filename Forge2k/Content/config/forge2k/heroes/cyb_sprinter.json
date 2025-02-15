@@ -1,5 +1,5 @@
 {
-	"sprinter2k" :
+	"cyb_sprinter2k" :
 	{
 		"class" : "cyborg2k",
 		"texts" :
@@ -27,17 +27,17 @@
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 20,
-				"min" : 10
+				"min" : 20
 			},
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 20,
-				"min" : 10
+				"min" : 20
 			},
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 20,
-				"min" : 10
+				"min" : 20
 			}
 		],
 
