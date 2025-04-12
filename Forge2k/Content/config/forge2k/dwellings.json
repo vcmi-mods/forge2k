@@ -76,8 +76,8 @@
 				},				
 				"templates" : {
 					"default" : {
-						"animation" : "forge2k/adventure-map/tankDwelling",
-						"mask" : [ "VVV", "VBB", "ABV" ]
+						"animation" : "forge2k/adventure-map/tankDwelling2",
+						"mask" : [ "VVVV", "VBBV", "VABV" ]
 					}
 				}
 			},
@@ -90,8 +90,8 @@
 				"guards" : true,
 				"templates" : {
 					"default" : {
-						"animation" : "forge2k/adventure-map/juggDwelling",
-						"mask" : [ "VVVV", "VVBV", "VABB" ]
+						"animation" : "forge2k/adventure-map/juggDwelling2",
+						"mask" : [ "VVVV", "VBBV", "VABV" ]
 					}
 				}
 			}
