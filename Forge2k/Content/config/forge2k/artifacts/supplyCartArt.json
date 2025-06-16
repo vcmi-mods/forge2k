@@ -15,10 +15,11 @@
 		"graphics":
 		{
 			"image": "forge2k/artifacts/supplyCartbigart",
-			"large": "forge2k/artifacts/supplyCartL",
+			"scenarioBonus": "forge2k/artifacts/supplyCartL",
 			"map": "forge2k/map/blank"
 		},
-		"bonuses" : [  
+		"bonuses" : {
+			"creatureDamage" :
 			{
 				"type" : "CREATURE_DAMAGE",
 				"val" : 35,
@@ -26,6 +27,6 @@
 				"subtype" : "creatureDamageBoth",
 				"limiters" : [ "SHOOTER_ONLY" ]
 			}
-		]
+		}
 	}
 }

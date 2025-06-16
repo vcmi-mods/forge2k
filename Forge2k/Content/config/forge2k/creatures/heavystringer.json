@@ -145,13 +145,13 @@
 			{
 				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "spell.weakness",
-					"addInfo" : 1000 },
+					"addInfo" : [0, 1, 0] },
 				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
 			},
 			{
 				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "spell.disruptingRay",
-					"addInfo" : 1000 },
+					"addInfo" : [0, 1, 1] },
 				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
 			}
 		]	

@@ -47,8 +47,8 @@
 		"speed" : 0,
 		"abilities" :
 		{
-				"additionalDef" : 
-				{ 
+			"additionalDef" : 
+			{ 
 				"type": "PRIMARY_SKILL", 
 				"val": 5, 
 				"subtype" : "defence",
@@ -57,14 +57,13 @@
 					"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cartArmor2k"]
 				} ]
 			},
-
-			"inactive" : 
-			{ 
-				"type" : "NOT_ACTIVE" 
-			},
 			"warmachine" :
 			{
 				"type" : "SIEGE_WEAPON"
+			},
+			"inactive" : 
+			{ 
+				"type" : "NOT_ACTIVE" 
 			},
 			"noRetaliation" : 
 			{

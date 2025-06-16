@@ -14,7 +14,9 @@
 			"base":{
 
 				"description": "{Additional Cart Armor}\r\n\r\n+50 Health + 5 Defense.",
-				"cost": 0, "power": 0, "aiValue": 0,
+				"cost": 0, 
+				"power": 0, 
+//				"aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":true},
 				"effects" : {
@@ -102,7 +104,9 @@
 			"base":{
 
 				"description": "{Refill Cart Armor}\r\n\r\nRefills the missing Health.",
-				"cost": 0, "power": 0, "aiValue": 0,
+				"cost": 0, 
+				"power": 0, 
+//				"aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":true},
 				"battleEffects":{

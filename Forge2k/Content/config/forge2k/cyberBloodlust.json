@@ -30,7 +30,7 @@
 				"description": "Cybernetic Undead get filled with murderous intent when attacking living creatures.",
 				"cost": 0,
 				"power": 3,
-				"aiValue": 0,
+//				"aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":false},
 				"effects" : {

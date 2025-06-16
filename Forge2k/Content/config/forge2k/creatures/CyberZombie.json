@@ -68,6 +68,7 @@
 					 {
 						 "type" : "SPELL_BEFORE_ATTACK",
 						 "val" : 100,
+						 "addInfo" : [0, 0],
 						 "subtype" : "spell.cyberBloodlust"
 					 }
 					 

@@ -88,7 +88,7 @@
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.meteorShower",
 				"val" : 20,
-				"addInfo" : [0,1]
+				"addInfo" : [ 0, 1 ]
 			}
 			},
 		"stackExperience" : [
@@ -135,13 +135,14 @@
 			{
 				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "spell.weakness",
-					"addInfo" : 1000 },
+					"addInfo" : [0, 1, 1]
+					},
 				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
 			},
 			{
 				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "spell.disruptingRay",
-					"addInfo" : 1000 },
+					"addInfo" : [0, 1, 2] },
 				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
 			}
 		]	

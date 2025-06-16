@@ -20,7 +20,9 @@
 			"base":{
 
 				"description": "{Tesla's Wrath}\r\n\r\nSummons the power of the Heavenly Forge's grail to strike your opponents.\r\n",
-				"cost": 0, "power": 200, "aiValue": 0,
+				"cost": 0, 
+				"power": 200, 
+//				"aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":true},
 
@@ -36,7 +38,7 @@
 		},
 		"targetCondition" : {"allOf" : {},
 		"noneOf" : {
-			"bonus.DIRECT_DAMAGE_IMMUNITY" : "normal"
+//			"bonus.DIRECT_DAMAGE_IMMUNITY" : "normal"
 		}, "anyOf" : {	}},		
 		"flags" : {
 			//"offensive": true, 
