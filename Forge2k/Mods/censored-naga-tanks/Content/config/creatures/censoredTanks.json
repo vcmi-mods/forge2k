@@ -1,0 +1,22 @@
+{
+	"forge2k:nagaTank2k" :
+	{
+		"graphics" :
+		{
+			"animation" : "CR207C.DEF",
+			"map" : "tankC.def",
+			"iconSmall" : "CPRS207FC.bmp",
+			"iconLarge" : "CPrL207BC.bmp"
+		}
+	},
+	"forge2k:nagaHeavy2k" :
+	{
+		"graphics" :
+		{
+			"animation" : "CR208C.DEF",
+			"map" : "heavytankC.def",
+			"iconSmall" : "CPrS208FC.bmp",
+			"iconLarge" : "CPrL208BC.bmp"
+		}
+	}
+}
