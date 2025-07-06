@@ -1,0 +1,21 @@
+{
+	"name" : "Censored Naga Tanks",
+	"description" : "Adds big black bars on top of Naga Tanks' boobs.",
+	"author" : "Warzyw647",
+	"contact" : "Please don't",
+	"version" : "1.0",
+	"modType" : "Graphical",
+    "depends" :
+	[
+		"forge2k"
+	],
+	"creatures" :
+	[
+		"config/creatures/censoredTanks.json"
+	],
+	"heroes" :
+	[
+		"config/heroes/censoredSunnith.json"
+	],
+	"keepDisabled" : true
+}
