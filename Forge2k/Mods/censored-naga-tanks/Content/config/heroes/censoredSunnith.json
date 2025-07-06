@@ -1,0 +1,10 @@
+{
+	"forge2k:cyb_sunnith2k" :
+	{
+		"images" :
+		{
+			"specialtySmall" : "spec-sunnith-smallC.png",
+			"specialtyLarge" : "spec-sunnith-largeC.png"
+		}
+	}
+}
