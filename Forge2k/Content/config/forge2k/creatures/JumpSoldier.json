@@ -57,10 +57,13 @@
 					"noneOf",
 					{						
 						"type" : "CREATURE_FACTION_LIMITER",
-						"parameters": [ "forge2k" ]
-						 } ],
-						 "stacking" : "Forge creatures"
-		},
+						"faction": "forge2k"
+					} 
+				],
+				"stacking" : "Forge creatures",
+				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"	 
+			},
 		"flying" :
 			{
 				"type" : "FLYING"
@@ -68,7 +71,7 @@
 		"spellimmunityslow" :
 			{
 				"type" : "SPELL_IMMUNITY",
-				"subtype" : "spell.slow"
+				"subtype" : "slow"
 			}
 
 		},
@@ -77,7 +80,7 @@
 				"bonus" :
 				{
 					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "attack"
 				},
 				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
 			},	
@@ -85,7 +88,7 @@
 				"bonus" :
 				{
 					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "defence"
 				},
 				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
 			},

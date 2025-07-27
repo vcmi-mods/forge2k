@@ -77,7 +77,7 @@
 							"type" : "HYPNOTIZED",
 							"val": 3,
 							"duration": "N_TURNS",
-							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "creature.psychicElemental", false ]}]
+							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","creature": "psychicElemental", "includeUpgrades" : false }]
 										},
 						"quicker" :
 						{
@@ -85,7 +85,7 @@
 							"valueType" : "PERCENT_TO_ALL",
 							"val": 25,
 							"duration": "N_TURNS",
-							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "creature.psychicElemental", false ]}]
+							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","creature": "psychicElemental", "includeUpgrades" : false }]
 						},
 						
 						"stronger" :
@@ -94,14 +94,14 @@
 							"type" : "PRIMARY_SKILL",
 							"subtype" : "attack",
 							"duration": "N_TURNS",
-							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "creature.psychicElemental", false ]}]
+							"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","creature": "psychicElemental", "includeUpgrades" : false }]
 						},
 						
 				"damageForPsychos" : {
-					"subtype" : "spell.assumeControl2k",
+					"subtype" : "assumeControl2k",
 					"type" : "MORE_DAMAGE_FROM_SPELL",
 					"val" : -100,
-					"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","parameters": [ "psychicElemental", false ]}]
+					"limiters": ["noneOf",{"type" : "CREATURE_TYPE_LIMITER","creature": "psychicElemental", "includeUpgrades" : false }]
 				}
 						}
 						

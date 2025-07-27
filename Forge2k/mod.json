@@ -5,7 +5,7 @@
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.5.2",
+	"version" : "2.5.3",
 	"compatibility" : 
 	{
 		"min" : "1.7.0"
@@ -31,7 +31,8 @@
 		"2.4.2" : ["Ukrainian transtation by MyroSlave"],
 		"2.5.0" : ["some change due to vcmi-1.6 format"],
 		"2.5.1" : ["fixed size and masks for 2 dwellings"],
-		"2.5.2" : ["Update to vcmi-1.7 format"]
+		"2.5.2" : ["Update to vcmi-1.7 format"],
+		"2.5.3" : ["Another update to vcmi-1.7 format"]
     },
 	"modType" : "Town",
     "depends" :

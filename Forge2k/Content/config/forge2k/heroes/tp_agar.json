@@ -55,13 +55,13 @@
 			"bonuses" : {
 				
 				"resurrection50plus" : {
-					"subtype" : "spell.resurrection",
+					"subtype" : "resurrection",
 					"type" : "SPECIFIC_SPELL_DAMAGE",
 					"val" : 50,
 					"valueType" : "BASE_NUMBER"
 				},
 				"resurrection" : {
-					"subtype" : "spell.resurrection",
+					"subtype" : "resurrection",
 					"type" : "SPECIAL_SPELL_LEV",
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 1

@@ -42,7 +42,7 @@
 						"duration": "UNTIL_BEING_ATTACKED",		
 						"limiters": [ {
 						"type":"CREATURE_TYPE_LIMITER",
-						"parameters": [ "cyberZombie2k", true ]
+						"creature":  "cyberZombie2k", "includeUpgrades" : true
 					} ]
 					}
 				}

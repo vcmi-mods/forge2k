@@ -53,17 +53,19 @@
 					"noneOf",
 					{						
 						"type" : "CREATURE_FACTION_LIMITER",
-						"parameters": [ "forge2k" ]
-						 } ],
-						 "stacking" : "Forge creatures"
-		},
-			"fearless" :
-			{
+						"faction": "forge2k"
+					} 
+				],
+				"stacking" : "Forge creatures",
+				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"		 
+			},
+			"fearless" : {
 				"type" : "FEARFUL",
-				"valueType" : "INDEPENDENT_MAX",
-				"description" : "PLACEHOLDER",
-				"val" : 0
-				
+				"valueType" : "INDEPENDENT_MIN",
+				"val" : 0,
+				"description" : "{Fearless}\nImmune to Fear ability",
+				"icon" : "forge2k/icons/bonusIcons/e_fearl.png"
 			},
             "multiAttack" : 
 			{
@@ -73,7 +75,7 @@
             "panzer" : 
 			{
 				"type" : "SPELL_IMMUNITY",
-				"subtype" : "spell.landMine",
+				"subtype" : "landMine",
 				"addInfo" : 0
 			}
 
@@ -95,7 +97,7 @@
 				"bonus" :
 				{
 					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "attack"
 				},
 				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
 			},	
@@ -103,7 +105,7 @@
 				"bonus" :
 				{
 					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "defence"
 				},
 				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
 			},

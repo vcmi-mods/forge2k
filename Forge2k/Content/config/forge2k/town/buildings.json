@@ -14,8 +14,7 @@
 						"wood" : 5,
 						"ore" : 5,
 						"gold" : 2000
-					},
-					"id" : 0
+					}
 				},
 				"mageGuild2" :
 				{
@@ -30,9 +29,7 @@
 						"crystal" : 4,
 						"gems" : 4,
 						"gold" : 1000
-					},
-					"id" : 1,
-					"upgrades" : "mageGuild1"
+					}
 				},
 				"mageGuild3" :
 				{
@@ -47,9 +44,7 @@
 						"crystal" : 6,
 						"gems" : 6,
 						"gold" : 1000
-					},
-					"id" : 2,
-					"upgrades" : "mageGuild2"
+					}
 				},
 				"mageGuild4" : 
 				{
@@ -64,9 +59,7 @@
 						"crystal" : 8,
 						"gems" : 8,
 						"gold" : 1000
-					},
-					"id" : 3,
-					"upgrades" : "mageGuild3"
+					}
 				},
 				"mageGuild5" :
 				{
@@ -81,9 +74,7 @@
 						"crystal" : 10,
 						"gems" : 10,
 						"gold" : 1000
-					},
-					"id" : 4,
-					"upgrades" : "mageGuild4"
+					}
 				},
 				"tavern" :
 				{
@@ -93,8 +84,7 @@
 					{
 						"wood" : 5,
 						"gold" : 500
-					},
-					"id" : 5
+					}
 				},
 //				"shipyard" :
 //				{
@@ -116,8 +106,7 @@
 						"wood" : 20,
 						"ore" : 20,
 						"gold" : 5000
-					},
-					"id" : 7
+					}
 				},
 				"citadel" :
 				{
@@ -127,9 +116,7 @@
 					{
 						"ore" : 5,
 						"gold" : 2500
-					},
-					"id" : 8,
-					"upgrades" : "fort"
+					}
 				},
 				"castle" :
 				{
@@ -140,9 +127,7 @@
 						"wood" : 10,
 						"ore" : 10,
 						"gold" : 5000
-					},
-					"id" : 9,
-					"upgrades" : "citadel"
+					}
 				},
 
 				"horde2" :
@@ -153,7 +138,6 @@
 						"wood" : 10,
 						"ore" : 10,
 						"gold" : 5000},
-					"id" : 24,
 					"upgrades" : "castle",
 					"requires" : [ "allOf", [ "castle"], ["dwellingLvl7" ] ],
 					"mode" : "auto"
@@ -166,19 +150,15 @@
 						"wood" : 10,
 						"ore" : 10,
 						"gold" : 5000},
-					"id" : 25,
 					"upgrades" : "horde2",
-					"requires" : [ "allOf", [ "castle"], ["dwellingUpLvl7" ] ],
-					"mode" : "auto"
+					"requires" : [ "allOf", [ "castle"], ["dwellingUpLvl7" ] ]
 				},
 
 
 				"villageHall" :
 				{
 					"name" : "Village Hall",
-					"description" : "The Village Hall allows you to purchase town structures and earns your kingdom 500 gold per day.",
-					"id" : 10,
-					"mode" : "auto"
+					"description" : "The Village Hall allows you to purchase town structures and earns your kingdom 500 gold per day."
 				},
 				"townHall" :
 				{
@@ -187,10 +167,7 @@
 					"cost" :
 					{
 						"gold" : 2500
-					},
-					"id" : 11,
-					"requires" : [ "tavern" ],
-					"upgrades" : "villageHall"
+					}
 				},
 				"cityHall" :
 				{
@@ -200,9 +177,7 @@
 					{
 						"gold" : 5000
 					},
-					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ],
-					"id" : 12,
-					"upgrades" : "townHall"
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ]
 				},
 				"capitol" :
 				{
@@ -211,10 +186,7 @@
 					"cost" :
 					{
 						"gold" : 10000
-					},
-					"id" : 13,
-					"requires" : [ "castle" ],
-					"upgrades" : "cityHall"
+					}
 				},
 				"marketplace" :
 				{
@@ -224,9 +196,7 @@
 					{
 						"wood" : 5,
 						"gold" : 500
-					},
-					"marketModes" : ["resource-resource", "resource-player"],
-					"id" : 14
+					}
 				},
 				"resourceSilo" :
 				{
@@ -237,9 +207,7 @@
 						"ore" : 5,
 						"gold" : 5000
 					},
-					"requires" : [ "marketplace" ],
-					"produce": { "crystal": 1 },
-					"id" : 15
+					"produce": { "crystal": 1 }
 				},
 				"blacksmith" :
 				{
@@ -250,8 +218,7 @@
 						"wood" : 5,
 						"gold" : 1000
 					},
-					"warMachine" : "supplyCart2k",					
-					"id" : 16
+					"warMachine" : "supplyCart2k"
 				},
 				"horde1" :
 				{
@@ -259,9 +226,7 @@
 					"name" : "Supply Tanker",
 					"cost" : {
 						"gold" : 1000
-					},
-					"id" : 18
-//					"upgrades" : "dwellingLvl1"
+					}
 				},
 				"horde1Upgr" :
 				{
@@ -270,10 +235,7 @@
 					"cost" : {
 						"gold" : 1000
 					},
-					"id" : 19,
-//					"upgrades" : "dwellingUpLvl1",
-					"requires" : [ "horde1" ],
-					"mode" : "auto"
+					"requires" : [ "horde1" ]
 				},
 //				"ship" :
 //				{
@@ -295,17 +257,17 @@
 						{ 
 						"type": "ENCHANTED", 
 						"valueType" : "BASE_NUMBER",
-						"subtype" : "spell.cartArmor2k",
-						"propagator": "PLAYER_PROPAGATOR" },
-
+						"subtype" : "cartArmor2k",
+						"propagator": "PLAYER" 
+						},
 						{
 						"type" : "OPENING_BATTLE_SPELL",
 						"val" : 50,
-						"subtype" : "spell.cartRefill2k",
-						"propagator": "PLAYER_PROPAGATOR"}
+						"subtype" : "cartRefill2k",
+						"propagator": "PLAYER"
+						}
 						
-						] ,
-					"id" : 17
+					]
 				},
 				"special2" :
 				{
@@ -328,8 +290,7 @@
 							} 
 						]
 					},
-					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "mageGuild1" ] ],
-					"id" : 21
+					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "mageGuild1" ] ]
 				},
 				"special3" :
 				{
@@ -350,48 +311,43 @@
 						"type" : "PRIMARY_SKILL", 
 						"subtype" : "attack",
 						"val": 1, 
-						"propagator" : "VISITED_TOWN_AND_VISITOR" },
+						"propagator" : "TOWN_AND_VISITOR" },
 						{ 
 						"type" : "PRIMARY_SKILL", 
 						"subtype" : "defence",
 						"val": 1, 
-						"propagator" : "VISITED_TOWN_AND_VISITOR" },
+						"propagator" : "TOWN_AND_VISITOR" },
 						{ 
 						"type" : "PRIMARY_SKILL", 
 						"subtype" : "spellpower",
 						"val": 1, 
-						"propagator" : "VISITED_TOWN_AND_VISITOR" },
+						"propagator" : "TOWN_AND_VISITOR" },
 						{ 
 						"type" : "LUCK", 
 						"val": 1, 
-						"propagator" : "VISITED_TOWN_AND_VISITOR" },
+						"propagator" : "TOWN_AND_VISITOR" },
 						{ 
 						"type" : "CHANGES_SPELL_COST_FOR_ALLY", 
 						"val": 1, 
-						"propagator" : "VISITED_TOWN_AND_VISITOR" } ],
-					"id" : 22
+						"propagator" : "TOWN_AND_VISITOR" } ]
 				},
 				"grail" :
 				{
 					"description" : "The presence of the Energy Coil increases weekly creature generation by 50%, provides your kingdom with an additional 5000 gold each day, and summons a bolt of energy to strike your enemies at the start of every battle. This spell will also appear in every hero's spellbook.",
 					"name" : "Energy Coil",
-					"id" : 26,
-					"produce": { "gold": 5000 },
-					"mode" : "grail",
-					
 					"bonuses": [ 
 						{ 
 						"type": "SPELL", 
 						"valueType" : "BASE_NUMBER",
 						"val" : 0,
-						"subtype" : "spell.teslasWrath2k",
-						"propagator": "PLAYER_PROPAGATOR" },
+						"subtype" : "teslasWrath2k",
+						"propagator": "PLAYER" },
 
 						{
 						"type" : "OPENING_BATTLE_SPELL",
 						"val" : 0,
-						"subtype" : "spell.teslasWrath2k",
-						"propagator": "PLAYER_PROPAGATOR"}
+						"subtype" : "teslasWrath2k",
+						"propagator": "PLAYER"}
 						
 						] 
 				},
@@ -403,8 +359,7 @@
 						"gold" : 1000,
 						"ore" : 10
 					},
-					"requires" : [ "allOf", [ "fort" ], [ "blacksmith" ] ],
-					"id" : 30
+					"requires" : [ "allOf", [ "fort" ], [ "blacksmith" ] ]
 				},
 				"dwellingLvl2" :
 				{
@@ -415,8 +370,7 @@
 						"ore" : 5,
 						"wood" : 5
 					},
-					"requires" : [ "fort" ],
-					"id" : 31
+					"requires" : [ "fort" ]
 				},
 				"dwellingLvl3" :
 				{
@@ -426,8 +380,7 @@
 						"gold" : 1500,
 						"sulfur" : 5
 					},
-					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "blacksmith" ] ],
-					"id" : 32
+					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "blacksmith" ] ]
 				},
 				"dwellingLvl4" :
 				{
@@ -439,8 +392,7 @@
 						"wood" : 5,
 						"mercury" : 5
 					},
-					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "dwellingLvl2" ] ],
-					"id" : 33
+					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "dwellingLvl2" ] ]
 				},
 				"dwellingLvl5" :
 				{
@@ -455,8 +407,7 @@
 						"gems" : 3,
 						"sulfur" : 3
 						},
-					"requires" : [ "dwellingLvl3" ],
-					"id" : 34
+					"requires" : [ "dwellingLvl3" ]
 				},
 				"dwellingLvl6" :
 				{
@@ -469,8 +420,7 @@
 						"sulfur" : 5,
 						"gems" : 5
 					},
-					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "dwellingLvl5" ] ],
-					"id" : 35
+					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "dwellingLvl5" ] ]
 				},
 				"dwellingLvl7" :
 				{
@@ -485,8 +435,7 @@
 						"crystal" : 10,
 						"gems" : 10
 					},
-					"requires" : [ "allOf", [ "dwellingLvl6" ], [ "mageGuild1" ] ],
-					"id" : 36
+					"requires" : [ "allOf", [ "dwellingLvl6" ], [ "mageGuild1" ] ]
 				},
 				"dwellingUpLvl1" :
 				{
@@ -497,7 +446,6 @@
 						"ore" : 5,
 						"wood" : 5
 					},
-					"id" : 37,
 					"upgrades" : "dwellingLvl1"
 				},
 				"dwellingUpLvl2" :
@@ -509,7 +457,6 @@
 						"wood" : 5,
 						"ore" : 5
 					},
-					"id" : 38,
 					"upgrades" : "dwellingLvl2"
 				},
 				"dwellingUpLvl3" :
@@ -520,7 +467,6 @@
 						"gold" : 1500,
 						"ore" : 5
 					},
-					"id" : 39,
 					"upgrades" : "dwellingLvl3"
 				},
 				"dwellingUpLvl4" :
@@ -533,7 +479,6 @@
 						"gold" : 2000,
 						"crystal" : 10
 					},
-					"id" : 40,
 					//"requires" : [ "mageGuild1" ],
 					"upgrades" : "dwellingLvl4"
 				},
@@ -548,7 +493,6 @@
 						"gold" : 1500,
 						"crystal" : 5
 					},
-					"id" : 41,
 					"upgrades" : "dwellingLvl5"
 				},
 				"dwellingUpLvl6" :
@@ -564,7 +508,6 @@
 						"crystal" : 6,
 						"gems" : 6
 					},
-					"id" : 42,
 					"upgrades" : "dwellingLvl6"
 				},
 				"dwellingUpLvl7" :
@@ -577,7 +520,6 @@
 						"wood" : 10,
 						"sulfur" : 30
 					},
-					"id" : 43,
 					"requires" : [ "allOf", [ "dwellingLvl6" ], [ "mageGuild3" ] ],
 					"upgrades" : "dwellingLvl7"
 				}

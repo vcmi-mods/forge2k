@@ -28,8 +28,8 @@
 						"duration": "STACK_GETS_TURN",	
 					
 						"limiters": [ "anyOf", 
-						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "supplyCart2k", true]	},
-						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "ammoCart", true]	} ]
+						{"type" : "CREATURE_TYPE_LIMITER", "creature" : "supplyCart2k", "includeUpgrades" : true	},
+						{"type" : "CREATURE_TYPE_LIMITER", "creature" : "ammoCart", "includeUpgrades" : true	} ]
 					},
 
 					"additionalDef" : {
@@ -39,19 +39,18 @@
 						"duration": "STACK_GETS_TURN",	
 
 						"limiters": [ "anyOf", 
-						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "supplyCart2k", true]	},
-						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "ammoCart", true]	} ]
+						{"type" : "CREATURE_TYPE_LIMITER", "creature" : "supplyCart2k", "includeUpgrades" : true	},
+						{"type" : "CREATURE_TYPE_LIMITER", "creature" : "ammoCart", "includeUpgrades" : true	} ]
 					},
 					
 					"refill" : {
 						"type" : "OPENING_BATTLE_SPELL",
-						"subtype" : "spell.cartRefill2k",
+						"subtype" : "cartRefill2k",
 						"duration": "STACK_GETS_TURN",	
-						"propagator": "PLAYER_PROPAGATOR",
-
+						"propagator": "PLAYER",
 						"limiters": [ "anyOf", 
-						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "supplyCart2k", true]	},
-						{"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "ammoCart", true]	} ]
+						{"type" : "CREATURE_TYPE_LIMITER", "creature" : "supplyCart2k", "includeUpgrades" : true	},
+						{"type" : "CREATURE_TYPE_LIMITER", "creature" : "ammoCart", "includeUpgrades" : true	} ]
 					}
 				}
 

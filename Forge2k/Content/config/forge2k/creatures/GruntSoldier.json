@@ -76,9 +76,12 @@
 					"noneOf",
 					{						
 						"type" : "CREATURE_FACTION_LIMITER",
-						"parameters": [ "forge2k" ]
-						 } ],
-						 "stacking" : "Forge creatures"
+						"faction": "forge2k"
+					} 
+				],
+				"stacking" : "Forge creatures",
+				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"	 
 		},
 		"shooter" :
 			{
@@ -88,7 +91,7 @@
 		"stackExperience" : [ {
 				"bonus" :
 				{
-					"subtype" : "primarySkill.attack",
+					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL",
 					"valueType" : "BASE_NUMBER"
 				},
@@ -97,7 +100,7 @@
 			{
 				"bonus" :
 				{
-					"subtype" : "primarySkill.defence",
+					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL",
 					"valueType" : "BASE_NUMBER"
 				},

@@ -59,7 +59,7 @@
 		"specialty" : {
 			"bonuses" : {
 				"clone" : {
-					"subtype" : "spell.specialClone2k",
+					"subtype" : "specialClone2k",
 					"type" : "SPELL"
 				}
 			}

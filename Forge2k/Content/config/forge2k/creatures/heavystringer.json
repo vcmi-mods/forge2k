@@ -81,22 +81,24 @@
 					"noneOf",
 					{						
 						"type" : "CREATURE_FACTION_LIMITER",
-						"parameters": [ "forge2k" ]	 
+						"faction": "forge2k"
 					} 
 				],
-				"stacking" : "Forge creatures"
+				"stacking" : "Forge creatures",
+				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"		 
 			},
 		
 		"missilePower" :
 		{
 			"type" : "SPECIFIC_SPELL_POWER",
-			"subtype" : "spell.meteorShower",
+			"subtype" : "meteorShower",
 			"val" : 30
 		},
 		"missileRain" :
 		{
 			"type" : "SPELL_AFTER_ATTACK",
-			"subtype" : "spell.meteorShower",
+			"subtype" : "meteorShower",
 			"val" : 20,
 			"addInfo" : [0,1]
 		}
@@ -106,7 +108,7 @@
 				"bonus" :
 				{
 					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "attack"
 				},
 				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
 			},	
@@ -114,7 +116,7 @@
 				"bonus" :
 				{
 					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "defence"
 				},
 				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
 			},
@@ -144,13 +146,13 @@
 			},
 			{
 				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
-					"subtype" : "spell.weakness",
+					"subtype" : "weakness",
 					"addInfo" : [0, 1, 0] },
 				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
 			},
 			{
 				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
-					"subtype" : "spell.disruptingRay",
+					"subtype" : "disruptingRay",
 					"addInfo" : [0, 1, 1] },
 				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
 			}
@@ -225,9 +227,9 @@
 		},
 		"abilities" :
 		{
-			"magicResistance" :
-			{
-				"type" : "MAGIC_RESISTANCE",
+			"magicResistance" : {
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "any",
 				"val" : 5
 			},
 			"castsAmount" :
@@ -248,7 +250,7 @@
 			"canCast" :
 			{
 				"type" : "SPELLCASTER",
-				"subtype" : "spell.disease",
+				"subtype" : "disease",
 				"val" : 3
 			}
 		}	
