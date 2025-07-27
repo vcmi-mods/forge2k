@@ -1,20 +1,16 @@
 {
-	"cyb_sprinter2k" :
-	{
+	"cyb_sprinter2k" : {
 		"class" : "cyborg2k",
-		"texts" :
-		{
+		"texts" : {
 			"name" : "Sprinter",
 			"biography" : "First of the Krewlod's Goblin leaders to embrace the abominable technomancy. The lure of the lethal weaponry and monstrous raids was just too enticing.",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "Increases the speed of Grunts or Troopers by 1 and their Attack and Defense skills for each level attained after 1st level.",
 				"tooltip" : "Creature Bonus: Grunts",
 				"name" : "Grunts"
 			}
 		},
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "forge2k/heroes/sprinter/spec-small",
 			"specialtyLarge" : "forge2k/heroes/sprinter/spec-large",
 			"large" : "forge2k/heroes/sprinter/portrait-large",
@@ -22,8 +18,7 @@
 		},
 
 		//"spellbook" :["magicArrow"],
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 20,
@@ -41,8 +36,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "archery"
@@ -52,7 +46,7 @@
 				"skill" : "logistics"
 			}
 		],
-		
+
 		"specialty" : {
 			"creature" : "gruntSoldier2k"
 		}

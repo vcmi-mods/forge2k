@@ -1,8 +1,6 @@
 {
-	"nagaTank2k":
-	{
-		"advMapAmount" :
-		{
+	"nagaTank2k" : {
+		"advMapAmount" : {
 			"max" : 10,
 			"min" : 4
 		},
@@ -13,19 +11,20 @@
 		"defense" : 15,
 		"hitPoints" : 130,
 		"speed" : 6,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 1500
 		},
-		"damage" :
-		{
+		"damage" : {
 			"max" : 25,
 			"min" : 20
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "forge2k/battle/CR207.DEF",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "forge2k/map/tank.def",
 			"iconSmall" : "forge2k/iconsSmall/CPRS207F.bmp",
 			"iconLarge" : "forge2k/iconsBig/CPrL207B.bmp",
@@ -34,35 +33,31 @@
 		"doubleWide" : true,
 		"growth" : 1.5,
 		"level" : 6,
-		"upgrades":
-		[
+		"upgrades" : [
 			"nagaHeavy2k"
 		],
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "forge2k/tankATTK.wav",
 			"defend" : "forge2k/CBRGDFND.wav",
 			"killed" : "forge2k/tankKILL.wav",
 			"move" : "forge2k/tankMOVE.wav",
 			"wince" : "forge2k/tankWNCE.wav"
 		},
-		"abilities" :
-		{
-			"forgeMorale" :
-			{
+		"abilities" : {
+			"forgeMorale" : {
 				"type" : "MORALE",
 				"val" : -1,
-				"propagator" : 	"HERO",
-				"limiters": [ 
+				"propagator" : "HERO",
+				"limiters" : [
 					"noneOf",
-					{						
+					{
 						"type" : "CREATURE_FACTION_LIMITER",
-						"faction": "forge2k"
-					} 
+						"faction" : "forge2k"
+					}
 				],
 				"stacking" : "Forge creatures",
 				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
-				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"	 
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"
 			},
 			"fearless" : {
 				"type" : "FEARFUL",
@@ -71,53 +66,119 @@
 				"description" : "{Fearless}\nImmune to Fear ability",
 				"icon" : "forge2k/icons/bonusIcons/e_fearl.png"
 			},
-            "multiAttack" : 
-			{
+			"multiAttack" : {
 				"type" : "BLOCKS_RETALIATION"
 				//"type" : "THREE_HEADED_ATTACK"
 			}
-
 		},
-		"stackExperience" : [ {
-				"bonus" :
-				{
+		"stackExperience" : [
+			{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "attack"
 				},
-				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
-			},	
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "defence"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMax"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMin"
 				},
-				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+				"values" : [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
-			{ "bonus" : { "type" : "STACKS_SPEED" }, "values" : [ 0, 0, 1, 1, 1, 2, 2, 2, 3, 3 ] } ]
+			{
+				"bonus" : {
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			}
+		]
 	}
-	}
+}

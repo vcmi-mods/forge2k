@@ -1,34 +1,27 @@
 {
-	"cyb_sturm2k" :
-	{
-		
+	"cyb_sturm2k" : {
 		"class" : "cyborg2k",
 		"female" : false,
-		"texts" :
-		{
+		"texts" : {
 			"name" : "Sturm",
 			"biography" : "A cruel warlord, who quickly rose in ranks thanks to his destructive skills and thirst for power. Some say that he plans to overthrow Kastore himself one day.",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "Always casts Meteor Shower at expert level, and with slightly increased effect (1% per hero level / target creature tier).",
 				"tooltip" : "Secondary Skill Bonus: Meteor Shower",
 				"name" : "Meteor Shower"
 			}
-		},	
-		"spellbook" :
-		[
+		},
+		"spellbook" : [
 			"meteorShower"
-		],	
+		],
 
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "forge2k/heroes/sturm/spec-small",
 			"specialtyLarge" : "forge2k/heroes/sturm/spec-large",
 			"large" : "forge2k/heroes/sturm/portrait-large",
 			"small" : "forge2k/heroes/sturm/portrait-small"
 		},
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 15,
@@ -46,8 +39,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "offence"
@@ -66,7 +58,7 @@
 					"val" : 3,
 					"valueType" : "INDEPENDENT_MAX"
 				},
-				
+
 				"meteorShower" : {
 					"subtype" : "meteorShower",
 					"type" : "SPECIAL_SPELL_LEV",

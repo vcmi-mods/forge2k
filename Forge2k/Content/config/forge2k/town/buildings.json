@@ -1,27 +1,20 @@
 {
-	"forge2k" :
-	{
-		"town" :
-		{
-			"buildings" :
-			{
-				"mageGuild1" :
-				{
+	"forge2k" : {
+		"town" : {
+			"buildings" : {
+				"mageGuild1" : {
 					"description" : "Entering the Mage Guild will allow a visiting hero to learn the spells kept within.",
 					"name" : "Mage Guild Level 1",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"ore" : 5,
 						"gold" : 2000
 					}
 				},
-				"mageGuild2" :
-				{
+				"mageGuild2" : {
 					"description" : "Entering the Mage Guild will allow a visiting hero to learn the spells kept within.",
 					"name" : "Mage Guild Level 2",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"mercury" : 4,
 						"ore" : 5,
@@ -31,12 +24,10 @@
 						"gold" : 1000
 					}
 				},
-				"mageGuild3" :
-				{
+				"mageGuild3" : {
 					"description" : "Entering the Mage Guild will allow a visiting hero to learn the spells kept within.",
 					"name" : "Mage Guild Level 3",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"mercury" : 6,
 						"ore" : 5,
@@ -46,12 +37,10 @@
 						"gold" : 1000
 					}
 				},
-				"mageGuild4" : 
-				{
+				"mageGuild4" : {
 					"description" : "Entering the Mage Guild will allow a visiting hero to learn the spells kept within.",
 					"name" : "Mage Guild Level 4",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"mercury" : 8,
 						"ore" : 5,
@@ -61,12 +50,10 @@
 						"gold" : 1000
 					}
 				},
-				"mageGuild5" :
-				{
+				"mageGuild5" : {
 					"description" : "Entering the Mage Guild will allow a visiting hero to learn the spells kept within.",
 					"name" : "Mage Guild Level 5",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"mercury" : 10,
 						"ore" : 5,
@@ -76,201 +63,207 @@
 						"gold" : 1000
 					}
 				},
-				"tavern" :
-				{
+				"tavern" : {
 					"name" : "Tavern",
 					"description" : "The Tavern increases morale for troops defending the city.",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"gold" : 500
 					}
 				},
-//				"shipyard" :
-//				{
-//					"name" : "Shipyard",
-//					"description" : "The Shipyard allows you to purchase ships.",
-//					"cost" :
-//					{
-//						"wood" : 20,
-//						"gold" : 2000
-//					},
-//					"id" : 6
-//				},
-				"fort" :
-				{
+				//				"shipyard" :
+				//				{
+				//					"name" : "Shipyard",
+				//					"description" : "The Shipyard allows you to purchase ships.",
+				//					"cost" :
+				//					{
+				//						"wood" : 20,
+				//						"gold" : 2000
+				//					},
+				//					"id" : 6
+				//				},
+				"fort" : {
 					"name" : "Fort",
 					"description" : "The Fort provides your town with defensive walls.",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 20,
 						"ore" : 20,
 						"gold" : 5000
 					}
 				},
-				"citadel" :
-				{
+				"citadel" : {
 					"name" : "Citadel",
 					"description" : "Including a 50% increase to base creature growth, the Citadel adds a keep, and other terrain obstacles, to a town's defenses.",
-					"cost" :
-					{
+					"cost" : {
 						"ore" : 5,
 						"gold" : 2500
 					}
 				},
-				"castle" :
-				{
+				"castle" : {
 					"name" : "Castle",
 					"description" : "The Castle adds two arrow towers, fortifies your town's defenses, and doubles base creature growth.",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 10,
 						"ore" : 10,
 						"gold" : 5000
 					}
 				},
 
-				"horde2" :
-				{
+				"horde2" : {
 					"description" : "The Castle adds two arrow towers, fortifies your town's defenses, and doubles base creature growth.",
 					"name" : "Castle",
 					"cost" : {
 						"wood" : 10,
 						"ore" : 10,
-						"gold" : 5000},
+						"gold" : 5000
+					},
 					"upgrades" : "castle",
-					"requires" : [ "allOf", [ "castle"], ["dwellingLvl7" ] ],
+					"requires" : [
+						"allOf",
+						[
+							"castle"
+						],
+						[
+							"dwellingLvl7"
+						]
+					],
 					"mode" : "auto"
 				},
-				"horde2Upgr" :
-				{
+				"horde2Upgr" : {
 					"description" : "The Castle adds two arrow towers, fortifies your town's defenses, and doubles base creature growth.",
 					"name" : "Castle",
 					"cost" : {
 						"wood" : 10,
 						"ore" : 10,
-						"gold" : 5000},
+						"gold" : 5000
+					},
 					"upgrades" : "horde2",
-					"requires" : [ "allOf", [ "castle"], ["dwellingUpLvl7" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"castle"
+						],
+						[
+							"dwellingUpLvl7"
+						]
+					]
 				},
 
-
-				"villageHall" :
-				{
+				"villageHall" : {
 					"name" : "Village Hall",
 					"description" : "The Village Hall allows you to purchase town structures and earns your kingdom 500 gold per day."
 				},
-				"townHall" :
-				{
+				"townHall" : {
 					"name" : "Town Hall",
 					"description" : "The Town Hall allows you to purchase town structures and earns your kingdom 1000 gold per day.",
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 2500
 					}
 				},
-				"cityHall" :
-				{
+				"cityHall" : {
 					"name" : "City Hall",
 					"description" : "The City Hall allows you to purchase town structures and earns your kingdom 2000 gold per day.",
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 5000
 					},
-					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"mageGuild1"
+						],
+						[
+							"blacksmith"
+						],
+						[
+							"marketplace"
+						]
+					]
 				},
-				"capitol" :
-				{
+				"capitol" : {
 					"name" : "Capitol",
 					"description" : "The Capitol earns your kingdom 4000 gold per day.",
-					"cost" :
-					{
+					"cost" : {
 						"gold" : 10000
 					}
 				},
-				"marketplace" :
-				{
+				"marketplace" : {
 					"name" : "Marketplace",
 					"description" : "With the Marketplace, you can buy and sell resources (exchange rates increase with each Marketplace you own).",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"gold" : 500
 					}
 				},
-				"resourceSilo" :
-				{
+				"resourceSilo" : {
 					"description" : "The Resource Silo provides you with an additional +1 crystal each day.",
 					"name" : "Resource Silo",
-					"cost" :
-					{
+					"cost" : {
 						"ore" : 5,
 						"gold" : 5000
 					},
-					"produce": { "crystal": 1 }
+					"produce" : {
+						"crystal" : 1
+					}
 				},
-				"blacksmith" :
-				{
+				"blacksmith" : {
 					"description" : "The Blacksmith provides your armies with Booster Carts.",
 					"name" : "Blacksmith",
-					"cost" :
-					{
+					"cost" : {
 						"wood" : 5,
 						"gold" : 1000
 					},
 					"warMachine" : "supplyCart2k"
 				},
-				"horde1" :
-				{
+				"horde1" : {
 					"description" : "Supply Tanker increases weekly production of Grunts by 6 per week.",
 					"name" : "Supply Tanker",
 					"cost" : {
 						"gold" : 1000
 					}
 				},
-				"horde1Upgr" :
-				{
+				"horde1Upgr" : {
 					"description" : "Supply Tanker increases weekly production of Troopers by 6 per week.",
 					"name" : "Supply Tanker",
 					"cost" : {
 						"gold" : 1000
 					},
-					"requires" : [ "horde1" ]
+					"requires" : [
+						"horde1"
+					]
 				},
-//				"ship" :
-//				{
-//					"name" : "Shipyard",
-//					"description" : "The Shipyard allows you to purchase ships.",
-//
-//					"id" : 20
-//				},
-				"special1" :
-				{
+				//				"ship" :
+				//				{
+				//					"name" : "Shipyard",
+				//					"description" : "The Shipyard allows you to purchase ships.",
+				//
+				//					"id" : 20
+				//				},
+				"special1" : {
 					"description" : "The Cart Armory increases your every Cart's Health points by 50 and defense by 10.",
 					//"description" : "The Cart Armory increases your every Cart's Health points by 25 and defense by 3.",
 					"name" : "Cart Armory",
 					"cost" : {
 						"gold" : 1000
 					},
-					"requires" : [ "blacksmith" ],
-					"bonuses": [ 
-						{ 
-						"type": "ENCHANTED", 
-						"valueType" : "BASE_NUMBER",
-						"subtype" : "cartArmor2k",
-						"propagator": "PLAYER" 
+					"requires" : [
+						"blacksmith"
+					],
+					"bonuses" : [
+						{
+							"type" : "ENCHANTED",
+							"valueType" : "BASE_NUMBER",
+							"subtype" : "cartArmor2k",
+							"propagator" : "PLAYER"
 						},
 						{
-						"type" : "OPENING_BATTLE_SPELL",
-						"val" : 50,
-						"subtype" : "cartRefill2k",
-						"propagator": "PLAYER"
+							"type" : "OPENING_BATTLE_SPELL",
+							"val" : 50,
+							"subtype" : "cartRefill2k",
+							"propagator" : "PLAYER"
 						}
-						
 					]
 				},
-				"special2" :
-				{
+				"special2" : {
 					"description" : "The Nanomedic provides a Health regeneration bonus\r\n(7 x unit tier) to any creature in visiting hero's army until the end of this week.",
 					"name" : "Nanomedic",
 					"cost" : {
@@ -281,19 +274,28 @@
 						"rewards" : [
 							{
 								"message" : "A faint hum fills the air as the egg-shaped apparatus starts producing nanomachines. These small mechanical organism implanted into bodies of your troops will continue to restore both living tissue and mechanical parts, until they need to be recharged next week.",
-								"bonuses" : [ {
-									"duration": "ONE_WEEK", 
-									"type": "HP_REGENERATION", 
-									"val": 7,
-									"updater" : "TIMES_STACK_LEVEL"
-								}]
-							} 
+								"bonuses" : [
+									{
+										"duration" : "ONE_WEEK",
+										"type" : "HP_REGENERATION",
+										"val" : 7,
+										"updater" : "TIMES_STACK_LEVEL"
+									}
+								]
+							}
 						]
 					},
-					"requires" : [ "allOf", [ "dwellingLvl2" ], [ "mageGuild1" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"dwellingLvl2"
+						],
+						[
+							"mageGuild1"
+						]
+					]
 				},
-				"special3" :
-				{
+				"special3" : {
 					"description" : "Garrison's hero will gain +1 attack, defense, spell power and luck during a siege. Additionally they will cast spells with cost reduced by 1.",
 					"name" : "Safeguard's Harness",
 					"cost" : {
@@ -305,64 +307,78 @@
 						"gems" : 1,
 						"gold" : 2000
 					},
-					"requires" : [ "mageGuild1" ],
-					"bonuses" : [ 
-						{ 
-						"type" : "PRIMARY_SKILL", 
-						"subtype" : "attack",
-						"val": 1, 
-						"propagator" : "TOWN_AND_VISITOR" },
-						{ 
-						"type" : "PRIMARY_SKILL", 
-						"subtype" : "defence",
-						"val": 1, 
-						"propagator" : "TOWN_AND_VISITOR" },
-						{ 
-						"type" : "PRIMARY_SKILL", 
-						"subtype" : "spellpower",
-						"val": 1, 
-						"propagator" : "TOWN_AND_VISITOR" },
-						{ 
-						"type" : "LUCK", 
-						"val": 1, 
-						"propagator" : "TOWN_AND_VISITOR" },
-						{ 
-						"type" : "CHANGES_SPELL_COST_FOR_ALLY", 
-						"val": 1, 
-						"propagator" : "TOWN_AND_VISITOR" } ]
+					"requires" : [
+						"mageGuild1"
+					],
+					"bonuses" : [
+						{
+							"type" : "PRIMARY_SKILL",
+							"subtype" : "attack",
+							"val" : 1,
+							"propagator" : "TOWN_AND_VISITOR"
+						},
+						{
+							"type" : "PRIMARY_SKILL",
+							"subtype" : "defence",
+							"val" : 1,
+							"propagator" : "TOWN_AND_VISITOR"
+						},
+						{
+							"type" : "PRIMARY_SKILL",
+							"subtype" : "spellpower",
+							"val" : 1,
+							"propagator" : "TOWN_AND_VISITOR"
+						},
+						{
+							"type" : "LUCK",
+							"val" : 1,
+							"propagator" : "TOWN_AND_VISITOR"
+						},
+						{
+							"type" : "CHANGES_SPELL_COST_FOR_ALLY",
+							"val" : 1,
+							"propagator" : "TOWN_AND_VISITOR"
+						}
+					]
 				},
-				"grail" :
-				{
+				"grail" : {
 					"description" : "The presence of the Energy Coil increases weekly creature generation by 50%, provides your kingdom with an additional 5000 gold each day, and summons a bolt of energy to strike your enemies at the start of every battle. This spell will also appear in every hero's spellbook.",
 					"name" : "Energy Coil",
-					"bonuses": [ 
-						{ 
-						"type": "SPELL", 
-						"valueType" : "BASE_NUMBER",
-						"val" : 0,
-						"subtype" : "teslasWrath2k",
-						"propagator": "PLAYER" },
+					"bonuses" : [
+						{
+							"type" : "SPELL",
+							"valueType" : "BASE_NUMBER",
+							"val" : 0,
+							"subtype" : "teslasWrath2k",
+							"propagator" : "PLAYER"
+						},
 
 						{
-						"type" : "OPENING_BATTLE_SPELL",
-						"val" : 0,
-						"subtype" : "teslasWrath2k",
-						"propagator": "PLAYER"}
-						
-						] 
+							"type" : "OPENING_BATTLE_SPELL",
+							"val" : 0,
+							"subtype" : "teslasWrath2k",
+							"propagator" : "PLAYER"
+						}
+					]
 				},
-				"dwellingLvl1" :
-				{
+				"dwellingLvl1" : {
 					"description" : "Blaster Arsenal allows to recruit Grunts.",
 					"name" : "Blaster Arsenal",
 					"cost" : {
 						"gold" : 1000,
 						"ore" : 10
 					},
-					"requires" : [ "allOf", [ "fort" ], [ "blacksmith" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"fort"
+						],
+						[
+							"blacksmith"
+						]
+					]
 				},
-				"dwellingLvl2" :
-				{
+				"dwellingLvl2" : {
 					"description" : "Slaughterhouse allows to recruit Cyber Dead.",
 					"name" : "Slaughterhouse",
 					"cost" : {
@@ -370,20 +386,28 @@
 						"ore" : 5,
 						"wood" : 5
 					},
-					"requires" : [ "fort" ]
+					"requires" : [
+						"fort"
+					]
 				},
-				"dwellingLvl3" :
-				{
+				"dwellingLvl3" : {
 					"description" : "Fire Basin allows to recruit Pyros.",
 					"name" : "Fire Basin",
 					"cost" : {
 						"gold" : 1500,
 						"sulfur" : 5
 					},
-					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "blacksmith" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"dwellingLvl1"
+						],
+						[
+							"blacksmith"
+						]
+					]
 				},
-				"dwellingLvl4" :
-				{
+				"dwellingLvl4" : {
 					"description" : "Stingers Post allows to recruit Stingers.",
 					"name" : "Stingers Post",
 					"cost" : {
@@ -392,10 +416,17 @@
 						"wood" : 5,
 						"mercury" : 5
 					},
-					"requires" : [ "allOf", [ "dwellingLvl1" ], [ "dwellingLvl2" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"dwellingLvl1"
+						],
+						[
+							"dwellingLvl2"
+						]
+					]
 				},
-				"dwellingLvl5" :
-				{
+				"dwellingLvl5" : {
 					"description" : "Airstrip allows to recruit Jump Cadets.",
 					"name" : "Airstrip",
 					"cost" : {
@@ -406,11 +437,12 @@
 						"crystal" : 3,
 						"gems" : 3,
 						"sulfur" : 3
-						},
-					"requires" : [ "dwellingLvl3" ]
+					},
+					"requires" : [
+						"dwellingLvl3"
+					]
 				},
-				"dwellingLvl6" :
-				{
+				"dwellingLvl6" : {
 					"description" : "Garage allows to recruit Tanks.",
 					"name" : "Garage",
 					"cost" : {
@@ -420,10 +452,17 @@
 						"sulfur" : 5,
 						"gems" : 5
 					},
-					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "dwellingLvl5" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"dwellingLvl3"
+						],
+						[
+							"dwellingLvl5"
+						]
+					]
 				},
-				"dwellingLvl7" :
-				{
+				"dwellingLvl7" : {
 					"description" : "Ancient Refinery allows to recruit Juggernauts.",
 					"name" : "Ancient Refinery",
 					"cost" : {
@@ -435,10 +474,17 @@
 						"crystal" : 10,
 						"gems" : 10
 					},
-					"requires" : [ "allOf", [ "dwellingLvl6" ], [ "mageGuild1" ] ]
+					"requires" : [
+						"allOf",
+						[
+							"dwellingLvl6"
+						],
+						[
+							"mageGuild1"
+						]
+					]
 				},
-				"dwellingUpLvl1" :
-				{
+				"dwellingUpLvl1" : {
 					"description" : "Upg. Blaster Arsenal allows to recruit Troopers.",
 					"name" : "Upg. Blaster Arsenal",
 					"cost" : {
@@ -448,8 +494,7 @@
 					},
 					"upgrades" : "dwellingLvl1"
 				},
-				"dwellingUpLvl2" :
-				{
+				"dwellingUpLvl2" : {
 					"description" : "Upg. Slaughterhouse allows to recruit Cyber Zombies.",
 					"name" : "Upg. Slaughterhouse",
 					"cost" : {
@@ -459,8 +504,7 @@
 					},
 					"upgrades" : "dwellingLvl2"
 				},
-				"dwellingUpLvl3" :
-				{
+				"dwellingUpLvl3" : {
 					"description" : "Upg. Fire Basin allows to recruit Pyromaniacs.",
 					"name" : "Upg. Fire Basin",
 					"cost" : {
@@ -469,8 +513,7 @@
 					},
 					"upgrades" : "dwellingLvl3"
 				},
-				"dwellingUpLvl4" :
-				{
+				"dwellingUpLvl4" : {
 					"description" : "Upg. Stingers Post allows to recruit Bruisers.",
 					"name" : "Upg. Stingers Post",
 					"cost" : {
@@ -482,8 +525,7 @@
 					//"requires" : [ "mageGuild1" ],
 					"upgrades" : "dwellingLvl4"
 				},
-				"dwellingUpLvl5" :
-				{
+				"dwellingUpLvl5" : {
 					"description" : "Upg. Airstrip allows to recruit Jump Soldiers.",
 					"name" : "Upg. Airstrip",
 					"cost" : {
@@ -495,8 +537,7 @@
 					},
 					"upgrades" : "dwellingLvl5"
 				},
-				"dwellingUpLvl6" :
-				{
+				"dwellingUpLvl6" : {
 					"description" : "Upg. Garage allows to recruit Heavy Tanks.",
 					"name" : "Upg. Garage",
 					"cost" : {
@@ -510,8 +551,7 @@
 					},
 					"upgrades" : "dwellingLvl6"
 				},
-				"dwellingUpLvl7" :
-				{
+				"dwellingUpLvl7" : {
 					"description" : "Upg. Ancient Refinery allows to recruit Dreadnoughts.",
 					"name" : "Upg. Ancient Refinery",
 					"cost" : {
@@ -520,11 +560,18 @@
 						"wood" : 10,
 						"sulfur" : 30
 					},
-					"requires" : [ "allOf", [ "dwellingLvl6" ], [ "mageGuild3" ] ],
+					"requires" : [
+						"allOf",
+						[
+							"dwellingLvl6"
+						],
+						[
+							"mageGuild3"
+						]
+					],
 					"upgrades" : "dwellingLvl7"
 				}
 			}
 		}
 	}
 }
-

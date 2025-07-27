@@ -1,125 +1,95 @@
 {
-	"cyberDead2k":
-	{
-		"name" :
-		{
+	"cyberDead2k" : {
+		"name" : {
 			"plural" : "Cyber Dead",
 			"singular" : "Cyber Dead"
 		}
 	},
-	"cyberZombie2k" :
-	{
-		"name" :
-		{
+	"cyberZombie2k" : {
+		"name" : {
 			"plural" : "Cyber Zombies",
 			"singular" : "Cyber Zombie"
 		}
 	},
 
-	"gruntSoldier2k":
-	{
-		"name" :
-		{
+	"gruntSoldier2k" : {
+		"name" : {
 			"plural" : "Grunts",
 			"singular" : "Grunt"
 		}
 	},
-	"footSoldier2k" :
-	{
-		"name" :
-		{
+	"footSoldier2k" : {
+		"name" : {
 			"plural" : "Troopers",
 			"singular" : "Trooper"
 		}
 	},
 
-	"pyro2k" :
-	{
-		"name" :
-		{
+	"pyro2k" : {
+		"name" : {
 			"plural" : "Pyros",
 			"singular" : "Pyro"
 		}
 	},
-	"pyromaniac2k" :
-	{
-		"name" :
-		{
+	"pyromaniac2k" : {
+		"name" : {
 			"plural" : "Pyromaniacs",
 			"singular" : "Pyromaniac"
 		}
 	},
-	"stringer2k" :
-	{
-		"name" :
-		{
+	"stringer2k" : {
+		"name" : {
 			"plural" : "Stingers",
 			"singular" : "Stinger"
 		}
 	},
-	"bruiser2k" :
-	{
-		"name" :
-		{
+	"bruiser2k" : {
+		"name" : {
 			"plural" : "Bruisers",
 			"singular" : "Bruiser"
 		}
 	},
-	"heavystringer2k" :
-	{
-		"name" :
-		{
+	"heavystringer2k" : {
+		"name" : {
 			"plural" : "Sluggers",
 			"singular" : "Slugger"
 		}
 	},
 
-	"jumpSoldier2k" :
-	{
-		"name" :
-		{
+	"jumpSoldier2k" : {
+		"name" : {
 			"plural" : "Jump Cadets",
 			"singular" : "Jump Cadet"
 		}
 	},
-	"jumpTrooper2k" :
-	{
-		"name" :
-		{
+	"jumpTrooper2k" : {
+		"name" : {
 			"plural" : "Jump Soldiers",
 			"singular" : "Jump Soldier"
 		}
 	},
 
-	"nagaTank2k" :
-	{
-		"name" :
-		{
+	"nagaTank2k" : {
+		"name" : {
 			"plural" : "Tanks",
 			"singular" : "Tank"
 		}
 	},
-	"nagaHeavy2k" :
-	{
-		"name" :
-		{
+	"nagaHeavy2k" : {
+		"name" : {
 			"plural" : "Heavy Tanks",
 			"singular" : "Heavy Tank"
 		}
 	},
 
-	"juggernaut2k" :
-	{
-		"name" :
-		{
+	"juggernaut2k" : {
+		"name" : {
 			"plural" : "Juggernauts",
 			"singular" : "Juggernaut"
 		}
 	},
-	"dreadnought2k" :
-	{
-		"name" :
-		{
+	"dreadnought2k" : {
+		"name" : {
 			"plural" : "Dreadnoughts",
 			"singular" : "Dreadnought"
 		}

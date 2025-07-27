@@ -1,8 +1,6 @@
 {
-	"footSoldier2k":
-	{
-		"advMapAmount" :
-		{
+	"footSoldier2k" : {
+		"advMapAmount" : {
 			"max" : 25,
 			"min" : 15
 		},
@@ -13,35 +11,98 @@
 		"defense" : 3,
 		"hitPoints" : 7,
 		"speed" : 6,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 120
 		},
-		"damage" :
-		{
+		"damage" : {
 			"max" : 2,
 			"min" : 2
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "forge2k/battle/CR198.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "forge2k/map/footsoldier.def",
 			"iconSmall" : "forge2k/iconsSmall/CPrS198F.bmp",
 			"iconLarge" : "forge2k/iconsBig/CPrL198B.bmp",
 			"timeBetweenFidgets" : 1,
-			"missile" :
-			{
-				"ray" :
-				[
-					{ "start" : [ 211, 64, 1, 200 ], "end" : [ 0, 162, 232,  211 ] },
-					{ "start" : [ 253, 160, 36, 200 ], "end" : [ 153, 217, 234, 211 ] },
-					{ "start" : [ 254, 237, 197, 200 ], "end" : [ 231, 245, 250, 211 ] },
-					{ "start" : [ 253, 160, 36, 200 ], "end" : [ 153, 217, 234, 211 ] },
-					{ "start" : [ 211, 64, 1, 200 ], "end" : [ 0, 162, 232,  211 ] }
+			"missile" : {
+				"ray" : [
+					{
+						"start" : [
+							211,
+							64,
+							1,
+							200
+						],
+						"end" : [
+							0,
+							162,
+							232,
+							211
+						]
+					},
+					{
+						"start" : [
+							253,
+							160,
+							36,
+							200
+						],
+						"end" : [
+							153,
+							217,
+							234,
+							211
+						]
+					},
+					{
+						"start" : [
+							254,
+							237,
+							197,
+							200
+						],
+						"end" : [
+							231,
+							245,
+							250,
+							211
+						]
+					},
+					{
+						"start" : [
+							253,
+							160,
+							36,
+							200
+						],
+						"end" : [
+							153,
+							217,
+							234,
+							211
+						]
+					},
+					{
+						"start" : [
+							211,
+							64,
+							1,
+							200
+						],
+						"end" : [
+							0,
+							162,
+							232,
+							211
+						]
+					}
 				],
-				"offset" :
-				{
+				"offset" : {
 					"upperX" : 28,
 					"upperY" : -80,
 					"middleX" : 34,
@@ -49,97 +110,173 @@
 					"lowerX" : -6,
 					"lowerY" : -5
 				},
-				"frameAngles" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+				"frameAngles" : [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0
+				],
 				"attackClimaxFrame" : 3
 			}
 		},
 
 		"growth" : 10,
 		"horde" : 6,
-        "level" : 1,
+		"level" : 1,
 		"shots" : 16,
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "forge2k/gruntATTK.wav",
 			"defend" : "forge2k/gruntDFND.wav",
 			"killed" : "forge2k/gruntKILL.wav",
 			"move" : "forge2k/gruntMOVE.wav",
 			"wince" : "forge2k/gruntWNCE.wav",
-                     	"shoot" : "forge2k/gruntSHOT2.wav"
+			"shoot" : "forge2k/gruntSHOT2.wav"
 		},
-		"abilities" :
-		{
-			"forgeMorale" :
-			{
+		"abilities" : {
+			"forgeMorale" : {
 				"type" : "MORALE",
 				"val" : -1,
-				"propagator" : 	"HERO",
-				"limiters": [ 
+				"propagator" : "HERO",
+				"limiters" : [
 					"noneOf",
-					{						
+					{
 						"type" : "CREATURE_FACTION_LIMITER",
-						"faction": "forge2k"
-					} 
+						"faction" : "forge2k"
+					}
 				],
 				"stacking" : "Forge creatures",
 				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
-				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"	 
-		},
-		"shooter" :
-			{
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"
+			},
+			"shooter" : {
 				"type" : "SHOOTER"
 			},
-		"freeshooting" :	
-			{
+			"freeshooting" : {
 				"type" : "FREE_SHOOTING"
 			}
 		},
 		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL",
 					"valueType" : "BASE_NUMBER"
 				},
-				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
-			},	
+				"values" : [
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL",
 					"valueType" : "BASE_NUMBER"
 				},
-				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
-			},	
+				"values" : [
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMin"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMax"
 				},
-				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+				"values" : [
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
-			{ "bonus" : { "type" : "SHOTS" }, "values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ] },
 			{
-				"bonus" : { "type" : "NO_DISTANCE_PENALTY" },
+				"bonus" : {
+					"type" : "SHOTS"
+				},
+				"values" : [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus" : {
+					"type" : "NO_DISTANCE_PENALTY"
+				},
 				"values" : [
 					false,
 					false,

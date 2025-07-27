@@ -1,30 +1,25 @@
 {
-	"tp_kastore2k" :
-	{
+	"tp_kastore2k" : {
 		"class" : "technoJunk2k",
 		"female" : false,
-		"texts" :
-		{
+		"texts" : {
 			"name" : "Kastore",
 			"biography" : "Kastore is a powerful sorcerer who knows many secrets of the Ancients. He plans to conquer the world and will stop at nothing in pursuit of this goal.",
-			"specialty" :
-			{
+			"specialty" : {
 				"tooltip" : "Spell Bonus: Double Clone",
 				"name" : "Double Clone",
 				"description" : "Knows a special Clone spell variant which costs more spell points and summons 2 clones of the target unit."
 			}
-		},		
+		},
 
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "forge2k/heroes/kastore/spec-small",
 			"specialtyLarge" : "forge2k/heroes/kastore/spec-large",
 			"large" : "forge2k/heroes/kastore/portrait-large",
 			"small" : "forge2k/heroes/kastore/portrait-small"
 		},
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 15,
@@ -42,8 +37,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "wisdom"
@@ -53,8 +47,10 @@
 				"skill" : "waterMagic"
 			}
 		],
-		
-		"spellbook": [ "clone" ],
+
+		"spellbook" : [
+			"clone"
+		],
 
 		"specialty" : {
 			"bonuses" : {

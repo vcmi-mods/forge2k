@@ -1,8 +1,6 @@
 {
-	"gruntSoldier2k":
-	{
-		"advMapAmount" :
-		{
+	"gruntSoldier2k" : {
+		"advMapAmount" : {
 			"max" : 40,
 			"min" : 15
 		},
@@ -13,28 +11,27 @@
 		"defense" : 3,
 		"hitPoints" : 7,
 		"speed" : 5,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 80
 		},
-		"damage" :
-		{
+		"damage" : {
 			"max" : 2,
 			"min" : 2
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "forge2k/battle/CR197.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "forge2k/map/gruntsoldier.def",
 			"iconSmall" : "forge2k/iconsSmall/CPrS197F.bmp",
 			"iconLarge" : "forge2k/iconsBig/CPrL197B.png",
 			"timeBetweenFidgets" : 1,
-			"missile" :
-			{
+			"missile" : {
 				"projectile" : "forge2k/battle/projectile/SHOT197.DEF",
-				"offset" :
-				{
+				"offset" : {
 					"upperX" : 34,
 					"upperY" : -96,
 					"middleX" : 50,
@@ -43,93 +40,168 @@
 					"lowerY" : 0
 				},
 				"attackClimaxFrame" : 4,
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				]
 			}
-
 		},
 
 		"growth" : 10,
 		"horde" : 6,
-              	"level" : 1,
+		"level" : 1,
 		"shots" : 8,
-		"upgrades":
-		[
+		"upgrades" : [
 			"footSoldier2k"
 		],
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "forge2k/gruntATTK.wav",
 			"defend" : "forge2k/gruntDFND.wav",
 			"killed" : "forge2k/gruntKILL.wav",
 			"move" : "forge2k/gruntMOVE.wav",
 			"wince" : "forge2k/gruntWNCE.wav",
-                     	"shoot" : "forge2k/gruntSHOT1.wav"
+			"shoot" : "forge2k/gruntSHOT1.wav"
 		},
-		"abilities" :
-		{
-			"forgeMorale" :
-			{
+		"abilities" : {
+			"forgeMorale" : {
 				"type" : "MORALE",
 				"val" : -1,
-				"propagator" : 	"HERO",
-				"limiters": [ 
+				"propagator" : "HERO",
+				"limiters" : [
 					"noneOf",
-					{						
+					{
 						"type" : "CREATURE_FACTION_LIMITER",
-						"faction": "forge2k"
-					} 
+						"faction" : "forge2k"
+					}
 				],
 				"stacking" : "Forge creatures",
 				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
-				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"	 
-		},
-		"shooter" :
-			{
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"
+			},
+			"shooter" : {
 				"type" : "SHOOTER"
 			}
 		},
-		"stackExperience" : [ {
-				"bonus" :
-				{
+		"stackExperience" : [
+			{
+				"bonus" : {
 					"subtype" : "attack",
 					"type" : "PRIMARY_SKILL",
 					"valueType" : "BASE_NUMBER"
 				},
-				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
-			},	
+				"values" : [
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"subtype" : "defence",
 					"type" : "PRIMARY_SKILL",
 					"valueType" : "BASE_NUMBER"
 				},
-				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
-			},	
+				"values" : [
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMin"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMax"
 				},
-				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+				"values" : [
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
-			{ "bonus" : { "type" : "SHOTS" }, "values" : [ 1, 1, 2, 2, 2, 3, 3, 3, 4, 4 ] } ]
+			{
+				"bonus" : {
+					"type" : "SHOTS"
+				},
+				"values" : [
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			}
+		]
 	}
 }

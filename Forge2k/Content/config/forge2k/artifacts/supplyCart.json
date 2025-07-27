@@ -1,116 +1,158 @@
 {
-	"supplyCart2k":
-	{
-		"name" :
-		{
+	"supplyCart2k" : {
+		"name" : {
 			"plural" : "Booster Carts",
 			"singular" : "Booster Cart"
 		},
 		"faction" : "neutral",
-		"level": 1,
+		"level" : 1,
 		"aiValue" : 450,
 		"special" : true,
 		"attack" : 0,
-        "cost": 
-        {
-              "gold": 1500
-        },
-		"damage" :
-		{
-			 "max" : 0,
-			 "min" : 0
+		"cost" : {
+			"gold" : 1500
+		},
+		"damage" : {
+			"max" : 0,
+			"min" : 0
 		},
 		"defense" : 7,
 		"fightValue" : 50,
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "forge2k/battle/supplyCart",
 			"iconSmall" : "forge2k/iconsSmall/supplyCartsmall",
 			"iconLarge" : "forge2k/iconsBig/supplyCartbig",
-//			"map" : "forge2k/map/blank",
+			//			"map" : "forge2k/map/blank",
 			"timeBetweenFidgets" : 1,
-			"animationTime" :
-			{
-				"walk" : 1.00,
-				"idle" : 10.00,
-				"attack" : 1.00
+			"animationTime" : {
+				"walk" : 1.0,
+				"idle" : 10.0,
+				"attack" : 1.0
 			}
 		},
 		"doubleWide" : false,
 		"growth" : 0,
 		"hitPoints" : 100,
-		"sound" :
-		{
-			"killed": "forge2k/SUPPKILL",
-			"wince": "forge2k/SUPPWNCE"
+		"sound" : {
+			"killed" : "forge2k/SUPPKILL",
+			"wince" : "forge2k/SUPPWNCE"
 		},
 		"speed" : 0,
-		"abilities" :
-		{
-			"additionalDef" : 
-			{ 
-				"type": "PRIMARY_SKILL", 
-				"val": 5, 
+		"abilities" : {
+			"additionalDef" : {
+				"type" : "PRIMARY_SKILL",
+				"val" : 5,
 				"subtype" : "defence",
-				"limiters": [ {
-					"type":"HAS_ANOTHER_BONUS_LIMITER",
-					"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cartArmor2k"]
-				} ]
+				"limiters" : [
+					{
+						"type" : "HAS_ANOTHER_BONUS_LIMITER",
+						"parameters" : [
+							"MORE_DAMAGE_FROM_SPELL",
+							"spell.cartArmor2k"
+						]
+					}
+				]
 			},
-			"warmachine" :
-			{
+			"warmachine" : {
 				"type" : "SIEGE_WEAPON"
 			},
-			"inactive" : 
-			{ 
-				"type" : "NOT_ACTIVE" 
+			"inactive" : {
+				"type" : "NOT_ACTIVE"
 			},
-			"noRetaliation" : 
-			{
-                "type" : "NO_RETALIATION"
-            }
+			"noRetaliation" : {
+				"type" : "NO_RETALIATION"
+			}
 		},
-		"stackExperience" :
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.attack"
 				},
-				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
-			},	
+				"values" : [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "primarySkill.defence"
 				},
-				"values" : [ 1, 2, 3, 3, 4, 5, 6, 6, 7, 8 ]
+				"values" : [
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMax"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMin"
 				},
-				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+				"values" : [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			}
 		]
 	}

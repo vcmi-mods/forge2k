@@ -1,29 +1,23 @@
 {
-	"cyb_rengust2k" :
-	{
+	"cyb_rengust2k" : {
 		"class" : "cyborg2k",
 		"female" : false,
-		"texts" :
-		{
+		"texts" : {
 			"name" : "Rengust",
-			"biography" : "The kin to the late king Boragus, Rengust joined the quickly expanding Deyjan empire, in hope to turn the miraculous inventions of the Heavenly Forge into the tools of his vengeance.", 
-			"specialty" :
-			{
+			"biography" : "The kin to the late king Boragus, Rengust joined the quickly expanding Deyjan empire, in hope to turn the miraculous inventions of the Heavenly Forge into the tools of his vengeance.",
+			"specialty" : {
 				"description" : "Increases the speed of Stingers or Bruisers by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up).",
 				"tooltip" : "Creature Bonus: Stingers",
 				"name" : "Stingers"
 			}
 		},
-		"images" :
-		{
-			
+		"images" : {
 			"specialtySmall" : "forge2k/heroes/rengust/spec-small",
 			"specialtyLarge" : "forge2k/heroes/rengust/spec-large",
 			"large" : "forge2k/heroes/rengust/portrait-large",
 			"small" : "forge2k/heroes/rengust/portrait-small"
 		},
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 15,
@@ -41,8 +35,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "offence"
@@ -52,10 +45,9 @@
 				"skill" : "archery"
 			}
 		],
-		
+
 		"specialty" : {
 			"creature" : "stringer2k"
 		}
 	}
 }
-

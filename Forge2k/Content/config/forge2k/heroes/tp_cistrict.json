@@ -1,35 +1,28 @@
 {
-	"tp_cistrict2k" :
-	{
+	"tp_cistrict2k" : {
 		"class" : "technoJunk2k",
-		"texts" :
-		{
+		"texts" : {
 			"name" : "Cistrict",
 			"biography" : "Cistrict's abilities and great ambition brought upon him the wrath of many Nighon Warlocks. When the Heavenly Forge blazed anew, he found himself before its gates, to seek restoration of the body ravaged by magic duels.",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "Receives a 7% per level bonus to Resistance skill percentage.",
 				"tooltip" : "Secondary Skill Bonus: Resistance",
 				"name" : "Resistance"
 			}
 		},
 
-		"images" :
-		{
-			
+		"images" : {
 			"specialtySmall" : "forge2k/heroes/cistrict/spec-small",
 			"specialtyLarge" : "forge2k/heroes/cistrict/spec-large",
 			"large" : "forge2k/heroes/cistrict/portrait-large",
 			"small" : "forge2k/heroes/cistrict/portrait-small"
 		},
 
-		"spellbook" :
-		[
+		"spellbook" : [
 			"cure",
 			"dispel"
 		],
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 15,
@@ -47,21 +40,19 @@
 			}
 		],
 
-		"skills" : 
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "wisdom"
 			},
-			
+
 			{
 				"level" : "basic",
 				"skill" : "resistance"
 			}
 		],
-		
-        "specialty": 
-		{
+
+		"specialty" : {
 			"bonuses" : {
 				"resistance" : {
 					"targetSourceType" : "SECONDARY_SKILL",

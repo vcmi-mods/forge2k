@@ -1,8 +1,6 @@
 {
-	"jumpSoldier2k":
-	{
-		"advMapAmount" :
-		{
+	"jumpSoldier2k" : {
+		"advMapAmount" : {
 			"max" : 14,
 			"min" : 6
 		},
@@ -13,113 +11,170 @@
 		"defense" : 13,
 		"hitPoints" : 60,
 		"speed" : 8,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 750
 		},
-		"damage" :
-		{
+		"damage" : {
 			"max" : 20,
 			"min" : 10
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "forge2k/battle/CR205.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "forge2k/map/jumpsoldier.def",
 			"iconSmall" : "forge2k/iconsSmall/CPrS205F.bmp",
 			"iconLarge" : "forge2k/iconsBig/CPrL205B.bmp",
 			"timeBetweenFidgets" : 1
-              },
+		},
 
 		"growth" : 2.5,
 		"level" : 5,
-		"upgrades":
-		[
+		"upgrades" : [
 			"jumpTrooper2k"
 		],
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "forge2k/jumpATTK.wav",
 			"defend" : "forge2k/jumpDFND.wav",
 			"killed" : "forge2k/jumpKILL.wav",
 			"move" : "forge2k/jumpMOVE.wav",
 			"wince" : "forge2k/jumpWNCE.wav"
 		},
-		"abilities" :
-		{
-			"forgeMorale" :
-			{
+		"abilities" : {
+			"forgeMorale" : {
 				"type" : "MORALE",
 				"val" : -1,
-				"propagator" : 	"HERO",
-				"limiters": [ 
+				"propagator" : "HERO",
+				"limiters" : [
 					"noneOf",
-					{						
+					{
 						"type" : "CREATURE_FACTION_LIMITER",
-						"faction": "forge2k"
-					} 
+						"faction" : "forge2k"
+					}
 				],
 				"stacking" : "Forge creatures",
 				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
-				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"	 
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"
 			},
-		"flying" :
-			{
+			"flying" : {
 				"type" : "FLYING"
 			},
-		"spellimmunityslow" :
-			{
+			"spellimmunityslow" : {
 				"type" : "SPELL_IMMUNITY",
 				"subtype" : "slow"
 			}
-
 		},
 		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "attack"
 				},
-				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
-			},	
+				"values" : [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "defence"
 				},
-				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+				"values" : [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMax"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMin"
 				},
-				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+				"values" : [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" : { "type" : "GENERAL_DAMAGE_REDUCTION",
-					"subtype" : "damageTypeAll" },
-				"values" : [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ]
+				"bonus" : {
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"subtype" : "damageTypeAll"
+				},
+				"values" : [
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					21,
+					24,
+					27,
+					30
+				]
 			}
 		]
 	}

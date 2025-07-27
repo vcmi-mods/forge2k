@@ -1,8 +1,6 @@
 {
-	"stringer2k":
-	{
-		"advMapAmount" :
-		{
+	"stringer2k" : {
+		"advMapAmount" : {
 			"max" : 18,
 			"min" : 8
 		},
@@ -13,29 +11,28 @@
 		"defense" : 8,
 		"hitPoints" : 50,
 		"speed" : 4,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 550
 		},
-		"damage" :
-		{
+		"damage" : {
 			"max" : 14,
 			"min" : 8
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "forge2k/battle/CR203.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "forge2k/map/stringer.def",
 			"iconSmall" : "forge2k/iconsSmall/CPRS203F.bmp",
 			"iconLarge" : "forge2k/iconsBig/CPrL203B.bmp",
 			"timeBetweenFidgets" : 1,
-			"missile" :
-			{
+			"missile" : {
 				"projectile" : "forge2k/battle/projectile/shot207.DEF",
-			       "attackClimaxFrame" : 4,
-				"offset" :
-				{
+				"attackClimaxFrame" : 4,
+				"offset" : {
 					"upperX" : 25,
 					"upperY" : -86,
 					"middleX" : 47,
@@ -43,93 +40,174 @@
 					"lowerX" : 25,
 					"lowerY" : -38
 				},
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				]
 			}
 		},
 		"growth" : 3,
 		"level" : 4,
-		"upgrades":
-		[
+		"upgrades" : [
 			"bruiser2k"
 		],
 		"shots" : 6,
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "forge2k/stingerATTK.wav",
 			"defend" : "forge2k/stingerDFND.wav",
 			"killed" : "forge2k/stingerKILL.wav",
 			"move" : "forge2k/stingerMOVE.wav",
 			"wince" : "forge2k/stingerWNCE.wav",
- 			"shoot" : "forge2k/stingerSHOT.wav"                    
+			"shoot" : "forge2k/stingerSHOT.wav"
 		},
-		"abilities" :
-		{
-			"forgeMorale" :
-			{
+		"abilities" : {
+			"forgeMorale" : {
 				"type" : "MORALE",
 				"val" : -1,
-				"propagator" : 	"HERO",
-				"limiters": [ 
+				"propagator" : "HERO",
+				"limiters" : [
 					"noneOf",
-					{						
+					{
 						"type" : "CREATURE_FACTION_LIMITER",
-						"faction": "forge2k"
-					} 
+						"faction" : "forge2k"
+					}
 				],
 				"stacking" : "Forge creatures",
 				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
-				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"		 
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"
 			},
-            "canshoot" :
-			{
+			"canshoot" : {
 				"type" : "SHOOTER"
 			}
-		
 		},
 		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "attack"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
-			},	
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "defence"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageBoth"
 				},
-				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+				"values" : [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
+				"bonus" : {
+					"type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "weakness",
-					"addInfo" : [0, 1, 0]  },
-				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
+					"addInfo" : [
+						0,
+						1,
+						0
+					]
+				},
+				"values" : [
+					7,
+					14,
+					21,
+					28,
+					35,
+					42,
+					49,
+					56,
+					63,
+					70
+				]
 			},
 			{
-				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
+				"bonus" : {
+					"type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "disruptingRay",
-					"addInfo" : [0, 1, 1]  },
-				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
+					"addInfo" : [
+						0,
+						1,
+						1
+					]
+				},
+				"values" : [
+					7,
+					14,
+					21,
+					28,
+					35,
+					42,
+					49,
+					56,
+					63,
+					70
+				]
 			}
 		]
 	}

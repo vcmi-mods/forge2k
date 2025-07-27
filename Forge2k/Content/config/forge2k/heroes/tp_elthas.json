@@ -1,29 +1,24 @@
 {
-	"tp_elthas2k" :
-	{
+	"tp_elthas2k" : {
 		"class" : "technoJunk2k",
 		"female" : false,
-		"texts" :
-		{
+		"texts" : {
 			"name" : "Elthas",
 			"biography" : "Elthas made his name when he developed extremely efficient means of blowing up large swaths of land. This made it easier to access buried vaults of the Ancients and a wealth of underground resources, so ravenously consumed by the furnaces of the Heavenly Forge.",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "Casts Inferno with 50 additional damage and with slightly increased effect (1% per hero level / target creature tier).",
 				"tooltip" : "Spell Bonus: Inferno",
 				"name" : "Inferno"
 			}
-		},		
+		},
 
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "forge2k/heroes/elthas/spec-small",
 			"specialtyLarge" : "forge2k/heroes/elthas/spec-large",
 			"large" : "forge2k/heroes/elthas/portrait-large",
 			"small" : "forge2k/heroes/elthas/portrait-small"
 		},
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 15,
@@ -51,11 +46,12 @@
 				"skill" : "fireMagic"
 			}
 		],
-		
-		"spellbook" : [ "inferno" ],
-		"specialty":
-		{
-			"bonuses" : {				
+
+		"spellbook" : [
+			"inferno"
+		],
+		"specialty" : {
+			"bonuses" : {
 				"inferno50plus" : {
 					"subtype" : "inferno",
 					"type" : "SPECIFIC_SPELL_DAMAGE",

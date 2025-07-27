@@ -1,30 +1,25 @@
 {
-	"tp_sheikleen2k" :
-	{
+	"tp_sheikleen2k" : {
 		"class" : "technoJunk2k",
 		"female" : true,
-		"texts" :
-		{
+		"texts" : {
 			"name" : "Sheikleen",
 			"biography" : "Enigmas like Sheikleen are not uncommon in the ranks of the Heavenly Forge. She emerged one day within the chain of command and her directives won battles, so she was universally deemed a useful asset. Still, there's always an ulterior motive with these kinds of people.",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "Receives a 10% per level bonus to Intelligence skill percentage.",
 				"tooltip" : "Secondary Skill Bonus: Intelligence",
 				"name" : "Intelligence"
 			}
-		},		
+		},
 
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "forge2k/heroes/sheikleen/spec-small",
 			"specialtyLarge" : "forge2k/heroes/sheikleen/spec-large",
 			"large" : "forge2k/heroes/sheikleen/portrait-large",
 			"small" : "forge2k/heroes/sheikleen/portrait-small"
 		},
 
-		"army" :
-		[
+		"army" : [
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 15,
@@ -42,8 +37,7 @@
 			}
 		],
 
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "intelligence"
@@ -53,11 +47,12 @@
 				"skill" : "wisdom"
 			}
 		],
-		
-		"spellbook": [ "haste" ],
-	
-        "specialty": 
-		{
+
+		"spellbook" : [
+			"haste"
+		],
+
+		"specialty" : {
 			"bonuses" : {
 				"intelligence" : {
 					"targetSourceType" : "SECONDARY_SKILL",

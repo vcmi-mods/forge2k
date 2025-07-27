@@ -1,8 +1,6 @@
 {
-	"dreadnought2k":
-	{
-		"advMapAmount" :
-		{
+	"dreadnought2k" : {
+		"advMapAmount" : {
 			"max" : 4,
 			"min" : 2
 		},
@@ -13,145 +11,216 @@
 		"defense" : 40,
 		"hitPoints" : 400,
 		"speed" : 13,
-		"cost" :
-		{
+		"cost" : {
 			"gold" : 10000,
 			"crystal" : 5
 		},
-		"damage" :
-		{
+		"damage" : {
 			"max" : 70,
 			"min" : 45
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "forge2k/battle/CR210.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "forge2k/map/dread.def",
 			"iconSmall" : "forge2k/iconsSmall/CPrS210F.bmp",
 			"iconLarge" : "forge2k/iconsBig/CPrL210B.bmp",
 			"timeBetweenFidgets" : 1
-
 		},
 		"doubleWide" : true,
 		"growth" : 1,
 		"horde" : -1,
 		"level" : 7,
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "forge2k/juggerATTK.wav",
 			"defend" : "forge2k/juggerDFND.wav",
 			"killed" : "forge2k/juggerKILL.wav",
 			"move" : "forge2k/juggerMOVE.wav",
 			"wince" : "forge2k/juggerWNCE.wav"
-                     
 		},
-		"abilities" :
-		{
-			"forgeMorale" :
-			{
+		"abilities" : {
+			"forgeMorale" : {
 				"type" : "MORALE",
 				"val" : -1,
-				"propagator" : 	"HERO",
-				"limiters": [ 
+				"propagator" : "HERO",
+				"limiters" : [
 					"noneOf",
-					{						
+					{
 						"type" : "CREATURE_FACTION_LIMITER",
-						"faction": "forge2k"
-					} 
+						"faction" : "forge2k"
+					}
 				],
 				"stacking" : "Forge creatures",
 				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
-				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"		 
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"
 			},
 
-			"expSlayer" : { 
+			"expSlayer" : {
 				"type" : "KING",
 				"val" : 3,
 				"valueType" : "ADDITIVE_VALUE"
 			},
 
-			"mechanical" :
-			{
+			"mechanical" : {
 				"type" : "NON_LIVING"
 			},
-			
-			"unlimited" :
-			{
+
+			"unlimited" : {
 				"type" : "UNLIMITED_RETALIATIONS"
 			},
 
-			"onePunch" : 
-			{ 
+			"onePunch" : {
 				"type" : "DESTRUCTION",
 				"subtype" : "destructionKillAmount",
 				"val" : 50,
 				"addInfo" : 1
 			}
 		},
-		"stackExperience" :
- 
-		[
+		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "attack"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-			},	
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "defence"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageBoth"
 				},
-				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+				"values" : [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+				"values" : [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "BLOCKS_RETALIATION"
 				},
-				"values" : [ false, false, false, true, true, true, true, true, true, true ]
+				"values" : [
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "DOUBLE_DAMAGE_CHANCE"
 				},
-				"values" : [ 0, 0, 0, 0, 0, 20, 20, 20, 20, 20 ]
+				"values" : [
+					0,
+					0,
+					0,
+					0,
+					0,
+					20,
+					20,
+					20,
+					20,
+					20
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "DEATH_STARE",
 					"subtype" : "deathStareGorgon"
 				},
-				"values" : [ 0, 0, 0, 0, 0, 0, 0, 10, 10, 10 ]
+				"values" : [
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					10,
+					10,
+					10
+				]
 			}
 		]
 	}

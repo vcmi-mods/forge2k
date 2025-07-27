@@ -3,98 +3,168 @@
 		"types" : {
 			"metalBarracks2k" : {
 				"name" : "Blaster Arsenal",
-				"creatures" : [[ "gruntSoldier2k" ]],
-				"sounds": {
-					"ambient": ["forge2k/gruntLOOP"]
-				},				
+				"creatures" : [
+					[
+						"gruntSoldier2k"
+					]
+				],
+				"sounds" : {
+					"ambient" : [
+						"forge2k/gruntLOOP"
+					]
+				},
 				"templates" : {
 					"default" : {
 						"animation" : "forge2k/adventure-map/gruntDwelling",
-						"mask" : [ "VVV", "VVV", "VBA" ]
+						"mask" : [
+							"VVV",
+							"VVV",
+							"VBA"
+						]
 					}
 				}
 			},
 			"slaughterhouse2k" : {
 				"name" : "Slaughterhouse",
-				"creatures" : [[ "cyberDead2k" ]],
-				"sounds": {
-					"ambient": ["forge2k/cDeadLOOP"]
-				},				
+				"creatures" : [
+					[
+						"cyberDead2k"
+					]
+				],
+				"sounds" : {
+					"ambient" : [
+						"forge2k/cDeadLOOP"
+					]
+				},
 				"templates" : {
 					"default" : {
 						"animation" : "forge2k/adventure-map/cDeadDwelling",
-						"mask" : [ "VVV", "VVB", "VAB" ]
+						"mask" : [
+							"VVV",
+							"VVB",
+							"VAB"
+						]
 					}
 				}
 			},
 			"fireBasin2k" : {
 				"name" : "Fire Basin",
-				"creatures" : [[ "pyro2k" ]],
-				"sounds": {
-					"ambient": ["forge2k/LOOPPYRO"]
-				},				
+				"creatures" : [
+					[
+						"pyro2k"
+					]
+				],
+				"sounds" : {
+					"ambient" : [
+						"forge2k/LOOPPYRO"
+					]
+				},
 				"templates" : {
-					"default" : {	
+					"default" : {
 						"animation" : "forge2k/adventure-map/pyroDwelling",
-						"mask" : [ "VVV", "VVV", "VBA" ]
+						"mask" : [
+							"VVV",
+							"VVV",
+							"VBA"
+						]
 					}
 				}
 			},
 			"airstrip2k" : {
 				"name" : "Airstrip",
-				"creatures" : [[ "jumpSoldier2k" ]],
-				"sounds": {
-					"ambient": ["forge2k/jCadLOOP"]
-				},				
+				"creatures" : [
+					[
+						"jumpSoldier2k"
+					]
+				],
+				"sounds" : {
+					"ambient" : [
+						"forge2k/jCadLOOP"
+					]
+				},
 				"templates" : {
 					"default" : {
 						"animation" : "forge2k/adventure-map/jCadDwelling.def",
-						"mask" : [ "VVV", "VVV", "VBA" ]
+						"mask" : [
+							"VVV",
+							"VVV",
+							"VBA"
+						]
 					}
 				}
 			},
 			"stingersPost2k" : {
 				"name" : "Stingers Post",
-				"creatures" : [[ "stringer2k" ]],
-				"sounds": {
-					"ambient": ["forge2k/stingLOOP"]
-				},				
+				"creatures" : [
+					[
+						"stringer2k"
+					]
+				],
+				"sounds" : {
+					"ambient" : [
+						"forge2k/stingLOOP"
+					]
+				},
 				"guards" : true,
 				"templates" : {
 					"default" : {
 						"animation" : "forge2k/adventure-map/stingDwelling",
-						"mask" : [ "VVV", "VVV", "VBA" ]
+						"mask" : [
+							"VVV",
+							"VVV",
+							"VBA"
+						]
 					}
 				}
 			},
 			"garage2k" : {
 				"name" : "Garage",
-				"creatures" : [[ "nagaTank2k" ]],
+				"creatures" : [
+					[
+						"nagaTank2k"
+					]
+				],
 				"guards" : true,
-				"sounds": {
-					"ambient": ["forge2k/tankLOOP"]
-				},				
+				"sounds" : {
+					"ambient" : [
+						"forge2k/tankLOOP"
+					]
+				},
 				"templates" : {
 					"default" : {
 						"animation" : "forge2k/adventure-map/tankDwelling2",
-						"mask" : [ "VVVV", "VBBV", "VABV" ]
+						"mask" : [
+							"VVVV",
+							"VBBV",
+							"VABV"
+						]
 					}
 				}
 			},
 			"ancientRefinery2k" : {
 				"name" : "Ancient Refinery",
-				"creatures" : [[ "juggernaut2k" ]],
-				"sounds": {
-					"ambient": ["forge2k/juggLOOP"]
-				},				
+				"creatures" : [
+					[
+						"juggernaut2k"
+					]
+				],
+				"sounds" : {
+					"ambient" : [
+						"forge2k/juggLOOP"
+					]
+				},
 				"guards" : true,
 				"templates" : {
 					"default" : {
 						"animation" : "forge2k/adventure-map/juggDwelling2",
-						"mask" : [ "VVVV", "VBBV", "VABV" ]
+						"mask" : [
+							"VVVV",
+							"VBBV",
+							"VABV"
+						]
 					}
 				}
 			}
-		}		
+		}
 	}
 }

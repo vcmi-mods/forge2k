@@ -1,31 +1,28 @@
 {
-	"cyb_null2k" :
-	{
+	"cyb_null2k" : {
 		"class" : "cyborg2k",
 		"female" : true,
-		"texts" :
-		{
+		"texts" : {
 			"name" : "Null",
 			"biography" : "01000110 01100001 01101001 01101100 01100101 01100100 00100000 01000101 01111000 01110000 01100101 01110010 01101001 01101101 01100101 01101110 01110100 00101110",
-			"specialty" :
-			{
+			"specialty" : {
 				"description" : "Increases the speed of Juggernauts or Dreadnoughts by 1 and their Attack and Defense skills by 5% for every 7 levels (rounded up).",
 				"tooltip" : "Creature Bonus: Juggernauts",
 				"name" : "Juggernauts"
 			}
-		},		
+		},
 
-		"images" :
-		{
+		"images" : {
 			"specialtySmall" : "forge2k/heroes/null/spec-small",
 			"specialtyLarge" : "forge2k/heroes/null/spec-large",
 			"large" : "forge2k/heroes/null/portrait-large",
 			"small" : "forge2k/heroes/null/portrait-small"
 		},
 
-		"spellbook" : [ "clone" ],
-		"army" :
-		[
+		"spellbook" : [
+			"clone"
+		],
+		"army" : [
 			{
 				"creature" : "gruntSoldier2k",
 				"max" : 15,
@@ -42,8 +39,7 @@
 				"min" : 4
 			}
 		],
-		"skills" :
-		[
+		"skills" : [
 			{
 				"level" : "basic",
 				"skill" : "wisdom"
@@ -53,10 +49,9 @@
 				"skill" : "waterMagic"
 			}
 		],
-		
+
 		"specialty" : {
 			"creature" : "juggernaut2k"
 		}
 	}
 }
-

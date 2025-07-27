@@ -1,8 +1,6 @@
 {
-	"heavystringer2k":
-	{
-		"advMapAmount" :
-		{
+	"heavystringer2k" : {
+		"advMapAmount" : {
 			"max" : 12,
 			"min" : 6
 		},
@@ -14,30 +12,29 @@
 		"growth" : 3,
 		"hitPoints" : 80,
 		"speed" : 7,
-        "shots" : 12,
-		"cost" :
-		{
+		"shots" : 12,
+		"cost" : {
 			"gold" : 675
 		},
-		"damage" :
-		{
+		"damage" : {
 			"max" : 18,
 			"min" : 10
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "forge2k/battle/heavystringer.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "forge2k/map/megabruiser.def",
 			"iconSmall" : "forge2k/iconsSmall/heavystringer.bmp",
 			"iconLarge" : "forge2k/iconsBig/heavystringer.bmp",
 			"timeBetweenFidgets" : 1,
-			"missile" :
-			{
+			"missile" : {
 				"projectile" : "forge2k/battle/projectile/lvl5shot.DEF",
-			    "attackClimaxFrame" : 4,
-				"offset" :
-				{
+				"attackClimaxFrame" : 4,
+				"offset" : {
 					"upperX" : 25,
 					"upperY" : -86,
 					"middleX" : 47,
@@ -45,132 +42,220 @@
 					"lowerX" : 25,
 					"lowerY" : -38
 				},
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				]
 			}
 		},
 		"level" : 5,
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "forge2k/stingerATTK.wav",
 			"defend" : "forge2k/stingerDFND.wav",
 			"killed" : "forge2k/stingerKILL.wav",
 			"move" : "forge2k/stingerMOVE.wav",
 			"wince" : "forge2k/stingerWNCE.wav",
- 			"shoot" : "forge2k/stingerSHOT.wav" 
+			"shoot" : "forge2k/stingerSHOT.wav"
 		},
-		"abilities" :
-		{
-			"shooter" :
-			{
+		"abilities" : {
+			"shooter" : {
 				"type" : "SHOOTER"
-			},	
-			"absoluteShooter" :
-			{
+			},
+			"absoluteShooter" : {
 				"type" : "NO_DISTANCE_PENALTY"
-			},	
-			"fullmelee" :
-			{
+			},
+			"fullmelee" : {
 				"type" : "NO_MELEE_PENALTY"
-			},	
-			"forgeMorale" :
-			{
+			},
+			"forgeMorale" : {
 				"type" : "MORALE",
 				"val" : -1,
-				"propagator" : 	"HERO",
-				"limiters": [ 
+				"propagator" : "HERO",
+				"limiters" : [
 					"noneOf",
-					{						
+					{
 						"type" : "CREATURE_FACTION_LIMITER",
-						"faction": "forge2k"
-					} 
+						"faction" : "forge2k"
+					}
 				],
 				"stacking" : "Forge creatures",
 				"description" : "{Cyber Abomination}\nAny non-Forge2k unit in hero army has Morale lowered by one",
-				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"		 
+				"icon" : "forge2k/icons/bonusIcons/cyberabo2.png"
 			},
-		
-		"missilePower" :
-		{
-			"type" : "SPECIFIC_SPELL_POWER",
-			"subtype" : "meteorShower",
-			"val" : 30
+
+			"missilePower" : {
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "meteorShower",
+				"val" : 30
+			},
+			"missileRain" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "meteorShower",
+				"val" : 20,
+				"addInfo" : [
+					0,
+					1
+				]
+			}
 		},
-		"missileRain" :
-		{
-			"type" : "SPELL_AFTER_ATTACK",
-			"subtype" : "meteorShower",
-			"val" : 20,
-			"addInfo" : [0,1]
-		}
-	  },
 		"stackExperience" : [
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "attack"
 				},
-				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
-			},	
+				"values" : [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "PRIMARY_SKILL",
 					"subtype" : "defence"
 				},
-				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+				"values" : [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMax"
 				},
-				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+				"values" : [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"type" : "CREATURE_DAMAGE",
 					"subtype" : "creatureDamageMin"
 				},
-				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+				"values" : [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
 			},
 			{
-				"bonus" :
-				{
+				"bonus" : {
 					"valueType" : "PERCENT_TO_BASE",
 					"type" : "STACK_HEALTH"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
 			},
 			{
-				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
+				"bonus" : {
+					"type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "weakness",
-					"addInfo" : [0, 1, 0] },
-				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
+					"addInfo" : [
+						0,
+						1,
+						0
+					]
+				},
+				"values" : [
+					7,
+					14,
+					21,
+					28,
+					35,
+					42,
+					49,
+					56,
+					63,
+					70
+				]
 			},
 			{
-				"bonus" : { "type" : "SPELL_AFTER_ATTACK",
+				"bonus" : {
+					"type" : "SPELL_AFTER_ATTACK",
 					"subtype" : "disruptingRay",
-					"addInfo" : [0, 1, 1] },
-				"values" : [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ]
+					"addInfo" : [
+						0,
+						1,
+						1
+					]
+				},
+				"values" : [
+					7,
+					14,
+					21,
+					28,
+					35,
+					42,
+					49,
+					56,
+					63,
+					70
+				]
 			}
-		]	
+		]
 	},
 
-	
-	"commstringer2k":
-	{
-		"advMapAmount" :
-		{
+	"commstringer2k" : {
+		"advMapAmount" : {
 			"max" : 25,
 			"min" : 16
 		},
 		"faction" : "forge2k",
 		"special" : true,
-		"name" :
-		{
+		"name" : {
 			"plural" : "Stinger Captains",
 			"singular" : "Stinger Captain"
 		},
@@ -181,30 +266,29 @@
 		"growth" : 9,
 		"hitPoints" : 40,
 		"speed" : 4,
-        "shots" : 24,
-		"cost" :
-		{
+		"shots" : 24,
+		"cost" : {
 			"gold" : 140
 		},
-		"damage" :
-		{
+		"damage" : {
 			"min" : 6,
 			"max" : 12
 		},
-		"graphics" :
-		{
+		"graphics" : {
 			"animation" : "forge2k/battle/heavystringer.def",
-			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"animationTime" : {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
 			"map" : "forge2k/map/megabruiser.def",
 			"iconSmall" : "forge2k/iconsSmall/heavystringer.bmp",
 			"iconLarge" : "forge2k/iconsBig/heavystringer.bmp",
 			"timeBetweenFidgets" : 1,
-			"missile" :
-			{
+			"missile" : {
 				"projectile" : "forge2k/battle/projectile/lvl5shot.DEF",
-			    "attackClimaxFrame" : 4,
-				"offset" :
-				{
+				"attackClimaxFrame" : 4,
+				"offset" : {
 					"upperX" : 25,
 					"upperY" : -86,
 					"middleX" : 47,
@@ -212,47 +296,54 @@
 					"lowerX" : 25,
 					"lowerY" : -38
 				},
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+				"frameAngles" : [
+					90,
+					72,
+					45,
+					27,
+					0,
+					-27,
+					-45,
+					-72,
+					-90,
+					0,
+					0,
+					0
+				]
 			}
 		},
 		"level" : 0,
-		"sound" :
-		{
+		"sound" : {
 			"attack" : "forge2k/stingerATTK.wav",
 			"defend" : "forge2k/stingerDFND.wav",
 			"killed" : "forge2k/stingerKILL.wav",
 			"move" : "forge2k/stingerMOVE.wav",
 			"wince" : "forge2k/stingerWNCE.wav",
- 			"shoot" : "forge2k/stingerSHOT.wav" 
+			"shoot" : "forge2k/stingerSHOT.wav"
 		},
-		"abilities" :
-		{
+		"abilities" : {
 			"magicResistance" : {
 				"type" : "SPELL_DAMAGE_REDUCTION",
 				"subtype" : "any",
 				"val" : 5
 			},
-			"castsAmount" :
-			{
+			"castsAmount" : {
 				"type" : "CASTS",
 				"val" : 1
 			},
-			"enchant" :
-			{
+			"enchant" : {
 				"type" : "CREATURE_ENCHANT_POWER",
 				"val" : 1
 			},
-			"spellpower" :
-			{
+			"spellpower" : {
 				"type" : "CREATURE_SPELL_POWER",
 				"val" : 100
 			},
-			"canCast" :
-			{
+			"canCast" : {
 				"type" : "SPELLCASTER",
 				"subtype" : "disease",
 				"val" : 3
 			}
-		}	
+		}
 	}
 }
