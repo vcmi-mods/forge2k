@@ -75,7 +75,7 @@
 		],
 		"2.5.4" : [
 			"Added flagport frames (Kingdom Overwiev window)"
-		]		
+		]
 	},
 	"modType" : "Town",
 	"depends" : [
