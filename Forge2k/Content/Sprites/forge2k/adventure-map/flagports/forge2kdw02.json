@@ -1,0 +1,10 @@
+{
+	"basepath" : "forge2k/adventure-map/flagports/",
+	"images" : [
+		{
+			"group" : 0,
+			"frame" : 0,
+			"file" : "forge2kdw02"
+		}
+	]
+}

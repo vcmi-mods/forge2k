@@ -22,7 +22,8 @@
 							"VBA"
 						]
 					}
-				}
+				},
+				"kingdomOverviewImage" : "forge2k/adventure-map/flagports/forge2kdw01.def"
 			},
 			"slaughterhouse2k" : {
 				"name" : "Slaughterhouse",
@@ -45,7 +46,8 @@
 							"VAB"
 						]
 					}
-				}
+				},
+				"kingdomOverviewImage" : "forge2k/adventure-map/flagports/forge2kdw02.def"
 			},
 			"fireBasin2k" : {
 				"name" : "Fire Basin",
@@ -68,7 +70,8 @@
 							"VBA"
 						]
 					}
-				}
+				},
+				"kingdomOverviewImage" : "forge2k/adventure-map/flagports/forge2kdw03.def"
 			},
 			"airstrip2k" : {
 				"name" : "Airstrip",
@@ -91,7 +94,8 @@
 							"VBA"
 						]
 					}
-				}
+				},
+				"kingdomOverviewImage" : "forge2k/adventure-map/flagports/forge2kdw04.def"
 			},
 			"stingersPost2k" : {
 				"name" : "Stingers Post",
@@ -115,7 +119,8 @@
 							"VBA"
 						]
 					}
-				}
+				},
+				"kingdomOverviewImage" : "forge2k/adventure-map/flagports/forge2kdw05.def"
 			},
 			"garage2k" : {
 				"name" : "Garage",
@@ -139,7 +144,8 @@
 							"VABV"
 						]
 					}
-				}
+				},
+				"kingdomOverviewImage" : "forge2k/adventure-map/flagports/forge2kdw06.def"
 			},
 			"ancientRefinery2k" : {
 				"name" : "Ancient Refinery",
@@ -163,7 +169,8 @@
 							"VABV"
 						]
 					}
-				}
+				},
+				"kingdomOverviewImage" : "forge2k/adventure-map/flagports/forge2kdw07.def"
 			}
 		}
 	}

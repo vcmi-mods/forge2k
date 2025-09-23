@@ -112,7 +112,7 @@
 							},
 
 							"damageForPsychos" : {
-								"subtype" : "assumeControl2k",
+								"subtype" : "spell.assumeControl2k",
 								"type" : "MORE_DAMAGE_FROM_SPELL",
 								"val" : -100,
 								"limiters" : [
