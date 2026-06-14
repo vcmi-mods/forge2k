@@ -69,13 +69,13 @@ jobs:
         if: env.VCMI_VERSION != ''
         run: python3 .github/install_mod_dependencies.py "${VCMI_VERSION}"
 
-      - name: Export translations
-        if: env.VCMI_VERSION != ''
-        run: |
-          if ! jq -e '.modType == "Translation"' mod.json >/dev/null; then
-            echo '{ "activePreset" : "default", "presets" : { "default" : { "mods" : [ "vcmi", "core", "' ${MOD_NAME} '" ]}}}' >~/.config/vcmi/modSettings.json
-            vcmiserver --translate-mod=${MOD_NAME}
-          fi
+#      - name: Export translations
+#        if: env.VCMI_VERSION != ''
+#        run: |
+#          if ! jq -e '.modType == "Translation"' mod.json >/dev/null; then
+#            echo '{ "activePreset" : "default", "presets" : { "default" : { "mods" : [ "vcmi", "core", "' ${MOD_NAME} '" ]}}}' >~/.config/vcmi/modSettings.json
+#            vcmiserver --translate-mod=${MOD_NAME}
+#          fi
 
       - name: Check translations folder
         id: check
