@@ -86,14 +86,14 @@
 		"description" : "Die beste aller Schmieden für VCMI - Aktualisierte Schmiedestadt, zusammengestellt aus verschiedenen Assets der Heroes of Might & Magic Modding-Community.",
 
 		"translations" : [
-			"translation/forge2k/german.json"
+			"translation/german.json"
 		]
 	},
 	"chinese" : {
 		"name" : "天堂铸造厂",
 		"description" : "天堂铸造厂是一个柴油朋克风格的高科技种族，基于《英雄无敌III》资料片机械族（Forge）废案制作，由Heroes of Might & Magic Modding Community社区的各种资源整理而成，是VCMI目前所有铸造厂项目中质量最好的。",
 		"translations" : [
-			"translation/forge2k/chinese.json"
+			"translation/chinese.json"
 		]
 	},
 	"russian" : {
@@ -101,7 +101,7 @@
 		"description" : "Горница всех кузниц для VCMI — обновленный город-кузница, созданный из различных материалов, созданных сообществом моддеров Heroes of Might & Magic.",
 
 		"translations" : [
-			"translation/forge2k/russian.json"
+			"translation/russian.json"
 		]
 	},
 	"polish" : {
@@ -109,14 +109,14 @@
 		"description" : "Najkuźniejsza ze wszystkich Kuźni na VCMI - Zaktualizowane miasto Niebiańskiej Kuźni, stworzone na podstawie różnych zasobów autorstwa społeczności HoMM.",
 
 		"translations" : [
-			"translation/forge2k/polish.json"
+			"translation/polish.json"
 		]
 	},
 	"ukrainian" : {
 		"name" : "Небесна Кузня 2000",
 		"description" : "Найкраща Кузня з усіх Кузень для VCMI - оновлене місто створене з різних наробок ком'юніті Героїв Меча і Магії.",
 		"translations" : [
-			"translation/forge2k/ukrainian.json"
+			"translation/ukrainian.json"
 		]
 	},
 
