@@ -248,5 +248,7 @@
 	"spell.forge2k.teslasWrath2k.description.basic": "{特斯拉之怒}\r\n\r\n为天堂铸造厂的特斯拉线圈充能，使其可以攻击敌人。\r\n",
 	"spell.forge2k.teslasWrath2k.description.expert": "{特斯拉之怒}\r\n\r\n为天堂铸造厂的特斯拉线圈充能，使其可以攻击敌人。\r\n",
 	"spell.forge2k.teslasWrath2k.description.none": "{特斯拉之怒}\r\n\r\n为天堂铸造厂的特斯拉线圈充能，使其可以攻击敌人。\r\n",
-	"spell.forge2k.teslasWrath2k.name": "特斯拉之怒"
+	"spell.forge2k.teslasWrath2k.name": "特斯拉之怒",
+	"mod.name": "天堂铸造厂",
+	"mod.description": "天堂铸造厂是一个柴油朋克风格的高科技种族，基于《英雄无敌III》资料片机械族（Forge）废案制作，由Heroes of Might & Magic Modding Community社区的各种资源整理而成，是VCMI目前所有铸造厂项目中质量最好的。"
 }

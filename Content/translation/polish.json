@@ -273,5 +273,7 @@
 	"hero.forge2k.tp_sheikleen2k.biography": "Tajemnicze postacie takie jak Sheikleen nie są rzadkością w szeregach Niebiańskiej Kuźni. Pewnego dnia ot tak pojawiła się jako wysoko postawiony dowodca, a jej rozkazy wygrały wiele bitew, więc powszechnie uznano ją za cenny zasób. Mimo to, takie osoby zawsze ukrywają prawdziwe motywy pnać się po ścieżkach kariery.",
 	"hero.forge2k.tp_sheikleen2k.specialty.description": "Otrzymuje 10% premii na poziom umiejętności inteligencja.",
 	"hero.forge2k.tp_sheikleen2k.specialty.name": "Inteligencja",
-	"hero.forge2k.tp_sheikleen2k.specialty.tooltip": "Premia do umiejętności: Inteligencja"
+	"hero.forge2k.tp_sheikleen2k.specialty.tooltip": "Premia do umiejętności: Inteligencja",
+	"mod.name": "Niebiańska Kuźnia 2000",
+	"mod.description": "Najkuźniejsza ze wszystkich Kuźni na VCMI - Zaktualizowane miasto Niebiańskiej Kuźni, stworzone na podstawie różnych zasobów autorstwa społeczności HoMM."
 }

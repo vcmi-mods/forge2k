@@ -273,5 +273,7 @@
 	"spell.forge2k.teslasWrath2k.description.basic" : "{Tesla's Wrath}\r\n\r\nSummons the power of the Heavenly Forge's grail to strike your opponents.\r\n",
 	"spell.forge2k.teslasWrath2k.description.expert" : "{Tesla's Wrath}\r\n\r\nSummons the power of the Heavenly Forge's grail to strike your opponents.\r\n",
 	"spell.forge2k.teslasWrath2k.description.none" : "{Tesla's Wrath}\r\n\r\nSummons the power of the Heavenly Forge's grail to strike your opponents.\r\n",
-	"spell.forge2k.teslasWrath2k.name" : "Tesla's Wrath"
+	"spell.forge2k.teslasWrath2k.name" : "Tesla's Wrath",
+	"mod.name" : "Heavenly Forge 2000",
+	"mod.description" : "The Forgest of all Forges for VCMI - Updated Forge town combined out of various assets made by the Heroes of Might & Magic modding community."
 }
