@@ -84,7 +84,6 @@
 	"german" : {
 		"name" : "Himmlische Schmiede 2000",
 		"description" : "Die beste aller Schmieden für VCMI - Aktualisierte Schmiedestadt, zusammengestellt aus verschiedenen Assets der Heroes of Might & Magic Modding-Community.",
-
 		"translations" : [
 			"translation/german.json"
 		]
@@ -99,7 +98,6 @@
 	"russian" : {
 		"name" : "Небесная Кузня 2000",
 		"description" : "Горница всех кузниц для VCMI — обновленный город-кузница, созданный из различных материалов, созданных сообществом моддеров Heroes of Might & Magic.",
-
 		"translations" : [
 			"translation/russian.json"
 		]
@@ -107,7 +105,6 @@
 	"polish" : {
 		"name" : "Niebiańska Kuźnia 2000",
 		"description" : "Najkuźniejsza ze wszystkich Kuźni na VCMI - Zaktualizowane miasto Niebiańskiej Kuźni, stworzone na podstawie różnych zasobów autorstwa społeczności HoMM.",
-
 		"translations" : [
 			"translation/polish.json"
 		]
@@ -119,7 +116,6 @@
 			"translation/ukrainian.json"
 		]
 	},
-
 	"factions" : [
 		"config/forge2k/town/buildings.json",
 		"config/forge2k/town/faction.json",
@@ -130,40 +126,30 @@
 	],
 	"creatures" : [
 		"config/forge2k/artifacts/supplyCart",
-
 		"config/forge2k/creatures/CyberDead.json",
 		"config/forge2k/creatures/CyberZombie.json",
-
 		"config/forge2k/creatures/GruntSoldier.json",
 		"config/forge2k/creatures/FootSoldier.json",
-
 		"config/forge2k/creatures/Pyro.json",
 		"config/forge2k/creatures/Pyromaniac.json",
-
 		"config/forge2k/creatures/Stringer.json",
 		"config/forge2k/creatures/Bruiser.json",
 		"config/forge2k/creatures/heavystringer.json",
-
 		"config/forge2k/creatures/JumpSoldier.json",
 		"config/forge2k/creatures/JumpTrooper.json",
-
 		"config/forge2k/creatures/NagaTank.json",
 		"config/forge2k/creatures/NagaHeavy.json",
-
 		"config/forge2k/creatures/Juggernaut.json",
 		"config/forge2k/creatures/Dreadnought.json",
-
 		"config/forge2k/creatures/creature-names2.json"
 	],
 	"artifacts" : [
 		"config/forge2k/artifacts/supplyCartArt"
 	],
-
 	"heroClasses" : [
 		"config/forge2k/heroes/cyborg.json",
 		"config/forge2k/heroes/technojunk.json"
 	],
-
 	"heroes" : [
 		"config/forge2k/heroes/cyb_deckard.json",
 		"config/forge2k/heroes/cyb_flamius.json",
@@ -174,7 +160,6 @@
 		"config/forge2k/heroes/cyb_sprinter.json",
 		"config/forge2k/heroes/cyb_sturm.json",
 		"config/forge2k/heroes/cyb_sunnith.json",
-
 		"config/forge2k/heroes/tp_agar.json",
 		"config/forge2k/heroes/tp_charity.json",
 		"config/forge2k/heroes/tp_cistrict.json",
@@ -187,9 +172,7 @@
 	"objects" : [
 		"config/forge2k/dwellings.json"
 	],
-	"skills" : [
-		//"config/forge2k/assumeControlDamage.json"
-	],
+	"skills" : [],
 	"spells" : [
 		"config/forge2k/assumeControl.json",
 		"config/forge2k/cyberBloodlust.json",
@@ -197,5 +180,10 @@
 		"config/forge2k/cartArmor.json",
 		"config/forge2k/teslasWrath.json",
 		"config/forge2k/moat.json"
-	]
+	],
+	"french" : {
+		"translations" : [
+			"translation/french.json"
+		]
+	}
 }
