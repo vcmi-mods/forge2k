@@ -33,102 +33,102 @@
 					"cartArmor" : {
 						"type" : "core:timed",
 						"bonus" : {
-					"additionalHP" : {
-						"type" : "STACK_HEALTH",
-						"val" : 50,
-						"duration" : "STACK_GETS_TURN",
+							"additionalHP" : {
+								"type" : "STACK_HEALTH",
+								"val" : 50,
+								"duration" : "STACK_GETS_TURN",
 
-						"limiters" : [
-							"anyOf",
-							{
-								"type" : "CREATURE_TYPE_LIMITER",
-								"creature" : "supplyCart2k",
-								"includeUpgrades" : true
+								"limiters" : [
+									"anyOf",
+									{
+										"type" : "CREATURE_TYPE_LIMITER",
+										"creature" : "supplyCart2k",
+										"includeUpgrades" : true
+									},
+									{
+										"type" : "CREATURE_TYPE_LIMITER",
+										"creature" : "ammoCart",
+										"includeUpgrades" : true
+									}
+								]
 							},
-							{
-								"type" : "CREATURE_TYPE_LIMITER",
-								"creature" : "ammoCart",
-								"includeUpgrades" : true
-							}
-						]
-					},
 
-					"additionalDef" : {
-						"val" : 10,
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "defence",
-						"duration" : "STACK_GETS_TURN",
+							"additionalDef" : {
+								"val" : 10,
+								"type" : "PRIMARY_SKILL",
+								"subtype" : "defence",
+								"duration" : "STACK_GETS_TURN",
 
-						"limiters" : [
-							"anyOf",
-							{
-								"type" : "CREATURE_TYPE_LIMITER",
-								"creature" : "supplyCart2k",
-								"includeUpgrades" : true
+								"limiters" : [
+									"anyOf",
+									{
+										"type" : "CREATURE_TYPE_LIMITER",
+										"creature" : "supplyCart2k",
+										"includeUpgrades" : true
+									},
+									{
+										"type" : "CREATURE_TYPE_LIMITER",
+										"creature" : "ammoCart",
+										"includeUpgrades" : true
+									}
+								]
 							},
-							{
-								"type" : "CREATURE_TYPE_LIMITER",
-								"creature" : "ammoCart",
-								"includeUpgrades" : true
-							}
-						]
-					},
 
-					"refill" : {
-						"type" : "OPENING_BATTLE_SPELL",
-						"subtype" : "cartRefill2k",
-						"duration" : "STACK_GETS_TURN",
-						"propagator" : "PLAYER",
-						"limiters" : [
-							"anyOf",
-							{
-								"type" : "CREATURE_TYPE_LIMITER",
-								"creature" : "supplyCart2k",
-								"includeUpgrades" : true
-							},
-							{
-								"type" : "CREATURE_TYPE_LIMITER",
-								"creature" : "ammoCart",
-								"includeUpgrades" : true
+							"refill" : {
+								"type" : "OPENING_BATTLE_SPELL",
+								"subtype" : "cartRefill2k",
+								"duration" : "STACK_GETS_TURN",
+								"propagator" : "PLAYER",
+								"limiters" : [
+									"anyOf",
+									{
+										"type" : "CREATURE_TYPE_LIMITER",
+										"creature" : "supplyCart2k",
+										"includeUpgrades" : true
+									},
+									{
+										"type" : "CREATURE_TYPE_LIMITER",
+										"creature" : "ammoCart",
+										"includeUpgrades" : true
+									}
+								]
 							}
-						]
+						}
 					}
 				}
-					}
-				}				
 			},
 			"none" : {},
 			"basic" : {
 				"battleEffects" : {
 					"cartArmor" : {
 						"bonus" : {
-					"additionalDef" : {
-						"val" : 20
-					}
-				}
+							"additionalDef" : {
+								"val" : 20
+							}
+						}
 					}
 				}
 			},
 			"advanced" : {
-			"battleEffects" : {
+				"battleEffects" : {
 					"cartArmor" : {
 						"bonus" : {
-					"additionalDef" : {
-						"val" : 30
+							"additionalDef" : {
+								"val" : 30
+							}
+						}
 					}
 				}
-					}
-			}
 			},
 			"expert" : {
 				"battleEffects" : {
 					"cartArmor" : {
 						"type" : "timed",
 						"bonus" : {
-					"additionalDef" : {
-						"val" : 40
-					}
-				}
+							"additionalDef" : {
+								"val" : 40
+							}
+						}
 					}
 				}
 			}

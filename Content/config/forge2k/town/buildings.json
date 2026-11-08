@@ -252,7 +252,9 @@
 						{
 							"type" : "COMBAT_EVENT_TRIGGER",
 							"subtype" : "enchanted",
-							"addInfo" : { "spell" : "cartArmor2k" },
+							"addInfo" : {
+								"spell" : "cartArmor2k"
+							},
 							"valueType" : "BASE_NUMBER",
 							"propagator" : "PLAYER"
 						},

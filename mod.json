@@ -78,7 +78,7 @@
 		],
 		"2.5.5" : [
 			"Update to vcmi-1.8 format"
-		]		
+		]
 	},
 	"modType" : "Town",
 	"depends" : [
