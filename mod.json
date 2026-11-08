@@ -5,9 +5,9 @@
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "2.5.4",
+	"version" : "2.5.5",
 	"compatibility" : {
-		"min" : "1.7.0"
+		"min" : "1.8.0"
 	},
 	"changelog" : {
 		"1.0" : [
@@ -75,7 +75,10 @@
 		],
 		"2.5.4" : [
 			"Added flagport frames (Kingdom Overwiev window)"
-		]
+		],
+		"2.5.5" : [
+			"Update to vcmi-1.8 format"
+		]		
 	},
 	"modType" : "Town",
 	"depends" : [

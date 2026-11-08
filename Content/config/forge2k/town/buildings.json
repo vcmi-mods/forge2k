@@ -250,9 +250,10 @@
 					],
 					"bonuses" : [
 						{
-							"type" : "ENCHANTED",
+							"type" : "COMBAT_EVENT_TRIGGER",
+							"subtype" : "enchanted",
+							"addInfo" : { "spell" : "cartArmor2k" },
 							"valueType" : "BASE_NUMBER",
-							"subtype" : "cartArmor2k",
 							"propagator" : "PLAYER"
 						},
 						{

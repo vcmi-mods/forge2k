@@ -60,7 +60,7 @@
 				},
 				"inferno" : {
 					"subtype" : "inferno",
-					"type" : "SPECIAL_SPELL_LEV",
+					"type" : "SPECIAL_SPELL_SCALING",
 					"updater" : "TIMES_HERO_LEVEL",
 					"val" : 1
 				}

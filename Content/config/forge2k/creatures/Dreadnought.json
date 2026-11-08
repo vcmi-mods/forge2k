@@ -74,10 +74,10 @@
 			},
 
 			"onePunch" : {
-				"type" : "DESTRUCTION",
-				"subtype" : "destructionKillAmount",
+				"type" : "COMBAT_EVENT_TRIGGER",
+				"subtype" : "destruction",
 				"val" : 50,
-				"addInfo" : 1
+				"addInfo" : { "killBy" : "count", "amount" : 1 }
 			}
 		},
 		"stackExperience" : [
@@ -206,8 +206,10 @@
 			},
 			{
 				"bonus" : {
-					"type" : "DEATH_STARE",
-					"subtype" : "deathStareGorgon"
+					"type" : "COMBAT_EVENT_TRIGGER",
+					"subtype" : "deathStare",
+//					"val" : 10,
+					"addInfo" : { "situation" : "melee" }
 				},
 				"values" : [
 					0,

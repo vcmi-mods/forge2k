@@ -5,7 +5,7 @@
 			"120px" : "forge2k/creature-bg-120px",
 			"130px" : "forge2k/creature-bg-130px"
 		},
-		"nativeTerrain" : "asphalt",
+		"nativeTerrain" : [ "asphalt" ],
 		"alignment" : "evil",
 		"boat" : "boatNecropolis",
 		"town" : {

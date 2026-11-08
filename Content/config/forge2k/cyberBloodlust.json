@@ -37,7 +37,10 @@
 				"targetModifier" : {
 					"smart" : false
 				},
-				"effects" : {
+				"battleEffects" : {
+					"blodlustEffects" : {
+						"type" : "core:timed",
+						"bonus" : {
 					"bloodlustAtCyberDeads" : {
 						"val" : 10,
 						"type" : "PRIMARY_SKILL",
@@ -51,6 +54,8 @@
 								"includeUpgrades" : true
 							}
 						]
+					}
+						}
 					}
 				}
 			},

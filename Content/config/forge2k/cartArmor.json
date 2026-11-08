@@ -29,7 +29,10 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"effects" : {
+				"battleEffects" : {
+					"cartArmor" : {
+						"type" : "core:timed",
+						"bonus" : {
 					"additionalHP" : {
 						"type" : "STACK_HEALTH",
 						"val" : 50,
@@ -91,26 +94,41 @@
 						]
 					}
 				}
+					}
+				}				
 			},
 			"none" : {},
 			"basic" : {
-				"effects" : {
+				"battleEffects" : {
+					"cartArmor" : {
+						"bonus" : {
 					"additionalDef" : {
 						"val" : 20
 					}
 				}
+					}
+				}
 			},
 			"advanced" : {
-				"effects" : {
+			"battleEffects" : {
+					"cartArmor" : {
+						"bonus" : {
 					"additionalDef" : {
 						"val" : 30
 					}
 				}
+					}
+			}
 			},
 			"expert" : {
-				"effects" : {
+				"battleEffects" : {
+					"cartArmor" : {
+						"type" : "timed",
+						"bonus" : {
 					"additionalDef" : {
 						"val" : 40
+					}
+				}
 					}
 				}
 			}
